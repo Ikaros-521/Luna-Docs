@@ -1,4 +1,6 @@
 site_name: Luna AI
+repo_url: https://github.com/Ikaros-521/AI-Vtuber
+repo_name: Luna AI
 markdown_extensions:
   - attr_list
   - admonition
