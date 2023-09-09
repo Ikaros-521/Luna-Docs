@@ -1591,6 +1591,16 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 
     ### 文档生成
 
+    基于编写 `mkdocs-material`，官方文档：[mkdocs-material](//squidfunk.github.io/mkdocs-material/getting-started/)  
+    
+    安装 `pip install mkdocs-material`  
+
+    构建静态网站 `mkdocs build`  
+
+    文档本地实时预览 `mkdocs serve`  
+
+    ### 文档生成(简易旧版)
+
     依赖 [node.js](//nodejs.org) 环境。  
 
     #### 安装docsify-cli工具
@@ -1648,6 +1658,10 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ## 📝更新日志
 
 ??? note "更新日志"
+
+    - 2023-09-08
+        - 文档独立到单独仓库，在线访问。
+        - 聊天页 文本输入框支持回车按键触发发送。
 
     - 2023-09-08
         - VITS下，兼容bert-vits2
