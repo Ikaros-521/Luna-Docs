@@ -1,0 +1,28 @@
+site_name: Luna AI
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+theme:
+  name: material
+  language: zh
+  favicon: static/images/favicon.png
+  icon:
+    logo: fontawesome/solid/dove
+  features:
+    - navigation.instant
+    - content.tabs.link
+  palette:
+    scheme: default
+    primary: blue
+extra:
+  generator: false
+copyright: >
+  Copyright &copy; 2023 <a href="//ie.cx">𝑖𝑞𝑏𝑜𝑜𝑠𝑡</a> & Ikaros-521
