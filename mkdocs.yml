@@ -26,5 +26,8 @@ theme:
     primary: blue
 extra:
   generator: false
+  analytics:
+    provider: google
+    property: G-FR32RDV2MT
 copyright: >
   Copyright &copy; 2023 <a href="//ie.cx">𝑖𝑞𝑏𝑜𝑜𝑠𝑡</a> & Ikaros-521
