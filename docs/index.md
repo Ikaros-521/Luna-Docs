@@ -5,154 +5,71 @@ hide:
 
 # ✨ Luna AI ✨
 
-<a href="//github.com/Ikaros-521/AI-Vtuber/stargazers">
-    <img alt="GitHub stars" src="//img.shields.io/github/stars/Ikaros-521/AI-Vtuber?color=%09%2300BFFF&style=flat-square">
-</a>
-<a href="//github.com/Ikaros-521/AI-Vtuber/issues">
-    <img alt="GitHub issues" src="//img.shields.io/github/issues/Ikaros-521/AI-Vtuber?color=Emerald%20green&style=flat-square">
-</a>
-<a href="//github.com/Ikaros-521/AI-Vtuber/network">
-    <img alt="GitHub forks" src="//img.shields.io/github/forks/Ikaros-521/AI-Vtuber?color=%2300BFFF&style=flat-square">
-</a>
-<a href="/">
-    <img src="//img.shields.io/github/license/Ikaros-521/AI-Vtuber.svg" alt="license">
-</a>
-<a href="//www.python.org">
-    <img src="//img.shields.io/badge/python-3.10+-blue.svg" alt="python">
-</a>
+!!! tip "数据"
 
-Luna AI 是一个由
+    <a href="//github.com/Ikaros-521/AI-Vtuber/stargazers">
+        <img alt="GitHub stars" src="//img.shields.io/github/stars/Ikaros-521/AI-Vtuber?color=%09%2300BFFF&style=flat-square">
+    </a>
+    <a href="//github.com/Ikaros-521/AI-Vtuber/issues">
+        <img alt="GitHub issues" src="//img.shields.io/github/issues/Ikaros-521/AI-Vtuber?color=Emerald%20green&style=flat-square">
+    </a>
+    <a href="//github.com/Ikaros-521/AI-Vtuber/network">
+        <img alt="GitHub forks" src="//img.shields.io/github/forks/Ikaros-521/AI-Vtuber?color=%2300BFFF&style=flat-square">
+    </a>
+    <a href="/">
+        <img src="//img.shields.io/github/license/Ikaros-521/AI-Vtuber.svg" alt="license">
+    </a>
+    <a href="//www.python.org">
+        <img src="//img.shields.io/badge/python-3.10+-blue.svg" alt="python">
+    </a>
 
-`ChatterBot / GPT / Claude / langchain 本地 or 云端 / chatglm / text-generation-webui / 讯飞星火 / 智谱AI`
+!!! quote "介绍"
 
-做为 `大脑` 驱动的虚拟主播 `Live2D / Vtube Studio / UE5 + Audio2Face` ，可以在 `Bilibili / 抖音 / 快手 / 斗鱼` 直播中与观众实时互动 或者 直接在本地和您进行聊天
+    `Luna AI` 是一个由
 
-它使用自然语言处理和文本转语音技术 `Edge-TTS / VITS-Fast / elevenlabs / bark-gui / VALL-E-X` 生成对观众问题的回答并可以通过 `so-vits-svc / DDSP-SVC` 变声
+    `ChatterBot / GPT / Claude / langchain 本地 or 云端 / chatglm / text-generation-webui / 讯飞星火 / 智谱AI`
 
-另外还可以通过特定指令协同 `Stable Diffusion` 进行画图展示。并且可以自定义文案进行循环播放
+    做为 `大脑` 驱动的虚拟主播 `Live2D / Vtube Studio / UE5 + Audio2Face` ，可以在 `Bilibili / 抖音 / 快手 / 斗鱼` 直播中与观众实时互动 或者 直接在本地和您进行聊天
+
+    它使用自然语言处理和文本转语音技术 `Edge-TTS / VITS-Fast / elevenlabs / bark-gui / VALL-E-X` 生成对观众问题的回答并可以通过 `so-vits-svc / DDSP-SVC` 变声
+
+    另外还可以通过特定指令协同 `Stable Diffusion` 进行画图展示。并且可以自定义文案进行循环播放
 
 !!! danger "请注意"
     
     本项目完全免费，如有发现一模一样的套壳售卖程序，皆为盗版，请及时止损
 
 
-<a href="//space.bilibili.com/3709626/channel/collectiondetail?sid=1422512" target="_blank">▶︎ 视频教程合集</span></a>
-<span> | </span>
-<a href="/">📄 在线文档</span></a>
-<span> | </span>
-<a href="//github.com/Ikaros-521/AI-Vtuber" target="_blank">🍉 GitHub</span></a>
-<span> | </span>
-<a href="//gitee.com/ikaros-521/AI-Vtuber" target="_blank">🍓 Gitee</span></a>
+!!! note "导航"
 
-![思维导图](./static/images/luna-ai/xmind.png)
+    <a href="//space.bilibili.com/3709626/channel/collectiondetail?sid=1422512" target="_blank">:fontawesome-solid-video: 视频教程合集</span></a>
+    <span> | </span>
+    <a href="/">:material-file-document: 在线文档</span></a>
+    <span> | </span>
+    <a href="//github.com/Ikaros-521/AI-Vtuber" target="_blank">:simple-github: GitHub</span></a>
+    <span> | </span>
+    <a href="//gitee.com/ikaros-521/AI-Vtuber" target="_blank">:simple-gitee: Gitee</span></a>
 
-??? note "目录"
+![mind-map](./static/images/luna-ai/xmind.png)
 
-    ## 🕺🏻目录
-    <!-- START doctoc generated TOC please keep comment here to allow auto update -->
-    <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## :material-file-tree: 项目结构
 
+!!! abstract "项目结构"
 
-    - [🕺🏻目录](#目录)
-    - [📖项目结构](#项目结构)
-    - [下载项目](#下载项目)
-    - [💿运行环境](#运行环境)
-    - [🔧配置](#配置)
-      - [ChatGPT 代理](#chatgpt-代理)
-      - [chat\_with\_file 模式说明](#chat_with_file-模式说明)
-        - [模式简介](#模式简介)
-        - [模式配置](#模式配置)
-          - [注意](#注意)
-    - [🎉使用](#使用)
-      - [哔哩哔哩版](#哔哩哔哩版)
-      - [抖音版](#抖音版)
-      - [抖音版\_旧版（不稳定）](#抖音版_旧版不稳定)
-      - [快手版](#快手版)
-      - [斗鱼版](#斗鱼版)
-      - [聊天模式](#聊天模式)
-    - [🃏效果图](#效果图)
-      - [GUI界面](#gui界面)
-      - [SD接入](#sd接入)
-    - [❓️FAQ 常问问题](#️faq-常问问题)
-    - [♏️补充](#️补充)
-      - [平台](#平台)
-        - [b站直播监听](#b站直播监听)
-        - [抖音弹幕获取](#抖音弹幕获取)
-        - [快手弹幕获取](#快手弹幕获取)
-        - [斗鱼直播监听](#斗鱼直播监听)
-        - [聊天模式 百度](#聊天模式-百度)
-      - [LLM](#llm)
-        - [ChatGPT](#chatgpt)
-        - [Claude](#claude)
-        - [Claude2](#claude2)
-        - [ChatGLM](#chatglm)
-        - [智谱AI](#智谱ai)
-        - [langchain-ChatGLM](#langchain-chatglm)
-        - [chat\_with\_file](#chat_with_file)
-        - [text-generation-webui](#text-generation-webui)
-        - [讯飞星火](#讯飞星火)
-        - [闻达](#闻达)
-        - [ChatterBot](#chatterbot)
-        - [Bard](#bard)
-      - [TTS](#tts)
-        - [elevenlabs](#elevenlabs)
-        - [genshinvoice.top](#genshinvoicetop)
-        - [VITS](#vits)
-        - [VITS-fast-fine-tuning](#vits-fast-fine-tuning)
-        - [VALL-E-X](#vall-e-x)
-      - [变声](#变声)
-        - [DDSP-SVC](#ddsp-svc)
-        - [so-vits-svc](#so-vits-svc)
-      - [模型皮套](#模型皮套)
-        - [Live2D](#live2d)
-        - [NVIDIA Omniverse Audio2Face](#nvidia-omniverse-audio2face)
-      - [其他](#其他)
-        - [Stable Diffusion](#stable-diffusion)
-        - [web字幕打印机](#web字幕打印机)
-    - [🀅开发\&项目相关](#开发项目相关)
-      - [简易流程图](#简易流程图)
-      - [UI设计](#ui设计)
-      - [源码开发](#源码开发)
-        - [新增LLM](#新增llm)
-      - [打包懒人包](#打包懒人包)
-      - [MD目录自动生成](#md目录自动生成)
-        - [安装](#安装)
-        - [使用](#使用-1)
-      - [文档生成](#文档生成)
-        - [安装docsify-cli工具](#安装docsify-cli工具)
-        - [初始化项目](#初始化项目)
-        - [启动服务](#启动服务)
-      - [测试](#测试)
-    - [🖹待办事项](#待办事项)
-    - [📝更新日志](#更新日志)
-    - [🉑许可证](#许可证)
-      - [免责声明](#免责声明)
-    - [⭐️Star 经历](#️star-经历)
-    - [🤝贡献](#贡献)
-      - [🎉鸣谢](#鸣谢)
-      - [💸投资方](#投资方)
-      - [合作伙伴](#合作伙伴)
-      - [🙌赞助](#赞助)
+    - `config.json` 配置文件
+    - `main.py` GUI主程序。会根据配置调用各平台程序
+    - `utils` 文件夹，存储聊天、音频、通用类相关功能的封装实现
+    - `data` 文件夹，存储数据文件、违禁词、文案等
+    - `log` 文件夹，存储运行日志、字幕日志等
+    - `out` 文件夹，存储edge-tts输出的音频文件，文案输出的音频文件
+    - `Live2D` 文件夹，存储Live2D源码及模型
+    - `song` 文件夹，存储点歌模式的歌曲
+    - `docs` 文件夹，存储项目相关文档
+    - `tests` 文件夹，存储单一功能点的测试程序
 
-    <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+## :material-cloud-download: 下载项目
 
-## 📖项目结构
-
-- `config.json` 配置文件。
-- `main.py` GUI主程序。会根据配置调用各平台程序
-- `utils` 文件夹，存储聊天、音频、通用类相关功能的封装实现
-- `data` 文件夹，存储数据文件、违禁词、文案等
-- `log` 文件夹，存储运行日志、字幕日志等
-- `out` 文件夹，存储edge-tts输出的音频文件，文案输出的音频文件
-- `Live2D` 文件夹，存储Live2D源码及模型
-- `song` 文件夹，存储点歌模式的歌曲
-- `docs` 文件夹，存储项目相关文档
-- `tests` 文件夹，存储单一功能点的测试程序
-
-
-## 下载项目
-
-首先你得装个`git`（啥，没装？[百度](https://bing.com/search?q=git)），当然也可以直接在页面切换分支后下载各版本ZIP压缩包。    
+#### 首先你得装个 `git`（啥，没装？[百度:material-file-search:](https://bing.com/search?q=git)），当然也可以直接在页面切换分支后下载各版本 ZIP 压缩包   
 
 ```shell
 # 主线（推荐）
@@ -165,16 +82,19 @@ git clone -b owner https://github.com/Ikaros-521/AI-Vtuber.git
 git clone -b dev https://github.com/Ikaros-521/AI-Vtuber.git
 ```
 
-整合包下载：[Releases（点我跳转）](//github.com/Ikaros-521/AI-Vtuber/releases)  
+!!! note
 
+    整合包下载 [点我跳转 :octicons-link-16:](//github.com/Ikaros-521/AI-Vtuber/releases)
 
-## 💿运行环境
+## :material-run-fast: 运行环境
 
-python `3.10.11`
+#### Python 版本 `3.10.11`
 
 各个版本的依赖的库在 `requirements_xx.txt` 中，请自行安装。 
  
-安装目录请勿在 `中文路径、带有空格的路径、带有特殊字符的路径` ，可能会导致程序无法运行或运行异常！！！   
+!!! danger "注意"
+    
+    安装目录请勿在 `中文路径、带有空格的路径、带有特殊字符的路径` ，可能会导致程序无法运行或运行异常
 
 依赖版本参考 `requirements_common.txt`
 
@@ -187,11 +107,15 @@ pip install -r requirements_ks.txt
 pip install -r requirements_talk.txt
 ```
 
-部署视频教程：[哔哩哔哩-BV1fV4y1C77r](//www.bilibili.com/video/BV1fV4y1C77r)  
+!!! note
 
-## 🔧配置
+    部署视频教程 [哔哩哔哩 :octicons-link-16:](//www.bilibili.com/video/BV1fV4y1C77r)  
 
-GUI程序运行后会自动加载配置文件，可以通过GUI程序进行配置修改，也可以手动修改配置运行。配置都在 `config.json`
+## :material-file-edit: 配置
+
+#### GUI 程序运行后会自动加载配置文件，可以通过 GUI 程序进行配置修改，也可以手动修改配置运行。
+
+配置都在 `config.json`
 
 ??? note "config.json"
 
@@ -524,8 +448,9 @@ GUI程序运行后会自动加载配置文件，可以通过GUI程序进行配�
     }
     ```
 
-### ChatGPT 代理
-例如：[API2D](//api2d.com/wiki/doc)  
+## :material-chat: ChatGPT 代理
+
+#### 例如 [API2D :octicons-link-16:](//api2d.com/wiki/doc)  
 
 ```json
 "openai": {
@@ -540,22 +465,22 @@ GUI程序运行后会自动加载配置文件，可以通过GUI程序进行配�
 
 !!! note "或者纯代理的镜像站"
 
-    合作伙伴 [智来星球](//m.zlxqai.com) 提供：
+    #### 合作伙伴 [智来星球 :octicons-link-16:](//m.zlxqai.com) 提供
 
-    - [129.226.219.212:9000](//129.226.219.212:9000)
-    - [43.134.230.167:9000](//43.134.230.167:9000)
+    - [129.226.219.212:9000 :octicons-link-16:](//129.226.219.212:9000)
+    - [43.134.230.167:9000 :octicons-link-16:](//43.134.230.167:9000)
 
-    源自互联网：
+    #### 源自互联网：
 
-    - [openai-pag.wangzhishi.net](//openai-pag.wangzhishi.net)
+    - [openai-pag.wangzhishi.net :octicons-link-16:](//openai-pag.wangzhishi.net)
 
-    如何配置呢？  
+    #### 如何配置呢？  
 
     GUI中openai api地址配置为：`http://openai-pag.wangzhishi.net/v1`
 
     ![image](./static/images/luna-ai/253742483-ce47dd53-118e-488a-94d6-0d837db23e6c.png)
 
-### `chat_with_file` 模式说明
+## :material-help-circle: `chat_with_file` 模式说明
 
 #### 模式简介
 
@@ -570,46 +495,47 @@ GUI程序运行后会自动加载配置文件，可以通过GUI程序进行配�
 
 #### 模式配置
 
-chat_type设置为 `chat_with_file` 方可使用。使用前必须先设置好 opeanai、claude 等模型的访问 token 相关的配置。
+chat_type设置为 `chat_with_file` 方可使用。使用前必须先设置好 `opeanai、claude` 等模型的访问 `token` 相关的配置。
 
-chat_with_file 目前支持以下模式，在相关配置下的 chat_mode 进行配置：
+chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进行配置
 
-- claude：使用claude作为聊天模型，需要同时设置好
+- `claude` 使用claude作为聊天模型，需要同时设置好
 
-- local_vector_embedding_model 本地向量数据库。该模式会使用本地向量数据库存储数据。
+- `local_vector_embedding_model` 本地向量数据库。该模式会使用本地向量数据库存储数据。
 
-- openai_vector_search：仅仅使用向量数据库作查询，不做gpt的调用，可以节省token，做个简单的本地数据搜索。目前使用OpenAIEmbedding进行向量化，所以需要配置好OpenAI信息
+- `openai_vector_search` 仅仅使用向量数据库作查询，不做gpt的调用，可以节省token，做个简单的本地数据搜索。目前使用OpenAIEmbedding进行向量化，所以需要配置好OpenAI信息
 
-- openai_gpt：从向量数据库中查询到相关信息后，将其传递给gpt模型，让模型作进一步处理
+- `openai_gpt` 从向量数据库中查询到相关信息后，将其传递给gpt模型，让模型作进一步处理
 
-推荐使用Claude模式，这样可以免费使用，无需消耗openai的token。
+推荐使用 `claude` 模式，这样可以免费使用，无需消耗 `openai` 的 `token`
 
-后续会支持更多免费模型，如：文心一言、讯飞星火等
+后续会支持更多免费模型，如 `文心一言、讯飞星火` 等
 
 !!! note "注意"
 
-    1. 所有模型都应该采用HuggingFace模型，暂未适配其他模型
+    1. 所有模型都应该采用 `HuggingFace` 模型，暂未适配其他模型
 
-    2. 本地模型存储目录是data/text2vec_models，将自己的模型存储到该位置，在config.json配置中填写该模型的 "文件夹名字" 即可
+    2. 本地模型存储目录是 `data/text2vec_models` ，将自己的模型存储到该位置，在 `config.json` 配置中填写该模型的 `文件夹名字` 即可
 
-    3. 如果需要其他模型，可以从HuggingFace中下载下来，存放到对应位置即可
+    3. 如果需要其他模型，可以从 `HuggingFace` 中下载下来，存放到对应位置即可
 
-    4. 也可以直接输入HuggingFace的模型名字，如 [GanymedeNil/text2vec-large-chinese](//huggingface.co/GanymedeNil/text2vec-large-chinese)，项目会自动从远程仓库下载。
+    4. 也可以直接输入 `HuggingFace` 的模型名字，如 [GanymedeNil/text2vec-large-chinese :octicons-link-16:](//huggingface.co/GanymedeNil/text2vec-large-chinese) ，项目会自动从远程仓库下载。
 
-       1. 请确保能够连接上HuggingFace
+        1. 请确保能够连接上 `HuggingFace` (可能需要科学上网)
 
-       2. 远程仓库下载的模型，一般存储在系统cache中。win端一般是 `C:\Users\用户\.cache\torch\sentence_transformers` 。也可以将其移动到项目模型存储目录下使用
+        2. 远程仓库下载的模型，一般存储在系统cache中。win端一般是 `C:\Users\用户\.cache\torch\sentence_transformers` 。也可以将其移动到项目模型存储目录下使用
 
-    5. openai_vector_search和openai_gpt读取本地数据的内容默认以换行为分隔符，所以可能导致大标题数据丢失问题，需要注意你的数据内容在编辑时不要将核心的内容放在标题部分单独一行，导致丢失 核心数据，尽量将标题和正文写在一行，在真的需要分割的部分进行换行。  
+    5. `openai_vector_search` 和 `openai_gpt` 读取本地数据的内容默认以换行为分隔符，所以可能导致大标题数据丢失问题，需要注意你的数据内容在编辑时不要将核心的内容放在标题部分单独一行，导致丢失 核心数据，尽量将标题和正文写在一行，在真的需要分割的部分进行换行。  
 
 
-## 🎉使用
+## :fontawesome-solid-user: 使用
 
-各版本都需要做的前期准备操作。
+### 各版本都需要做的前期准备操作。
 
-??? note "`chatterbot` 相关安装"
+??? note "`Chatterbot` 相关安装"
 
     ## 运行环境
+
     - `Python 3.6+`
 
     ## 安装依赖
@@ -618,13 +544,13 @@ chat_with_file 目前支持以下模式，在相关配置下的 chat_mode 进行
     pip install spacy ChatterBot
     ```
 
-    如果ChatterBot安装报错，请前往 [ChatterBot_update](//github.com/RaSan147/ChatterBot_update) 安装新版本。下载下来输入`python setup.py install`即可
+    如果ChatterBot安装报错，请前往 [ChatterBot_update :octicons-link-16:](//github.com/RaSan147/ChatterBot_update) 安装新版本。下载下来输入 `python setup.py install` 即可
 
     安装慢，可以拆开来装  `pip install SQLAlchemy==1.3.24`
 
     ## 如何训练自己的AI？
 
-    - 打开`data/db.txt`，写入你想要训练的内容，格式如下
+    - 打开 `data/db.txt` ，写入你想要训练的内容，格式如下
 
     ```
     问
@@ -633,14 +559,14 @@ chat_with_file 目前支持以下模式，在相关配置下的 chat_mode 进行
     答
     ```
 
-    - 将文件重命名为`data/db.txt`
+    - 将文件重命名为 `data/db.txt`
     - 在命令行中运行以下命令启动程序：
 
     ```bash
     python train.py
     ```
 
-    - 训练完的模型名叫`db.sqlite3`，直接双击`main.py`即可使用
+    - 训练完的模型名叫 `db.sqlite3` ，直接双击 `main.py` 即可使用
 
     ## 常见问题
     1. 提示缺少 `en-core-web-sm` ，打开终端输入
@@ -655,24 +581,27 @@ chat_with_file 目前支持以下模式，在相关配置下的 chat_mode 进行
     pip install spacy
     ```
 
-启动GUI/手动修改 `config.json` 的配置，配好哈，注意 JSON 数据格式
+启动 GUI/手动 修改 `config.json` 的配置，配好哈，注意 JSON 数据格式
  
 
 ### 哔哩哔哩版
 
-在命令行中使用以下命令安装所需库：
+#### 在命令行中使用以下命令安装所需库：
 
 ```shell
 pip install -r requirements_bilibili.txt
 ```
 
-运行GUI `python main.py`
 
-单独运行 `python bilibili.py`
+!!! note
+
+    运行 GUI `python main.py`
+
+    单独运行 `python bilibili.py`
 
 ### 抖音版
 
-在命令行中使用以下命令安装所需库：
+#### 在命令行中使用以下命令安装所需库：
 
 ```shell
 pip install -r requirements_dy.txt
@@ -680,12 +609,17 @@ pip install -r requirements_dy.txt
 
 先安装第三方弹幕捕获软件，参考 [补充-抖音](#dy)
 
-运行GUI `python main.py`  
-单独运行 `python dy.py`  
+!!! note
 
-### 抖音版_旧版（不稳定）
+    运行 GUI `python main.py`  
 
-在命令行中使用以下命令安装所需库：
+    单独运行 `python dy.py`  
+
+### 抖音版 旧版
+
+!!! danger "不稳定"
+
+#### 在命令行中使用以下命令安装所需库：
 
 ```shell
 pip install -r requirements_dy.txt
@@ -696,46 +630,58 @@ pip install -r requirements_dy.txt
 ```shell
 protoc -I . --python_out=. dy.proto
 ```
-ps:依赖[golang](//go.dev/dl/)环境，还没有的话，手动补一补 [protobuf](//github.com/protocolbuffers/protobuf/releases)  
 
-运行 `python main.py`
+!!! note
+
+    依赖 [golang :octicons-link-16:](//go.dev/dl/) 环境，还没有的话，手动补一补 [protobuf :octicons-link-16:](//github.com/protocolbuffers/protobuf/releases)
+
+!!! note
+
+    运行 `python main.py`
 
 ### 快手版
 
-在命令行中使用以下命令安装所需库：
+#### 在命令行中使用以下命令安装所需库：
 
 ```shell
 pip install -r requirements_ks.txt
 ```
 
-新版本：
+#### 新版本：
 
 请在安装完依赖后，安装火狐浏览器内核。参考命令：`playwright install firefox`
 
 如果你是整合包，项目路径打开cmd，然后使用 `Miniconda3\python.exe Miniconda3\Scripts\playwright.exe install firefox` 进行安装。
 
-使用新版本时需要注意，请使用小号登录，然后在每次用完之后，把`cookie`文件夹下的`123.json`文件删掉！！！用过一次后cookie就异常了，所以需要删了重新登录！！！  
+使用新版本时需要注意，请使用小号登录，然后在每次用完之后，把 `cookie` 文件夹下的 `123.json` 文件删掉！！！用过一次后 cookie 就异常了，所以需要删了重新登录！！！  
 
-旧版本：  
+#### 旧版本：  
 
-运行前请重新生成一下protobuf文件，因为机器系统不一样同时protobuf版本也不一样所以不能拿来直接用～  
+运行前请重新生成一下 protobuf 文件，因为机器系统不一样同时 protobuf 版本也不一样所以不能拿来直接用～  
 
 ```shell
 protoc -I . --python_out=. ks.proto
 ```
-ps:依赖[golang](//go.dev/dl/)环境，还没有的话，手动补一补 [protobuf](//github.com/protocolbuffers/protobuf/releases)  
 
-运行 `python main.py`
+!!! note
+
+    依赖 [golang :octicons-link-16:](//go.dev/dl/) 环境，还没有的话，手动补一补 [protobuf :octicons-link-16:](//github.com/protocolbuffers/protobuf/releases)
+
+!!! note
+
+    运行 `python main.py`
 
 ### 斗鱼版
 
-在命令行中使用以下命令安装所需库：
+#### 在命令行中使用以下命令安装所需库：
 
 ```shell
 pip install -r requirements_douyu.txt
 ```
 
-运行 `python main.py`  
+!!! note
+
+    运行 `python main.py`  
 
 打开您的浏览器，找到您需要监听的直播间，然后按F12打开开发者工具，点击Console（控制台），复制 `douyu_ws_client.js` 脚本中的内容，粘贴到控制台，回车运行，启动监听服务
 
@@ -835,25 +781,30 @@ pip install -r requirements_douyu.txt
 
 ### 聊天模式
 
-在命令行中使用以下命令安装所需库：
+#### 在命令行中使用以下命令安装所需库：
 
 ```shell
 pip install -r requirements_talk.txt
 ```
 
-运行GUI `python main.py`
-单独运行 `python talk.py`
+!!! note
 
-## 🃏效果图
-### GUI界面  
+    运行GUI `python main.py`
 
-![动画](./static/images/luna-ai/261792128-6ba4ba49-aa1b-43b0-989f-58a851dfd054.gif)
+    单独运行 `python talk.py`
+
+## :material-image: 效果图
+
+!!! note "GUI 界面"
+
+    ![动画](./static/images/luna-ai/261792128-6ba4ba49-aa1b-43b0-989f-58a851dfd054.gif)
 
 
-### SD接入
-![image](./static/images/luna-ai/248568910-a3e4b3b7-96d1-41b1-b45e-f2725acee27c.png)
+!!! note "SD 接入"
 
-## ❓️FAQ 常问问题
+    ![image](./static/images/luna-ai/248568910-a3e4b3b7-96d1-41b1-b45e-f2725acee27c.png)
+
+## :material-frequently-asked-questions: 常见问题
 
 ??? note "部署过程问题"
 
@@ -881,7 +832,7 @@ pip install -r requirements_talk.txt
     https://pypi.tuna.tsinghua.edu.cn/simple
     ```
 
-    ##### ModuleNotFoundError: No module named 'PyQt5'
+    #### ModuleNotFoundError: No module named 'PyQt5'
 
     半自动包 运行 `GUI运行.bat` 时，出现
 
@@ -898,7 +849,7 @@ pip install -r requirements_talk.txt
 
     ![image](./static/images/luna-ai/247523915-ee3ad055-b562-4f12-8797-d6aff44331be.png)
 
-    ##### ModuleNotFoundError: No module named 'langid'
+    #### ModuleNotFoundError: No module named 'langid'
 
     半自动包 运行 `GUI运行.bat` 时，出现
 
@@ -919,7 +870,7 @@ pip install -r requirements_talk.txt
 
     ![image](./static/images/luna-ai/247524637-0f08c00f-f7ac-41dd-a6a4-7f7539efa843.png)
 
-    ##### ModuleNotFoundError: No module named 'profanity'
+    #### ModuleNotFoundError: No module named 'profanity'
 
     半自动包 运行 `GUI运行.bat` 时，出现  
 
@@ -936,7 +887,7 @@ pip install -r requirements_talk.txt
 
     ![image](./static/images/luna-ai/247524836-3501aaca-9a08-45e3-b7bd-6aa60f9ea4b9.png)
 
-    ##### ModuleNotFoundError: No module named 'ahocorasick'
+    #### ModuleNotFoundError: No module named 'ahocorasick'
 
     半自动包 运行`3.GUI运行.bat`时，出现  
 
@@ -1066,29 +1017,29 @@ pip install -r requirements_talk.txt
     [ChatGPT-Next-Web](//chat-gpt-next-web-ikaros-521.vercel.app/)  
 
 
-## ♏️补充
+## :material-more: 补充
 
-补充板块提供了对项目接入的第三方技术或应用的详细说明。如果您需要与第三方应用进行对接，您可以查阅此板块的内容，并访问第三方官方网站以了解其使用方法。  
+#### 补充板块提供了对项目接入的第三方技术或应用的详细说明。如果您需要与第三方应用进行对接，您可以查阅此板块的内容，并访问第三方官方网站以了解其使用方法。  
 
 ### 平台
 
 #### b站直播监听
 
-监听库：[bilibili-api](//github.com/Nemo2011/bilibili-api)  
+监听库 [bilibili-api :octicons-link-16:](//github.com/Nemo2011/bilibili-api)  
 
 需要进行扫描登录或者配置 cookie 等信息，才能稳定监听弹幕。注意！！！请使用小号登录，有封号风险！！！  
 
 #### <span id="dy">抖音弹幕获取</span>
 
-`dy.py` 稳定：[dy-barrage-grab](//gitee.com/haodong108/dy-barrage-grab)
+`dy.py` 稳定 [dy-barrage-grab :octicons-link-16:](//gitee.com/haodong108/dy-barrage-grab)
 
 请到此仓库的 releases 下载官方软件包，并仔细阅读官方的使用说明，运行后能在cmd看到弹幕消息的话，即为成功。  
 
-`dy_old.py` 不稳定：[douyin-live](//github.com/YunzhiYike/douyin-live)   
+`dy_old.py` 不稳定 [douyin-live :octicons-link-16:](//github.com/YunzhiYike/douyin-live)   
 
 #### 快手弹幕获取
 
-`ks.py` 新版本：[kuaishou_websocket](//github.com/Superheroff/kuaishou_websocket)
+`ks.py` 新版本 [kuaishou_websocket :octicons-link-16:](//github.com/Superheroff/kuaishou_websocket)
 
 使用新版本时需要注意，请使用小号登录，然后在每次用完之后，把 `cookie` 文件夹下的 `123.json` 文件删掉！！！用过一次后cookie就异常了，所以需要删了重新登录！！！
 
@@ -1096,17 +1047,17 @@ pip install -r requirements_talk.txt
 
 如果你是整合包，项目路径打开cmd，然后使用 `Miniconda3\python.exe Miniconda3\Scripts\playwright.exe install firefox` 进行安装。
 
-`ks_old.py` 旧版本：[kuaishou-live](//github.com/YunzhiYike/kuaishou-live)  
+`ks_old.py` 旧版本 [kuaishou-live :octicons-link-16:](//github.com/YunzhiYike/kuaishou-live)  
 
 #### 斗鱼直播监听
 
-借鉴 [Live-Barrage](//github.com/XiaoXinYo/Live-Barrage)  
+借鉴 [Live-Barrage :octicons-link-16:](//github.com/XiaoXinYo/Live-Barrage)  
 
 #### 聊天模式 百度
 
 新用户+实名认证后有半年的免费额度可以使用。  
 
-申请地址：[console.bce.baidu.com/ai/#/ai/speech/overview/index](//console.bce.baidu.com/ai/#/ai/speech/overview/index)
+申请地址：[console.bce.baidu.com/ai/#/ai/speech/overview/index :octicons-link-16:](//console.bce.baidu.com/ai/#/ai/speech/overview/index)
 
 ??? note "详细教程"
 
@@ -1124,39 +1075,41 @@ pip install -r requirements_talk.txt
 
 #### ChatGPT
 
-官网：[chat.openai.com/chat](//chat.openai.com/chat)  
+官网 [chat.openai.com/chat :octicons-link-16:](//chat.openai.com/chat)  
 
-openai后台：[platform.openai.com/](//platform.openai.com/)  
+openai 后台 [platform.openai.com :octicons-link-16:](//platform.openai.com/)  
 
-新建API KEY：[platform.openai.com/account/api-keys](//platform.openai.com/account/api-keys) 
+新建 API KEY [platform.openai.com/account/api-keys :octicons-link-16:](//platform.openai.com/account/api-keys) 
 
-查看账号额度：[platform.openai.com/account/usage](//platform.openai.com/account/usage)  
+查看账号额度 [platform.openai.com/account/usage :octicons-link-16:](//platform.openai.com/account/usage)  
 
-官方API文档：[platform.openai.com/docs/api-reference](//platform.openai.com/docs/api-reference)  
+官方 API 文档 [platform.openai.com/docs/api-reference :octicons-link-16:](//platform.openai.com/docs/api-reference)  
 
 #### Claude
 
-实现参考：[claude-in-slack-api](//github.com/yokonsan/claude-in-slack-api)  
+实现参考 [claude-in-slack-api :octicons-link-16:](//github.com/yokonsan/claude-in-slack-api)  
 
-API申请方法：[claude-api](//github.com/bincooo/claude-api)  
+API申请方法 [claude-api :octicons-link-16:](//github.com/bincooo/claude-api)  
 
-slack官网：[slack.com/intl/zh-cn/](//slack.com/intl/zh-cn/)  
+slack 官网 [slack.com/intl/zh-cn :octicons-link-16:](//slack.com/intl/zh-cn/)  
 
-添加claude到slack：[www.anthropic.com/claude-in-slack](//www.anthropic.com/claude-in-slack)  
+添加 claude 到 slack [www.anthropic.com/claude-in-slack :octicons-link-16:](//www.anthropic.com/claude-in-slack)  
 
-视频教程：  
+!!! note "视频教程"
 
-[完美替代chatGPT！保姆级Claude注册教程及使用上的优点和缺点](//www.bilibili.com/video/BV1PP41127mQ)  
+    [完美替代 chatGPT！保姆级 Claude 注册教程及使用上的优点和缺点 :octicons-link-16:](//www.bilibili.com/video/BV1PP41127mQ)  
 
-[解决现阶段slack新建工作区Claude不回复](//www.bilibili.com/video/BV17k4y1H7aa)  
+    [解决现阶段 slack 新建工作区 Claude 不回复 :octicons-link-16:](//www.bilibili.com/video/BV17k4y1H7aa)  
 
 #### Claude2
 
-[Claude2-PyAPI](//github.com/wwwzhouhui/Claude2-PyAPI)
+[Claude2-PyAPI :octicons-link-16:](//github.com/wwwzhouhui/Claude2-PyAPI)
 
-claude2官网：[claude.ai](//claude.ai)
+claude2 官网 [claude.ai :octicons-link-16:](//claude.ai)
 
-cookie获取方式：F12抓包XHR，然后请求头获取cookie 
+!!! note "Cookie 获取方式"
+    
+    F12 抓包 XHR ，然后请求头获取 cookie`
 
 #### ChatGLM
 
@@ -1166,15 +1119,15 @@ cookie获取方式：F12抓包XHR，然后请求头获取cookie
 
 运行 `api.py` ，然后配置相关信息接入本项目。
 
-参考：
+!!! note "参考"
 
-```python
-if __name__ == '__main__':
-    tokenizer = AutoTokenizer.from_pretrained("THUDM\chatglm-6b-int4", trust_remote_code=True)
-    model = AutoModel.from_pretrained("THUDM\chatglm-6b-int4", trust_remote_code=True).half().cuda()
-    model.eval()
-    uvicorn.run(app, host='0.0.0.0', port=8000, workers=1)
-```
+    ```python
+    if __name__ == '__main__':
+        tokenizer = AutoTokenizer.from_pretrained("THUDM\chatglm-6b-int4", trust_remote_code=True)
+        model = AutoModel.from_pretrained("THUDM\chatglm-6b-int4", trust_remote_code=True).half().cuda()
+        model.eval()
+        uvicorn.run(app, host='0.0.0.0', port=8000, workers=1)
+    ```
 
 #### 智谱AI
 
