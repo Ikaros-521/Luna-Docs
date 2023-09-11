@@ -23,11 +23,11 @@ hide:
         <img src="//img.shields.io/badge/python-3.10+-blue.svg" alt="python">
     </a>
 
-!!! note inline end "网站样式正在修改"
+!!! example inline end "广告"
 
-    非常感谢您对我们的网站的访问！我们非常重视您对网站的意见和建议，并且我们很愿意与您直接联系。
+    如需付费调试，请联系 `327209194`
 
-    如果您有任何修改意见或提供的建议，或者希望与我进行进一步的讨论，我们鼓励您直接与我联系。
+    交流群 `587663288`
 
 !!! quote "介绍"
 
@@ -41,9 +41,9 @@ hide:
 
     另外还可以通过特定指令协同 `Stable Diffusion` 进行画图展示。并且可以自定义文案进行循环播放
 
-!!! danger "请注意"
+!!! warning "License"
     
-    本项目完全免费，如有发现一模一样的套壳售卖程序，皆为盗版，请及时止损
+    This project is licensed under the `GNU General Public License (GPL)`. Please see the `LICENSE` file for more details.
 
 !!! note "导航"
 
@@ -475,7 +475,7 @@ pip install -r requirements_talk.txt
     - [129.226.219.212:9000 :octicons-link-16:](//129.226.219.212:9000)
     - [43.134.230.167:9000 :octicons-link-16:](//43.134.230.167:9000)
 
-    #### 源自互联网：
+    #### 源自互联网
 
     - [openai-pag.wangzhishi.net :octicons-link-16:](//openai-pag.wangzhishi.net)
 
@@ -491,22 +491,22 @@ pip install -r requirements_talk.txt
 
 用户上传预先设定好的“人物设定”文件（pdf、txt等文本文件），让用户自定义配置角色背景信息、设定
 
-1. 当用户输入一个查询时，这个系统首先会在本地文档集合中进行相似性搜索，寻找与查询最相关的文档。
+1. 当用户输入一个查询时，这个系统首先会在本地文档集合中进行相似性搜索，寻找与查询最相关的文档
 
-2. 然后，它会把这些相关文档以及用户的查询作为输入，传递给语言模型。这个语言模型会基于这些输入生成一个答案。
+2. 然后，它会把这些相关文档以及用户的查询作为输入，传递给语言模型。这个语言模型会基于这些输入生成一个答案
 
-3. 如果系统在本地文档集合中找不到任何与用户查询相关的文档，或者如果语言模型无法基于给定的输入生成一个有意义的答案，那么这个系统可能就无法回答用户的查询。
+3. 如果系统在本地文档集合中找不到任何与用户查询相关的文档，或者如果语言模型无法基于给定的输入生成一个有意义的答案，那么这个系统可能就无法回答用户的查询
 
 
 #### 模式配置
 
-chat_type设置为 `chat_with_file` 方可使用。使用前必须先设置好 `opeanai、claude` 等模型的访问 `token` 相关的配置。
+chat_type设置为 `chat_with_file` 方可使用。使用前必须先设置好 `opeanai、claude` 等模型的访问 `token` 相关的配置
 
 chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进行配置
 
 - `claude` 使用claude作为聊天模型，需要同时设置好
 
-- `local_vector_embedding_model` 本地向量数据库。该模式会使用本地向量数据库存储数据。
+- `local_vector_embedding_model` 本地向量数据库。该模式会使用本地向量数据库存储数据
 
 - `openai_vector_search` 仅仅使用向量数据库作查询，不做gpt的调用，可以节省token，做个简单的本地数据搜索。目前使用OpenAIEmbedding进行向量化，所以需要配置好OpenAI信息
 
@@ -1946,10 +1946,6 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 
     - 2023-08-29
         - TTS新增VALL-E-X的接入
-
-## 🉑许可证
-
-MIT 许可证。详情请参阅LICENSE文件。
 
 ## ⭐️Star 经历
 
