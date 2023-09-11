@@ -3225,7 +3225,7 @@ Proceed<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</spa
     <span class="c1"># Bert-VITS2</span>
     <span class="p">[</span><span class="n">ABS_PATH</span> <span class="o">+</span> <span class="s2">&quot;/bert_vits2/G_0.pth&quot;</span><span class="p">,</span> <span class="n">ABS_PATH</span> <span class="o">+</span> <span class="s2">&quot;/bert_vits2/config.json&quot;</span><span class="p">],</span>
 </code></pre></div>
-<p>如果使用 <code>bert_vits2</code> ，需要注意 <code>vits-simple-api\bert_vits2\bert\chinese-roberta-wwm-ext-large</code> 路径下 <code>flax_model.msgpack</code> 等模型文件是否缺失，如果缺失，可以从隔壁 <code>bert_vits2</code> 整合包中拷贝进来。  </p>
+<p>如果使用 <code>bert_vits2</code> ，需要注意 <code>vits-simple-api\bert_vits2\bert\chinese-roberta-wwm-ext-large</code> 路径下 <code>flax_model.msgpack</code> 等模型文件是否缺失，如果缺失，可以从隔壁 <code>bert_vits2</code> 整合包中拷贝进来。另外模型需要存放在 <code>bert_vits2</code> 目录里面。  </p>
 <p>另外如果运行闪退、报错  </p>
 <div class="highlight"><pre><span></span><code><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
   <span class="n">File</span> <span class="s2">&quot;E:</span><span class="se">\v</span><span class="s2">its-simple-api</span><span class="se">\a</span><span class="s2">pp.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">49</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
@@ -3428,6 +3428,12 @@ Proceed<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</spa
 <details class="note">
 <summary>更新日志</summary>
 <ul>
+<li>
+<p>2023-09-12</p>
+<ul>
+<li>vits-fast新增配置项 语言，可以固定合成语言或自动识别</li>
+</ul>
+</li>
 <li>
 <p>2023-09-11</p>
 <ul>
