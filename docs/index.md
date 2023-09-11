@@ -1032,6 +1032,8 @@ pip install -r requirements_talk.txt
 
 监听库 [bilibili-api :octicons-link-16:](//github.com/Nemo2011/bilibili-api)  
 
+备用方案 [blivedm :octicons-link-16:](//github.com/xfgryujk/blivedm)  
+
 需要进行扫描登录或者配置 cookie 等信息，才能稳定监听弹幕。注意！！！请使用小号登录，有封号风险！！！  
 
 #### <span id="dy">抖音弹幕获取</span>
