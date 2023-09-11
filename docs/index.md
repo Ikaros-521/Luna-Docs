@@ -1616,6 +1616,9 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2023-09-12
+        - vits-fast新增配置项 语言，可以固定合成语言或自动识别
+
     - 2023-09-11
         - 删除聊天页ctrl+c或z的程序退出功能
     
