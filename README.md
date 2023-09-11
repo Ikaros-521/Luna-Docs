@@ -2,7 +2,7 @@
 
 项目地址：[Luna AI](https://github.com/Ikaros-521/AI-Vtuber)  
 
-基于编写 `mkdocs-material`，官方文档：[mkdocs-material](//squidfunk.github.io/mkdocs-material/getting-started/)  
+基于 `mkdocs-material` 编写，官方文档：[mkdocs-material](//squidfunk.github.io/mkdocs-material/getting-started/)  
     
 安装 `pip install mkdocs-material`  
 
