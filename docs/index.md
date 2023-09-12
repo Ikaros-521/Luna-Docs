@@ -1265,6 +1265,10 @@ token获取方式：
 
 官网：[yiyan.baidu.com](//yiyan.baidu.com)  
 
+服务端：[yiyan-api](//github.com/zhuweiyou/yiyan-api)  
+
+下载yiyan-api源码，根据官方教程部署搭建运行即可。简述过程就是安装Node.js >= 18，然后再源码项目文件夹内运行`npm install`，最后运行`npm start`即可。  
+
 cookie 获取方式：
 
 访问 `yiyan.baidu.com`，登录账号  
