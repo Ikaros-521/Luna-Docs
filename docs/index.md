@@ -1255,11 +1255,27 @@ ChatterBot 的核心思想是：基于历史对话数据，使用机器学习和
 
 token获取方式：  
 
-访问 bard.google.com，登录账号  
+访问 `bard.google.com`，登录账号  
 
 键盘F12 打开开发者工具  
 
 应用程序 → Cookie → 复制 Cookie 中 __Secure-1PSID 对应的值。  
+
+#### 文心一言
+
+官网：[yiyan.baidu.com](//yiyan.baidu.com)  
+
+cookie 获取方式：
+
+访问 `yiyan.baidu.com`，登录账号  
+
+键盘F12 打开开发者工具  
+
+找到`源代码`或者`Sources`页，右键`debugger`左侧行号, 选择 `never pause here` 或者叫做 `永不在此处暂停`, 然后再刷新页面  
+
+此时就可以跳过`debugger`和重定向，然后找到`网络`或者`Network`。  
+
+再随便发送一个提问，随便找个XHR请求中，查看请求头内的`cookie`对应的一长串的值，复制粘贴回GUI中保存即可。  
 
 ### TTS
 
@@ -1620,6 +1636,7 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ??? note "更新日志"
     - 2023-09-12
         - vits-fast新增配置项 语言，可以固定合成语言或自动识别
+        - 新增文心一言web版API接入
 
     - 2023-09-11
         - 删除聊天页ctrl+c或z的程序退出功能
