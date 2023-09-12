@@ -1638,6 +1638,9 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2023-09-13
+        - GUI缩短配置项长度，给右侧预留10%的空间，方便鼠标在此处停留使用滚轮功能。
+
     - 2023-09-12
         - vits-fast新增配置项 语言，可以固定合成语言或自动识别
         - 新增文心一言web版API接入
