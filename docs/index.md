@@ -1639,6 +1639,9 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 
 ??? note "更新日志"
     - 2023-09-16
+        - 录音页 新增录音按键` 数字1左边按键
+        
+    - 2023-09-16
         - 新增积分表，暂时只做了b站的签到部分功能，GUI未适配
 
     - 2023-09-14
