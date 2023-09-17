@@ -1638,6 +1638,9 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2023-09-17
+        - 后移web字幕打印机调用的位置，让其可以对其音频合成部分
+
     - 2023-09-16
         - 录音页 新增录音按键` 数字1左边按键
         
