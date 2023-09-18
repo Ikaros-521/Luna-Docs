@@ -1342,6 +1342,18 @@ for id, (key, name) in enumerate(obj.get_speakers().items()):
 # for id, name in enumerate(obj.get_speakers()):
 ```
 
+如果在使用`bert-vits2`时，报错：
+
+```bash
+error, ref_enc.convs.0.bias is not in the checkpoint
+error, ref_enc.convs.0.weight_g is not in the checkpoint
+......
+```
+
+解决方案参考：[issues/311](https://github.com/Ikaros-521/AI-Vtuber/issues/311)  
+
+改 `bert_vits2/models.py` 中第`646`行 `if n_speakers > 1:` 修改为 `if n_speakers >= 1:`  
+
 #### VITS-fast-fine-tuning
 
 官方仓库：[VITS-fast-fine-tuning](//github.com/Plachtaa/VITS-fast-fine-tuning)  

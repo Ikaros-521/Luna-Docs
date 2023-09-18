@@ -3265,6 +3265,13 @@ Proceed<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</spa
 <div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="nb">id</span><span class="p">,</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">get_speakers</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
 <span class="c1"># for id, name in enumerate(obj.get_speakers()):</span>
 </code></pre></div>
+<p>如果在使用<code>bert-vits2</code>时，报错：</p>
+<div class="highlight"><pre><span></span><code>error,<span class="w"> </span>ref_enc.convs.0.bias<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>checkpoint
+error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>checkpoint
+......
+</code></pre></div>
+<p>解决方案参考：<a href="https://github.com/Ikaros-521/AI-Vtuber/issues/311">issues/311</a>  </p>
+<p>改 <code>bert_vits2/models.py</code> 中第<code>646</code>行 <code>if n_speakers &gt; 1:</code> 修改为 <code>if n_speakers &gt;= 1:</code>  </p>
 <h4 id="vits-fast-fine-tuning">VITS-fast-fine-tuning</h4>
 <p>官方仓库：<a href="//github.com/Plachtaa/VITS-fast-fine-tuning">VITS-fast-fine-tuning</a>  </p>
 <p>官方推理包：<a href="//github.com/Plachtaa/VITS-fast-fine-tuning/releases/tag/webui-v1.1">inference-webui-v1.1</a>  </p>
