@@ -1652,7 +1652,7 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ## 📝更新日志
 
 ??? note "更新日志"
-    - 2023-09-18
+    - 2023-09-19
         - 新增游戏demo例程
         - 修改默认配置关闭积分机制
 
