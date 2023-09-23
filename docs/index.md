@@ -1281,6 +1281,17 @@ cookie 获取方式：
 
 再随便发送一个提问，随便找个XHR请求中，查看请求头内的`cookie`对应的一长串的值，复制粘贴回GUI中保存即可。  
 
+#### 通义千问
+
+官网：[qianwen.aliyun.com](//qianwen.aliyun.com/)  
+
+接口源自：[revTongYi](//github.com/xw5xr6/revTongYi)   
+
+cookie 获取方式：  
+1. 安装 [Chrome](//chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm)、[Edge](//microsoftedge.microsoft.com/addons/detail/cookie-editor-plus/nbmajjcfigmlcnikhnfhhicidleefhpp) 或 [Firefox](//addons.mozilla.org/en-US/firefox/addon/cookie-editor/) 上的`Cookies Editor`插件
+2. 前往 [https://tongyi.aliyun.com/chat](//tongyi.aliyun.com/chat) 并登录
+3. 打开此插件，点击 Export -> Export as JSON，将复制的Cookies内容保存到文件`cookie`文件夹下的`tongyi.json`  
+
 ### TTS
 
 #### elevenlabs
@@ -1654,6 +1665,7 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ??? note "更新日志"
     - 2023-09-23
         - 新增积分页的GUI实现，并且优化了UI部分动态加载数据的源码
+        - 新增 通义千问 的接入
 
     - 2023-09-22
         - 新增积分页，积分页暂时只完成了签到板块的显示功能
