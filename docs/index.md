@@ -1096,7 +1096,7 @@ openai 后台 [platform.openai.com :octicons-link-16:](//platform.openai.com/)
 
 实现参考 [claude-in-slack-api :octicons-link-16:](//github.com/yokonsan/claude-in-slack-api)  
 
-API申请方法 [claude-api :octicons-link-16:](//github.com/bincooo/claude-api)  
+API申请方法（内含各个参数的获取方式） [claude-api :octicons-link-16:](//github.com/bincooo/claude-api)  
 
 slack 官网 [slack.com/intl/zh-cn :octicons-link-16:](//slack.com/intl/zh-cn/)  
 
@@ -1107,6 +1107,41 @@ slack 官网 [slack.com/intl/zh-cn :octicons-link-16:](//slack.com/intl/zh-cn/)
     [完美替代 chatGPT！保姆级 Claude 注册教程及使用上的优点和缺点 :octicons-link-16:](//www.bilibili.com/video/BV1PP41127mQ)  
 
     [解决现阶段 slack 新建工作区 Claude 不回复 :octicons-link-16:](//www.bilibili.com/video/BV17k4y1H7aa)  
+
+
+以下文档转自：[claude-api :octicons-link-16:](//github.com/bincooo/claude-api)  
+##### 授权以及获取user-token
+
+网页([登录](https://app.slack.com))后, 进入api配置页面([点我跳转](https://api.slack.com/))。
+
+〉》点击 【Create an app】
+
+​	〉》主页看见Your Apps并弹出窗口【Create an app】  〉》  点击【From scratch】
+
+​	〉》填写app名称以及选择工作空间（例：name: Bot, workspace: chat）	 〉》  点击【Create App】
+
+​	〉》点击左侧边栏上的【OAuth & Permissions】	 〉》  下拉至【Scopes】卡片，在 【User Token Scopes】 项下添加权限，如下：
+
+​							channels:history,  channels:read,  channels:write,  groups:history,  groups:read,  groups:write, 
+
+​							chat:write,  im:history,  im:write,  mpim:history,  mpim:write
+
+​	〉》回到顶部【OAuth Tokens for Your Workspace】栏，点击【Install to Workspace】，然后确认授权即可
+
+
+至此，获得拥有一定权限的user-token
+
+<img src="https://github.com/bincooo/claude-api/blob/main/static/%E6%88%AA%E5%B1%8F2023-04-18%2009.10.56.png?raw=true" alt="截屏2023-04-18 09.10.56" style="zoom:50%;" />
+
+
+
+<img src="https://github.com/bincooo/claude-api/blob/main/static/%E6%88%AA%E5%B1%8F2023-04-18%2009.14.41.png?raw=true" alt="截屏2023-04-18 09.14.41" style="zoom:50%;" />
+
+
+
+##### 获取 claude appid
+
+<img src="https://github.com/bincooo/claude-api/blob/main/static/%E6%88%AA%E5%B1%8F2023-04-18%2008.49.20.png?raw=true" alt="截屏2023-04-18 08.49.20" style="zoom:50%;" />
 
 #### Claude2
 
