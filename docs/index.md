@@ -71,6 +71,7 @@ hide:
     - `song` 文件夹，存储点歌模式的歌曲
     - `docs` 文件夹，存储项目相关文档
     - `tests` 文件夹，存储单一功能点的测试程序
+    - `cookie` 文件夹，存储部分功能需要用到的cookie数据
 
 ## :material-cloud-download: 下载项目
 
@@ -467,6 +468,10 @@ pip install -r requirements_talk.txt
     ]
 }
 ```
+
+#### one-api
+
+官方仓库：[one-api](//github.com/songquanpeng/one-api)  
 
 !!! note "或者纯代理的镜像站"
 
