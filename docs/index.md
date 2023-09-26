@@ -1703,6 +1703,9 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2023-09-26
+        - 修复通义千问必须配置文件的bug
+
     - 2023-09-23
         - 新增积分页的GUI实现，并且优化了UI部分动态加载数据的源码
         - 新增 通义千问 的接入
