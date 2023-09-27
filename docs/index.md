@@ -1301,6 +1301,8 @@ token获取方式：
 
 应用程序 → Cookie → 复制 Cookie 中 __Secure-1PSID 对应的值。  
 
+ps：cookie有效期较短  
+
 #### 文心一言
 
 官网：[yiyan.baidu.com](//yiyan.baidu.com)  
@@ -1331,6 +1333,8 @@ cookie 获取方式：
 1. 安装 [Chrome](//chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm)、[Edge](//microsoftedge.microsoft.com/addons/detail/cookie-editor-plus/nbmajjcfigmlcnikhnfhhicidleefhpp) 或 [Firefox](//addons.mozilla.org/en-US/firefox/addon/cookie-editor/) 上的`Cookies Editor`插件
 2. 前往 [https://tongyi.aliyun.com/chat](//tongyi.aliyun.com/chat) 并登录
 3. 打开此插件，点击 Export -> Export as JSON，将复制的Cookies内容保存到文件`cookie`文件夹下的`tongyi.json`  
+
+ps:cookie有效期估计在6小时左右。  
 
 ### TTS
 
@@ -1372,6 +1376,8 @@ MODEL_LIST = [
 ```
 
 如果使用 `bert_vits2` ，需要注意 `vits-simple-api\bert_vits2\bert\chinese-roberta-wwm-ext-large` 路径下 `flax_model.msgpack` 等模型文件是否缺失，如果缺失，可以从隔壁 `bert_vits2` 整合包中拷贝进来 或者 从`huggingface`下载：[hfl/chinese-roberta-wwm-ext-large](//huggingface.co/hfl/chinese-roberta-wwm-ext-large/tree/main) 。另外模型需要存放在 `bert_vits2` 目录里面。  
+
+相关模型备份：[夸克网盘](//pan.quark.cn/s/0ec7deae974a)  
 
 
 另外如果运行闪退、报错  
