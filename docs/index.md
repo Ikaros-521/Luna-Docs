@@ -1699,6 +1699,7 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 - [x] 本地问答文本库支持动态变量功能
 - [x] 兼容bert vits2
 - [ ] 支持礼物或者其他形式的键盘映射
+- [ ] webui开发
 
 ## 📝更新日志
 
