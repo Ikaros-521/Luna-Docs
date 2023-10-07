@@ -1710,6 +1710,15 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2023-10-07
+        - 智谱AI新增CharacterGLM模型
+
+    - 2023-10-06
+        - webui开发进行中...进度预估30%
+
+    - 2023-10-01
+        - 音频部分相关的优化（音频输出路径自定义等）
+
     - 2023-09-26
         - 修复通义千问必须配置文件的bug
 
