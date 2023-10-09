@@ -1713,6 +1713,7 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ??? note "更新日志"
     - 2023-10-09
         - 新增按键映射配置，执行晚于其他3个模式（GUI未适配）
+        - 按键映射功能，新增配置项-起始命令（GUI未适配）
 
     - 2023-10-07
         - 智谱AI新增CharacterGLM模型
