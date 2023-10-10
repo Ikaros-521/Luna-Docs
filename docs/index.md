@@ -1713,6 +1713,8 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ??? note "更新日志"
     - 2023-10-10
         - 补充遗漏的pyautogui库
+        - 按键映射增加日志输出
+        - webui新增答谢、按键映射板块的配置功能
 
     - 2023-10-09
         - 新增按键映射配置，执行晚于其他3个模式（GUI未适配）
