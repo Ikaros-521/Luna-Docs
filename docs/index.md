@@ -1711,6 +1711,9 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2023-10-10
+        - 补充遗漏的pyautogui库
+
     - 2023-10-09
         - 新增按键映射配置，执行晚于其他3个模式（GUI未适配）
         - 按键映射功能，新增配置项-起始命令（GUI未适配）
