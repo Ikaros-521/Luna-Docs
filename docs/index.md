@@ -35,7 +35,7 @@ hide:
 
     `ChatterBot / GPT / Claude / langchain 本地 or 云端 / chatglm / text-generation-webui / 讯飞星火 / 智谱AI / 谷歌Bard / 文心一言 / 通义千问`
 
-    做为 `大脑` 驱动的虚拟主播 `Live2D / Vtube Studio / UE5 + Audio2Face` ，可以在 `Bilibili / 抖音 / 快手 / 斗鱼` 直播中与观众实时互动 或者 直接在本地和您进行聊天
+    做为 `大脑` 驱动的虚拟主播 `Live2D / Vtube Studio / UE5 + Audio2Face / xuniren` ，可以在 `Bilibili / 抖音 / 快手 / 斗鱼` 直播中与观众实时互动 或者 直接在本地和您进行聊天
 
     它使用自然语言处理和文本转语音技术 `Edge-TTS / VITS-Fast / elevenlabs / bark-gui / VALL-E-X` 生成对观众问题的回答并可以通过 `so-vits-svc / DDSP-SVC` 变声
 
@@ -121,7 +121,7 @@ pip install -r requirements_talk.txt
 
 #### GUI 程序运行后会自动加载配置文件，可以通过 GUI 程序进行配置修改，也可以手动修改配置运行。
 
-配置都在 `config.json`
+配置都在 `config.json`（此处只列举了大部分，因为实在是太多了，懒了）
 
 ??? note "config.json"
 
@@ -1527,6 +1527,8 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 
 参考教程：  
 
+[【AI主播】Audio2Face + UE5，轻松实现 数字人 口型同步，主打一个简单，就是配置要求高了点](//www.bilibili.com/video/BV1k94y147oG)  
+
 [【Omniverse教程】【Audio2Face】1-仅需一个音频来源即可生成表情丰富的面部动画，也支持实时录音](//www.bilibili.com/video/BV1TS4y187P9)  
 
 [玩转Omniverse | Reallusion Character Creator：生成角色](//www.bilibili.com/video/BV1wB4y1W7g4)  
@@ -1536,6 +1538,16 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 [零代码让UE Metahuman说话的方法（使用omniverse audio2face串流至UE）](//www.bilibili.com/video/BV1FV411375V)   
 
 [P6-UE5角色资产导入与说明!](//www.bilibili.com/video/BV1A24y1S77m)  
+
+#### xuniren
+
+xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waityousea/xuniren)  
+
+项目对接推荐使用我的改版：[https://github.com/Ikaros-521/xuniren](//github.com/Ikaros-521/xuniren)  
+
+半整合包（需要自行补充环境）：[https://pan.quark.cn/s/03db11314ca1](//pan.quark.cn/s/03db11314ca1), 需要注意的是这个项目环境十分难搭建，而且很多都需要自行编译，所以我编译的版本不一定适用于你的系统，那么你就需要自己重新编译安装了，那就是一件非常痛苦的事情，注意我的说明自行闭坑吧。  
+
+使用：整合包用户启动我提供的`http_api运行.bat`脚本，普通用户自行启动`http_api.py`即可，看到服务正常监听即可。那么此时我们的AI Vtuber也需要配置对应的`虚拟身体`配置，然后运行即可。  
 
 ### 其他
 
@@ -1711,6 +1723,9 @@ Epic下载：[store.epicgames.com/zh-CN/](//store.epicgames.com/zh-CN/)
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2023-10-11
+        - 新增虚拟身体部分 对接xuniren项目
+
     - 2023-10-10
         - 补充遗漏的pyautogui库
         - 按键映射增加日志输出
