@@ -1725,7 +1725,8 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 ??? note "更新日志"
     - 2023-10-12
         - 补充遗漏的nicegui依赖
-        
+        - 修改按键映射的函数调用为按下释放，配置结构调整为单个按键多行配置的形式
+
     - 2023-10-11
         - 新增虚拟身体部分 对接xuniren项目
 
