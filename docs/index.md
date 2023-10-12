@@ -1723,6 +1723,9 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2023-10-12
+        - 补充遗漏的nicegui依赖
+        
     - 2023-10-11
         - 新增虚拟身体部分 对接xuniren项目
 
