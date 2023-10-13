@@ -1723,6 +1723,10 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2023-10-13
+        - 修复平台配置bug
+        - 新增音频随机变速、Live2D、定时任务的配置项
+
     - 2023-10-12
         - 补充遗漏的nicegui依赖
         - 修改按键映射的函数调用为按下释放，配置结构调整为单个按键多行配置的形式
