@@ -1026,6 +1026,18 @@ pip install -r requirements_talk.txt
     [ChatGPT-Html](//ikaros521.eu.org/chatgpt-html/)  
     [ChatGPT-Next-Web](//chat-gpt-next-web-ikaros-521.vercel.app/)  
 
+    #### (base) D:\ai3\AI-Vtuber-20230825>Miniconda3\Scripts\playwright.exe install
+Fatal error in launcher: Unable to create process using '"D:\GitHub_pro\AI-Vtuber-20230729\Miniconda3\python.exe"  "D:\ai3\AI-Vtuber-20230825\Miniconda3\Scripts\playwright.exe" install': ???????????
+
+    playwright安装浏览器内核失败。   
+
+    解决方案：重新安装playwright，需要注意，前提是激活了本地环境  
+
+    ```shell
+    pip uninstall playwright
+    pip install playwright
+    playwright install
+    ```
 
 ## :material-more: 补充
 
