@@ -1737,6 +1737,7 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 ??? note "更新日志" 
     - 2023-10-15
         - 智谱AI新增无用内容删除，让回复更加正常点，不用把相关描述也输出
+        - 提供多按键映射的配置实例；修复多按键映射bug
 
     - 2023-10-14
         - webui补全通用配置页；修复配置上的部分bug
