@@ -1742,6 +1742,8 @@ pyautogui官方文档：[传送门，官方对按键名的定义](pyautogui.read
     - 2023-10-18
         - webui新增部分聊天页配置功能
         - 修改watchfiles日志等级
+        - webui增加聊天输入框及发送按钮
+        - 修复webui运行都是b站的问题
 
     - 2023-10-17
         - webui补充积分页配置功能（修复部分bug）
