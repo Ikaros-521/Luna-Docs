@@ -1585,7 +1585,7 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 
 #### 按键映射
 
-pyautogui官方文档：[传送门，官方对按键名的定义](pyautogui.readthedocs.io/en/latest/keyboard.html#keyboard-keys)  
+pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.readthedocs.io/en/latest/keyboard.html#keyboard-keys)  
 
 ## 🀅开发&项目相关
 
