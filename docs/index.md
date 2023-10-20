@@ -789,6 +789,22 @@ pip install -r requirements_douyu.txt
     observer.observe(targetNode, config); 
     ```
 
+
+### YouTube版
+
+#### 在命令行中使用以下命令安装所需库：
+
+```shell
+pip install -r requirements_youtube.txt
+```
+
+
+!!! note
+
+    运行 GUI `python main.py`
+
+    单独运行 `python youtube.py`
+
 ### 聊天模式
 
 #### 在命令行中使用以下命令安装所需库：
