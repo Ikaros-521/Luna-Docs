@@ -1077,6 +1077,12 @@ Fatal error in launcher: Unable to create process using '"D:\GitHub_pro\AI-Vtube
 
 借鉴 [Live-Barrage :octicons-link-16:](//github.com/XiaoXinYo/Live-Barrage)  
 
+#### YouTube直播监听
+
+依赖库：[pytchat](//github.com/taizan-hokuto/pytchat/tree/master)  
+
+修改平台后，配置直播间号即可，如`https://www.youtube.com/watch?v=P5wlxQgYhMY`的直播间号就是`P5wlxQgYhMY`  
+
 #### 聊天模式 百度
 
 新用户+实名认证后有半年的免费额度可以使用。  
