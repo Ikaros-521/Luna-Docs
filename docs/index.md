@@ -83,9 +83,6 @@ git clone https://github.com/Ikaros-521/AI-Vtuber.git
 
 # owner分支
 git clone -b owner https://github.com/Ikaros-521/AI-Vtuber.git
-
-# dev分支
-git clone -b dev https://github.com/Ikaros-521/AI-Vtuber.git
 ```
 
 !!! note
@@ -805,6 +802,21 @@ pip install -r requirements_youtube.txt
 
     单独运行 `python youtube.py`
 
+### twitch版
+
+#### 在命令行中使用以下命令安装所需库：
+
+```shell
+pip install -r requirements_twitch.txt
+```
+
+
+!!! note
+
+    运行 GUI `python main.py`
+
+    单独运行 `python twitch.py`
+
 ### 聊天模式
 
 #### 在命令行中使用以下命令安装所需库：
@@ -1098,6 +1110,15 @@ Fatal error in launcher: Unable to create process using '"D:\GitHub_pro\AI-Vtube
 依赖库：[pytchat](//github.com/taizan-hokuto/pytchat/tree/master)  
 
 修改平台后，配置直播间号即可，如`https://www.youtube.com/watch?v=P5wlxQgYhMY`的直播间号就是`P5wlxQgYhMY`  
+
+#### twitch直播监听
+
+接口源自官方接口: [irc.chat.twitch.tv](//irc.chat.twitch.tv)  
+
+使用时需要配置token、用户名、http代理等  
+
+其中token获取方式，通过访问[https://twitchapps.com/tmi/](//twitchapps.com/tmi/)，登录twitch账号授权后即可获取返回的token:`oauth:xxxxx`  
+
 
 #### 聊天模式 百度
 
@@ -1761,6 +1782,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志" 
+    - 2023-10-21
+        - 接入 twitch
+        
     - 2023-10-20
         - 修复本地问答音频库触发后，会合成多余内容的bug
         - 提高httpx日志等级
