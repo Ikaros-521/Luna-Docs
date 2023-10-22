@@ -3059,31 +3059,31 @@ pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </s
 <div class="highlight"><pre><span></span><code><span class="kd">let</span><span class="w"> </span><span class="nx">socket</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span>
 
 <span class="kd">function</span><span class="w"> </span><span class="nx">connectWebSocket</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="c1">// 创建 WebSocket 连接，适配服务端</span>
-<span class="w">  </span><span class="nx">socket</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocket</span><span class="p">(</span><span class="s2">&quot;ws://127.0.0.1:5000&quot;</span><span class="p">);</span>
+<span class="c1">// 创建 WebSocket 连接，适配服务端</span>
+<span class="nx">socket</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">WebSocket</span><span class="p">(</span><span class="s2">&quot;ws://127.0.0.1:5000&quot;</span><span class="p">);</span>
 
-<span class="w">  </span><span class="c1">// 当连接建立时触发</span>
-<span class="w">  </span><span class="nx">socket</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;open&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;ws连接打开&quot;</span><span class="p">);</span>
+<span class="c1">// 当连接建立时触发</span>
+<span class="nx">socket</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;open&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;ws连接打开&quot;</span><span class="p">);</span>
 
-<span class="w">      </span><span class="c1">// 向服务器发送一条消息</span>
-<span class="w">      </span><span class="c1">// socket.send(&quot;ws连接成功&quot;);</span>
-<span class="w">  </span><span class="p">});</span>
+<span class="w">    </span><span class="c1">// 向服务器发送一条消息</span>
+<span class="w">    </span><span class="c1">// socket.send(&quot;ws连接成功&quot;);</span>
+<span class="p">});</span>
 
-<span class="w">  </span><span class="c1">// 当收到消息时触发</span>
-<span class="w">  </span><span class="nx">socket</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;message&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;收到服务器数据:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
-<span class="w">  </span><span class="p">});</span>
+<span class="c1">// 当收到消息时触发</span>
+<span class="nx">socket</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;message&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;收到服务器数据:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<span class="p">});</span>
 
-<span class="w">  </span><span class="c1">// 当连接关闭时触发</span>
-<span class="w">  </span><span class="nx">socket</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;close&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;WS连接关闭&quot;</span><span class="p">);</span>
+<span class="c1">// 当连接关闭时触发</span>
+<span class="nx">socket</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;close&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">event</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;WS连接关闭&quot;</span><span class="p">);</span>
 
-<span class="w">      </span><span class="c1">// 重连</span>
-<span class="w">      </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="nx">connectWebSocket</span><span class="p">();</span>
-<span class="w">      </span><span class="p">},</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span><span class="w"> </span><span class="c1">// 延迟 1 秒后重连</span>
-<span class="w">  </span><span class="p">});</span>
+<span class="w">    </span><span class="c1">// 重连</span>
+<span class="w">    </span><span class="nx">setTimeout</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">connectWebSocket</span><span class="p">();</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span><span class="w"> </span><span class="c1">// 延迟 1 秒后重连</span>
+<span class="p">});</span>
 <span class="p">}</span>
 
 <span class="c1">// 初始连接</span>
@@ -3095,56 +3095,60 @@ pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </s
 
 <span class="c1">// 创建观察器实例</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">observer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">MutationObserver</span><span class="p">(</span><span class="nx">mutations</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">mutations</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">mutation</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="nx">mutations</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">mutation</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="c1">// 这里处理新增的DOM元素</span>
-<span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="nx">mutation</span><span class="p">.</span><span class="nx">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;childList&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nx">mutation</span><span class="p">.</span><span class="nx">addedNodes</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">node</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">mutation</span><span class="p">.</span><span class="nx">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;childList&#39;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">mutation</span><span class="p">.</span><span class="nx">addedNodes</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">node</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <span class="w">        </span><span class="c1">// 判断是否是新增的弹幕消息</span>
-<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="s1">&#39;Barrage-listItem&#39;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">          </span><span class="c1">// 新增的动态DOM元素处理</span>
-<span class="w">          </span><span class="c1">// console.log(&#39;Added node:&#39;, node);</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">node</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="s1">&#39;Barrage-listItem&#39;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="c1">// 新增的动态DOM元素处理</span>
+<span class="w">        </span><span class="c1">// console.log(&#39;Added node:&#39;, node);</span>
 
-<span class="w">          </span><span class="kd">const</span><span class="w"> </span><span class="nx">spans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">node</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">);</span>
+<span class="w">        </span><span class="kd">const</span><span class="w"> </span><span class="nx">spans</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">node</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">);</span>
 
-<span class="w">          </span><span class="kd">let</span><span class="w"> </span><span class="nx">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
-<span class="w">          </span><span class="kd">let</span><span class="w"> </span><span class="nx">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="w">        </span><span class="kd">let</span><span class="w"> </span><span class="nx">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span>
 
-<span class="w">          </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">span</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">spans</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kd">let</span><span class="w"> </span><span class="nx">span</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">spans</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="c1">//console.log(span);</span>
 <span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">span</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="s1">&#39;Barrage-nickName&#39;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">              </span><span class="kd">const</span><span class="w"> </span><span class="nx">targetSpan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">span</span><span class="p">;</span>
-<span class="w">              </span><span class="c1">// 获取用户名</span>
-<span class="w">              </span><span class="nx">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">targetSpan</span><span class="p">.</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">trim</span><span class="p">().</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">);</span>
+<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">targetSpan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">span</span><span class="p">;</span>
+<span class="w">            </span><span class="c1">// 获取用户名</span>
+<span class="w">            </span><span class="kd">let</span><span class="w"> </span><span class="nx">tmp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">targetSpan</span><span class="p">.</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">trim</span><span class="p">().</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">);</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">tmp</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="nx">username</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">targetSpan</span><span class="p">.</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">trim</span><span class="p">().</span><span class="nx">slice</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">);</span>
 <span class="w">            </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">span</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="s1">&#39;Barrage-content&#39;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
-<span class="w">              </span><span class="kd">const</span><span class="w"> </span><span class="nx">targetSpan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">span</span><span class="p">;</span>
-<span class="w">              </span><span class="c1">// 获取弹幕内容</span>
-<span class="w">              </span><span class="nx">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">targetSpan</span><span class="p">.</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">trim</span><span class="p">();</span>
+<span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">targetSpan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">span</span><span class="p">;</span>
+<span class="w">            </span><span class="c1">// 获取弹幕内容</span>
+<span class="w">            </span><span class="nx">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">targetSpan</span><span class="p">.</span><span class="nx">textContent</span><span class="p">.</span><span class="nx">trim</span><span class="p">();</span>
 <span class="w">            </span><span class="p">}</span>
-<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
 
-<span class="w">          </span><span class="c1">// 获取到弹幕数据</span>
-<span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">username</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">content</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">username</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s2">&quot;:&quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">content</span><span class="p">);</span>
+
+<span class="w">        </span><span class="c1">// 获取到弹幕数据</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">username</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">content</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">              </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;comment&quot;</span><span class="p">,</span>
-<span class="w">              </span><span class="nx">username</span><span class="o">:</span><span class="w"> </span><span class="nx">username</span><span class="p">,</span>
-<span class="w">              </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="nx">content</span>
+<span class="w">            </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;comment&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">username</span><span class="o">:</span><span class="w"> </span><span class="nx">username</span><span class="p">,</span>
+<span class="w">            </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="nx">content</span>
 <span class="w">            </span><span class="p">};</span>
 <span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
 <span class="w">            </span><span class="nx">socket</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nb">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
-<span class="w">          </span><span class="p">}</span>
 <span class="w">        </span><span class="p">}</span>
-<span class="w">      </span><span class="p">})</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">})</span>
 <span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">});</span><span class="w"> </span>
+<span class="p">});</span>
 <span class="p">});</span>
 
 <span class="c1">// 配置观察选项</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">childList</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span>
-<span class="w">  </span><span class="nx">subtree</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="nx">childList</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="nx">subtree</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span>
 <span class="p">};</span>
 
 <span class="c1">// 开始观察</span>
-<span class="nx">observer</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">targetNode</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="p">);</span><span class="w"> </span>
+<span class="nx">observer</span><span class="p">.</span><span class="nx">observe</span><span class="p">(</span><span class="nx">targetNode</span><span class="p">,</span><span class="w"> </span><span class="nx">config</span><span class="p">);</span>
 </code></pre></div>
 </details>
 <h3 id="youtube">YouTube版</h3>
@@ -3751,6 +3755,12 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <details class="note">
 <summary>更新日志</summary>
 <ul>
+<li>
+<p>2023-10-22</p>
+<ul>
+<li>修复斗鱼监听失败bug</li>
+</ul>
+</li>
 <li>
 <p>2023-10-21</p>
 <ul>
