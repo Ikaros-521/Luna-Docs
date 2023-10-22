@@ -602,6 +602,7 @@ chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进�
 pip install -r requirements_bilibili.txt
 ```
 
+注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
 
 !!! note
 
@@ -1076,6 +1077,10 @@ Fatal error in launcher: Unable to create process using '"D:\GitHub_pro\AI-Vtube
     playwright install
     ```
 
+    #### ModuleNotFoundError: No module named 'blivedm.models.web'; 'blivedm.models' is not a package
+
+    解决方案：[AI-Vtuber/issues/381#issuecomment-1774128497](//github.com/Ikaros-521/AI-Vtuber/issues/381#issuecomment-1774128497)
+
 ## :material-more: 补充
 
 #### 补充板块提供了对项目接入的第三方技术或应用的详细说明。如果您需要与第三方应用进行对接，您可以查阅此板块的内容，并访问第三方官方网站以了解其使用方法。  
@@ -1089,6 +1094,8 @@ Fatal error in launcher: Unable to create process using '"D:\GitHub_pro\AI-Vtube
 需要进行扫描登录或者配置 cookie 等信息，才能稳定监听弹幕。注意！！！请使用小号登录，有封号风险！！！  
 
 方案2 [blivedm :octicons-link-16:](//github.com/xfgryujk/blivedm)  
+
+注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
 
 不配置cookie，获取不到完整用户名。自行选择配置。
 
