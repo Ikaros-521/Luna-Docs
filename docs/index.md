@@ -108,6 +108,9 @@ pip install -r requirements_bilibili.txt
 pip install -r requirements_dy.txt
 pip install -r requirements_ks.txt
 pip install -r requirements_talk.txt
+pip install -r requirements_douyu.txt
+pip install -r requirements_youtube.txt
+pip install -r requirements_twitch.txt
 ```
 
 !!! note
@@ -604,7 +607,9 @@ pip install -r requirements_bilibili.txt
 
     运行 GUI `python main.py`
 
-    单独运行 `python bilibili.py`
+    单独运行 方案1 `python bilibili.py`
+
+    单独运行 方案2 `python bilibili2.py`
 
 ### 抖音版
 
@@ -1079,11 +1084,13 @@ Fatal error in launcher: Unable to create process using '"D:\GitHub_pro\AI-Vtube
 
 #### b站直播监听
 
-监听库 [bilibili-api :octicons-link-16:](//github.com/Nemo2011/bilibili-api)  
-
-备用方案 [blivedm :octicons-link-16:](//github.com/xfgryujk/blivedm)  
+方案1 [bilibili-api :octicons-link-16:](//github.com/Nemo2011/bilibili-api)  
 
 需要进行扫描登录或者配置 cookie 等信息，才能稳定监听弹幕。注意！！！请使用小号登录，有封号风险！！！  
+
+方案2 [blivedm :octicons-link-16:](//github.com/xfgryujk/blivedm)  
+
+不配置cookie，获取不到完整用户名。自行选择配置。
 
 #### <span id="dy">抖音弹幕获取</span>
 
@@ -1789,6 +1796,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2023-10-22
         - 修复斗鱼监听失败bug
         - b站登录新增2种登录方式
+        - 新增哔哩哔哩监听方案2（后期实测稳定性）
 
     - 2023-10-21
         - 接入 twitch
