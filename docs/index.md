@@ -1646,6 +1646,8 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 
 ### 简易流程图
 
+![image](./static/images/luna-ai/simple_flowchart.png)
+
 ![image](./static/images/luna-ai/chart.jpg)
 
 ??? note
