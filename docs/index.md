@@ -1427,7 +1427,7 @@ ps:cookie有效期估计在6小时左右。
 
 官方视频讲解：[【在线合成&效果优化】基于VITS的米哈游全角色语音合成现已发布](//www.bilibili.com/video/BV1Sg4y1K7kg)
 
-#### VITS
+#### VITS（vits-simple-api）
 
 emotional-vits官方仓库：[emotional-vits](//github.com/innnky/emotional-vits)  
 
