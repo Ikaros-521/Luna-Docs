@@ -1137,6 +1137,8 @@ Fatal error in launcher: Unable to create process using '"D:\GitHub_pro\AI-Vtube
 
 其中token获取方式，通过访问[https://twitchapps.com/tmi/](//twitchapps.com/tmi/)，登录twitch账号授权后即可获取返回的token:`oauth:xxxxx`  
 
+！！！注意：如果你的token和你监听的直播间是同一个账号，那会自动过滤你自己发送的弹幕！！！  
+
 
 #### 聊天模式 百度
 
