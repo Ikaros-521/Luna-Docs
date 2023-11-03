@@ -1634,11 +1634,15 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 
 启动API模式，填写相关配置即可接入。  
 
+视频教程：[BV1tV411u79T](//www.bilibili.com/video/BV1tV411u79T/)  
+
 #### web字幕打印机
 
-项目地址：[captions_printer](//github.com/Ikaros-521/captions_printer)
+项目地址：[captions_printer](//github.com/Ikaros-521/captions_printer)  
 
 具体使用参考项目文档即可。  
+
+视频教程：[BV13h4y1e7z8](//www.bilibili.com/video/BV13h4y1e7z8/)  
 
 #### 按键映射
 
