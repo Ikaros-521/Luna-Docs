@@ -3577,6 +3577,7 @@ playwright install
 <p>接入API：<a href="//github.com/Artrajz/vits-simple-api">vits-simple-api</a>  </p>
 <p>vits-simple-api整合包下载：<a href="//github.com/Artrajz/vits-simple-api/releases">github.com/Artrajz/vits-simple-api/releases</a>  </p>
 <p>个人提供的已训练好的模型：<a href="//github.com/Ikaros-521/emotional-vits/releases">点我跳转</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1ku4y1R73r">【AI主播-功能篇】新增 纯 VITS 接入，配合vits-simple-api，支持情感控制，语速调控</a> , <a href="https://www.bilibili.com/video/BV1Ph4y1A79w">【AI主播-功能篇】新增 bert-vits2 的接入，配合vits-simple-api食用，强有力的中文TTS让你到达新高度~</a>   </p>
 <p>vits-simple-api配置，修改 <code>config.py</code> ，参考配置如下，路径为追加的相对模型路径和配置文件路径：</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Fill in the model path here</span>
 <span class="n">MODEL_LIST</span> <span class="o">=</span> <span class="p">[</span>
@@ -3612,7 +3613,7 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <p>官方仓库：<a href="//github.com/Plachtaa/VITS-fast-fine-tuning">VITS-fast-fine-tuning</a>  </p>
 <p>官方推理包：<a href="//github.com/Plachtaa/VITS-fast-fine-tuning/releases/tag/webui-v1.1">inference-webui-v1.1</a>  </p>
 <p>个人提供的已训练好的模型：<a href="//github.com/Ikaros-521/VITS-fast-fine-tuning/releases">点我跳转</a>  </p>
-<p>视频教程：<a href="//www.bilibili.com/video/BV1Lm4y1r7Pi">【AI语音合成-数据集篇#00】模型使用简单讲解，手把手演示</a>  </p>
+<p>视频教程：<a href="//www.bilibili.com/video/BV1Lm4y1r7Pi">【AI语音合成-数据集篇#00】模型使用简单讲解，手把手演示</a> ，<a href="https://www.bilibili.com/video/BV1Tm4y1J71B">【AI主播-功能篇】TTS语音合成 VITS-Fast怎么使用？为什么没有合成语音？VITS不行吗？模型兼容吗？</a>   </p>
 <p>训练用整合包（原作者整合包备份）：<a href="//pan.quark.cn/s/da52e78983da">pan.quark.cn/s/da52e78983da</a>  </p>
 <p>整合包视频教程：<a href="//www.bilibili.com/video/BV1K94y1k7Bw">AI声音克隆又进化了，10分钟学会声音克隆！一键启动包发布！</a>  </p>
 <p>整合包视频教程2：<a href="//www.bilibili.com/video/BV1B841197Em">【VITS一键包】本地训练独属于你的AI嘴替？训练部署AI语音合成教程</a>  </p>
@@ -3620,12 +3621,14 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <p>官方仓库：<a href="//github.com/Plachtaa/VALL-E-X">VALL-E-X</a>  </p>
 <p>个人提供的已训练好的preset预设：<a href="//github.com/Ikaros-521/VALL-E-X/releases/tag/preset">点我跳转</a>  </p>
 <p>官方视频讲解：<a href="//www.bilibili.com/video/av617666708">仅需3秒音频实现声音克隆！我开源了微软的最新语音合成模型VALL-E X</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1Zh4y1T7YU">【AI主播-功能篇】接入 VALL-E-X（整合包附赠），进行TTS，3秒声音克隆，“好用”喵hhh</a>  </p>
 <p>整合包下载：<a href="//pan.quark.cn/s/b817e285ab41">pan.quark.cn/s/b817e285ab41</a>  </p>
 <h3 id="_44">变声</h3>
 <h4 id="ddsp-svc">DDSP-SVC</h4>
 <p>官方仓库：<a href="//github.com/yxlllc/DDSP-SVC">DDSP-SVC</a>  </p>
 <p>个人提供的已训练好的模型：<a href="//github.com/Ikaros-521/DDSP-SVC/releases">点我跳转</a>  </p>
 <p>羽毛佬视频教程：<a href="//www.bilibili.com/video/BV1rs4y1Q7BQ">【AI翻唱/变声/整合包】有张N卡就能跑！媲美So-VITS却不吃配置，全新的DDSP-SVC 3.0训练/推理教程</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1s8411m7rX/">【AI主播-功能篇】新增 DDSP-SVC 接入。变声选项再加一，多种选择总有一个是适合你的（</a>  </p>
 <p>修改 <code>flask_api.py</code> 最后几行中的模型路径，其他配置自行调整，另外需要注意！ <code>enable_spk_id_cover</code> 改为 <code>False</code> ，即可接入。  </p>
 <div class="highlight"><pre><span></span><code><span class="c1"># config和模型得同一目录。 这是我自己训练的DDSP模型，新鲜出炉</span>
 <span class="n">checkpoint_path</span> <span class="o">=</span> <span class="s2">&quot;exp/combsub-test/model_68000.pt&quot;</span>
@@ -3648,7 +3651,7 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <h4 id="so-vits-svc">so-vits-svc</h4>
 <p>官方仓库：<a href="//github.com/svc-develop-team/so-vits-svc">so-vits-svc</a>  </p>
 <p>个人提供的已训练好的模型：<a href="//github.com/Ikaros-521/so-vits-svc/releases">点我跳转</a>  </p>
-<p>视频教程：<a href="//www.bilibili.com/video/BV1k24y1F7Us">【AI歌姬】so-vits-svc 简单使用讲解 + 伊卡洛斯 模型开源</a>  </p>
+<p>视频教程：<a href="//www.bilibili.com/video/BV1k24y1F7Us">【AI歌姬】so-vits-svc 简单使用讲解 + 伊卡洛斯 模型开源</a> ， <a href="https://www.bilibili.com/video/BV1dh4y1j7hM/">【AI主播-功能篇】如何接入so-vits-svc？用什么版本？4.1版为什么会报错？运行哪个程序？在哪下载？</a>  </p>
 <p>修改 <code>flask_api_full_song.py</code> 最后几行中的模型路径，运行，配置相关信息即可接入。  </p>
 <div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
     <span class="n">model_name</span> <span class="o">=</span> <span class="s2">&quot;logs/44k/ikaros_G_54600.pth&quot;</span> <span class="c1"># 你的模型地址</span>
@@ -3687,6 +3690,7 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <p>项目对接推荐使用我的改版：<a href="//github.com/Ikaros-521/xuniren">https://github.com/Ikaros-521/xuniren</a>  </p>
 <p>半整合包（需要自行补充环境）：<a href="//pan.quark.cn/s/03db11314ca1">https://pan.quark.cn/s/03db11314ca1</a>, 需要注意的是这个项目环境十分难搭建，而且很多都需要自行编译，所以我编译的版本不一定适用于你的系统，那么你就需要自己重新编译安装了，那就是一件非常痛苦的事情，注意我的说明自行闭坑吧。  </p>
 <p>使用：整合包用户启动我提供的<code>http_api运行.bat</code>脚本，普通用户自行启动<code>http_api.py</code>即可，看到服务正常监听即可。那么此时我们的AI Vtuber也需要配置对应的<code>虚拟身体</code>配置，然后运行即可。  </p>
+<p>视频教程：<a href="//www.bilibili.com/video/BV1uB4y1d7o6/">BV1uB4y1d7o6</a>  </p>
 <h3 id="_46">其他</h3>
 <h4 id="stable-diffusion">Stable Diffusion</h4>
 <p>官方仓库：<a href="//github.com/AUTOMATIC1111/stable-diffusion-webui">stable-diffusion-webui</a>  </p>

@@ -1439,6 +1439,8 @@ vits-simple-api整合包下载：[github.com/Artrajz/vits-simple-api/releases](/
 
 个人提供的已训练好的模型：[点我跳转](//github.com/Ikaros-521/emotional-vits/releases)  
 
+视频教程：[【AI主播-功能篇】新增 纯 VITS 接入，配合vits-simple-api，支持情感控制，语速调控](https://www.bilibili.com/video/BV1ku4y1R73r) , [【AI主播-功能篇】新增 bert-vits2 的接入，配合vits-simple-api食用，强有力的中文TTS让你到达新高度~](https://www.bilibili.com/video/BV1Ph4y1A79w)   
+
 vits-simple-api配置，修改 `config.py` ，参考配置如下，路径为追加的相对模型路径和配置文件路径：
 
 ```python
@@ -1495,7 +1497,7 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 个人提供的已训练好的模型：[点我跳转](//github.com/Ikaros-521/VITS-fast-fine-tuning/releases)  
 
-视频教程：[【AI语音合成-数据集篇#00】模型使用简单讲解，手把手演示](//www.bilibili.com/video/BV1Lm4y1r7Pi)  
+视频教程：[【AI语音合成-数据集篇#00】模型使用简单讲解，手把手演示](//www.bilibili.com/video/BV1Lm4y1r7Pi) ，[【AI主播-功能篇】TTS语音合成 VITS-Fast怎么使用？为什么没有合成语音？VITS不行吗？模型兼容吗？](https://www.bilibili.com/video/BV1Tm4y1J71B)   
 
 训练用整合包（原作者整合包备份）：[pan.quark.cn/s/da52e78983da](//pan.quark.cn/s/da52e78983da)  
 
@@ -1511,6 +1513,8 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 官方视频讲解：[仅需3秒音频实现声音克隆！我开源了微软的最新语音合成模型VALL-E X](//www.bilibili.com/video/av617666708)  
 
+视频教程：[【AI主播-功能篇】接入 VALL-E-X（整合包附赠），进行TTS，3秒声音克隆，“好用”喵hhh](https://www.bilibili.com/video/BV1Zh4y1T7YU)  
+
 整合包下载：[pan.quark.cn/s/b817e285ab41](//pan.quark.cn/s/b817e285ab41)  
 
 ### 变声
@@ -1522,6 +1526,8 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 个人提供的已训练好的模型：[点我跳转](//github.com/Ikaros-521/DDSP-SVC/releases)  
 
 羽毛佬视频教程：[【AI翻唱/变声/整合包】有张N卡就能跑！媲美So-VITS却不吃配置，全新的DDSP-SVC 3.0训练/推理教程](//www.bilibili.com/video/BV1rs4y1Q7BQ)  
+
+视频教程：[【AI主播-功能篇】新增 DDSP-SVC 接入。变声选项再加一，多种选择总有一个是适合你的（](https://www.bilibili.com/video/BV1s8411m7rX/)  
 
 修改 `flask_api.py` 最后几行中的模型路径，其他配置自行调整，另外需要注意！ `enable_spk_id_cover` 改为 `False` ，即可接入。  
 
@@ -1551,7 +1557,7 @@ enable_spk_id_cover = False
 
 个人提供的已训练好的模型：[点我跳转](//github.com/Ikaros-521/so-vits-svc/releases)  
 
-视频教程：[【AI歌姬】so-vits-svc 简单使用讲解 + 伊卡洛斯 模型开源](//www.bilibili.com/video/BV1k24y1F7Us)  
+视频教程：[【AI歌姬】so-vits-svc 简单使用讲解 + 伊卡洛斯 模型开源](//www.bilibili.com/video/BV1k24y1F7Us) ， [【AI主播-功能篇】如何接入so-vits-svc？用什么版本？4.1版为什么会报错？运行哪个程序？在哪下载？](https://www.bilibili.com/video/BV1dh4y1j7hM/)  
 
 修改 `flask_api_full_song.py` 最后几行中的模型路径，运行，配置相关信息即可接入。  
 
@@ -1623,6 +1629,8 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 半整合包（需要自行补充环境）：[https://pan.quark.cn/s/03db11314ca1](//pan.quark.cn/s/03db11314ca1), 需要注意的是这个项目环境十分难搭建，而且很多都需要自行编译，所以我编译的版本不一定适用于你的系统，那么你就需要自己重新编译安装了，那就是一件非常痛苦的事情，注意我的说明自行闭坑吧。  
 
 使用：整合包用户启动我提供的`http_api运行.bat`脚本，普通用户自行启动`http_api.py`即可，看到服务正常监听即可。那么此时我们的AI Vtuber也需要配置对应的`虚拟身体`配置，然后运行即可。  
+
+视频教程：[BV1uB4y1d7o6](//www.bilibili.com/video/BV1uB4y1d7o6/)  
 
 ### 其他
 
