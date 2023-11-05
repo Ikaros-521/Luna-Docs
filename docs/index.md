@@ -1656,6 +1656,13 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 
 pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.readthedocs.io/en/latest/keyboard.html#keyboard-keys)  
 
+#### audio player（音频播放器）
+
+项目地址：[audio_player](//github.com/Ikaros-521/audio_player)  
+
+具体使用参考项目文档即可。  
+
+
 ## 🀅开发&项目相关
 
 ### 简易流程图
