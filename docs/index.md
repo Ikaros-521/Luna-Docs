@@ -33,7 +33,7 @@ hide:
 
     `Luna AI` 是一个由
 
-    `ChatterBot / GPT / Claude / langchain 本地 or 云端 / chatglm / text-generation-webui / 讯飞星火 / 智谱AI / 谷歌Bard / 文心一言 / 通义千问`
+    `ChatterBot / GPT / Claude / langchain 本地 or 云端 / chatglm / text-generation-webui / 讯飞星火 / 智谱AI / 谷歌Bard / 文心一言`
 
     做为 `大脑` 驱动的虚拟主播 `Live2D / Vtube Studio / UE5 + Audio2Face / xuniren` ，可以在 `Bilibili / 抖音 / 快手 / 斗鱼 / YouTube / twitch` 直播中与观众实时互动 或者 直接在本地和您进行聊天
 
@@ -1398,11 +1398,11 @@ cookie 获取方式：
 
 再随便发送一个提问，随便找个XHR请求中，查看请求头内的`cookie`对应的一长串的值，复制粘贴回GUI中保存即可。  
 
-#### 通义千问
+#### 通义千问（不再适配！！！）
 
-官网：[qianwen.aliyun.com](//qianwen.aliyun.com/)  
+不再适配！！！
 
-接口源自：[revTongYi](//github.com/xw5xr6/revTongYi)   
+官网：[qianwen.aliyun.com](//qianwen.aliyun.com/)   
 
 cookie 获取方式：  
 1. 安装 [Chrome](//chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm)、[Edge](//microsoftedge.microsoft.com/addons/detail/cookie-editor-plus/nbmajjcfigmlcnikhnfhhicidleefhpp) 或 [Firefox](//addons.mozilla.org/en-US/firefox/addon/cookie-editor/) 上的`Cookies Editor`插件
