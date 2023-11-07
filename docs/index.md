@@ -1835,6 +1835,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - 文案页 文案合成 vits传参补充遗漏的sdp_radio
         - 删减违禁词
         - 优化chatgpt特殊情况下token一直超长问题,2次都超长，直接清空上下文
+        - 增加伊卡洛斯本地问答数据
 
     - 2023-11-06
         - 修复audio_player模式下，取消点歌失效的bug
