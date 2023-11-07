@@ -1251,6 +1251,25 @@ claude2 官网 [claude.ai :octicons-link-16:](//claude.ai)
         uvicorn.run(app, host='0.0.0.0', port=8000, workers=1)
     ```
 
+##### ChatGLM3
+
+官方仓库：[ChatGLM3](//github.com/THUDM/ChatGLM3)  
+
+整合包：[https://pan.quark.cn/s/c2ded75100ac](https://pan.quark.cn/s/c2ded75100ac)  
+
+运行 `1.运行api.bat` ，然后配置相关信息接入本项目（聊天类型：`ChatGPT/闻达`，API地址：`http://localhost:8000/v1`，模型：`chatglm3-6b`）。  
+
+!!! openai_api.py "参考"
+
+    ```python
+    if __name__ == "__main__":
+        tokenizer = AutoTokenizer.from_pretrained("THUDM\\chatglm3-6b-int4", trust_remote_code=True)
+        model = AutoModel.from_pretrained("THUDM\\chatglm3-6b-int4", trust_remote_code=True).cuda()
+        # 多显卡支持，使用下面两行代替上面一行，将num_gpus改为你实际的显卡数量
+        # from utils import load_model_on_gpus
+        # model = load_model_on_gpus("THUDM\\chatglm3-6b-int4", num_gpus=2)
+    ```
+
 #### 智谱AI
 
 官方：[open.bigmodel.cn](//open.bigmodel.cn/)  
