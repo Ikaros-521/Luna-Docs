@@ -1834,6 +1834,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - 新增纯特殊字符和空格组成的文本的合成过滤，避免tts合成错误音频
         - 文案页 文案合成 vits传参补充遗漏的sdp_radio
         - 删减违禁词
+        - 优化chatgpt特殊情况下token一直超长问题
 
     - 2023-11-06
         - 修复audio_player模式下，取消点歌失效的bug
