@@ -1239,6 +1239,8 @@ claude2 官网 [claude.ai :octicons-link-16:](//claude.ai)
 
 整合包：[【ChatGLM】本地版ChatGPT？6G显存可用！ChatGLM-6B 清华开源模型一键包发布 可更新](//www.bilibili.com/video/BV1E24y1u7Go)  
 
+视频教程：[【AI主播-功能篇】ChatGLM如何接入？上下文记忆~ 不需魔法，本地跑，省钱了喵~](https://www.bilibili.com/video/BV1NN411a7zG)  
+
 运行 `api.py` ，然后配置相关信息接入本项目。
 
 !!! note "参考"
@@ -1256,6 +1258,8 @@ claude2 官网 [claude.ai :octicons-link-16:](//claude.ai)
 官方仓库：[ChatGLM3](//github.com/THUDM/ChatGLM3)  
 
 整合包：[https://pan.quark.cn/s/c2ded75100ac](https://pan.quark.cn/s/c2ded75100ac)  
+
+视频教程：[【AI主播-功能篇】接入ChatGLM3，含整合包，看看有没有提升（](https://www.bilibili.com/video/BV1M94y137h4)  
 
 运行 `1.运行api.bat` ，然后配置相关信息接入本项目（聊天类型：`ChatGPT/闻达`，API地址：`http://localhost:8000/v1`，模型：`chatglm3-6b`）。  
 
