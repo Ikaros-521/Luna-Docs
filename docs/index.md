@@ -1858,6 +1858,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - 补充遗漏的依赖
         - webui新增 页面配置页，暂时支持设置UI主题
         - 优化webui提示框
+        - TTS新增tts.ai-lab.top的接入（webui已适配）
 
     - 2023-11-09
         - 对闲时任务的闲时时间强制转型为int
