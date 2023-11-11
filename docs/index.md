@@ -87,9 +87,19 @@ git clone -b owner https://github.com/Ikaros-521/AI-Vtuber.git
 
 !!! note
 
-    整合包下载 [点我跳转 :octicons-link-16:](//github.com/Ikaros-521/AI-Vtuber/releases)
+    Windows整合包下载 [点我跳转 :octicons-link-16:](//github.com/Ikaros-521/AI-Vtuber/releases)
 
 ## :material-run-fast: 运行环境
+
+#### 操作系统
+
+- Windows 7 及以上
+- MacOS
+- Linux
+
+Windows部署建议直接使用整合包  
+
+MacOS部署问题讨论：[https://github.com/Ikaros-521/AI-Vtuber/issues/423](https://github.com/Ikaros-521/AI-Vtuber/issues/423)  
 
 #### Python 版本 `3.10.11`
 
