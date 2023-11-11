@@ -1868,6 +1868,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - gpt默认token提升到4096
         - webui使用linux兼容路径语法
         - bilibili2 cookie问题bug修复
+        - 优化闲时任务日志输出内容
 
     - 2023-11-10
         - 补充GUI遗漏的OpenAI TTS配置
