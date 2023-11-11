@@ -1853,6 +1853,12 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志" 
+    - 2023-11-11
+        - twitch增加重连机制和多次失败停止运行机制
+        - gpt默认token提升到4096
+        - webui使用linux兼容路径语法
+        - bilibili2 cookie问题bug修复
+
     - 2023-11-10
         - 补充GUI遗漏的OpenAI TTS配置
         - 补充遗漏的依赖
