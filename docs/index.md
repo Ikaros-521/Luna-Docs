@@ -1866,6 +1866,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2023-11-13
         - 新增 unity第三方项目对接，将LLM等响应数据传给HTTP中转站（可以用于对接其他项目使用）
         - 恢复genshinvoice的API调用
+        - 移动unity对接的启用方式到 虚拟身体 配置项
 
     - 2023-11-12
         - 修复webui闲时任务日志bug
