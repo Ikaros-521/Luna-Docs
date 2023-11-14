@@ -87,7 +87,10 @@ git clone -b owner https://github.com/Ikaros-521/AI-Vtuber.git
 
 !!! note
 
-    Windows整合包下载 [点我跳转 :octicons-link-16:](//github.com/Ikaros-521/AI-Vtuber/releases)
+    Windows整合包下载：
+    - [github :octicons-link-16:](//github.com/Ikaros-521/AI-Vtuber/releases)
+    - [夸克网盘 :octicons-link-16:](https://pan.quark.cn/s/e6755e65dc05)
+    - [阿里云盘 :octicons-link-16:](https://www.aliyundrive.com/s/JRWomhcpeN9)
 
 ## :material-run-fast: 运行环境
 
