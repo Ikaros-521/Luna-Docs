@@ -1077,8 +1077,7 @@ pip install -r requirements_talk.txt
     [ChatGPT-Html](//ikaros521.eu.org/chatgpt-html/)  
     [ChatGPT-Next-Web](//chat-gpt-next-web-ikaros-521.vercel.app/)  
 
-    - (base) D:\ai3\AI-Vtuber-20230825>Miniconda3\Scripts\playwright.exe install
-Fatal error in launcher: Unable to create process using '"D:\GitHub_pro\AI-Vtuber-20230729\Miniconda3\python.exe"  "D:\ai3\AI-Vtuber-20230825\Miniconda3\Scripts\playwright.exe" install': ???????????
+    - Miniconda3\Scripts\playwright.exe install Fatal error in launcher: Unable to create process using  '"D:\GitHub_pro\AI-Vtuber-20230729\Miniconda3\python.exe"  "D:\ai3\AI-Vtuber-20230825\Miniconda3\Scripts\playwright.exe" install': ???????????
 
     playwright安装浏览器内核失败。   
 
