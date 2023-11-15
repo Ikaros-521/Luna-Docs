@@ -469,7 +469,7 @@ pip install -r requirements_twitch.txt
 
 ## :material-chat: ChatGPT 代理
 
-#### 例如 [API2D :octicons-link-16:](//api2d.com/wiki/doc)  
+- 例如 [API2D :octicons-link-16:](//api2d.com/wiki/doc)  
 
 ```json
 "openai": {
@@ -482,26 +482,26 @@ pip install -r requirements_twitch.txt
 }
 ```
 
-#### one-api
+- one-api
 
 官方仓库：[one-api](//github.com/songquanpeng/one-api)  
 
 !!! note "或者纯代理的镜像站"
 
-    #### 合作伙伴 [智来星球 :octicons-link-16:](//m.zlxqai.com) 提供
+    - 合作伙伴 [智来星球 :octicons-link-16:](//m.zlxqai.com) 提供
 
-    - [129.226.219.212:9000 :octicons-link-16:](//129.226.219.212:9000)
-    - [43.134.230.167:9000 :octicons-link-16:](//43.134.230.167:9000)
+        - [129.226.219.212:9000 :octicons-link-16:](//129.226.219.212:9000)
+        - [43.134.230.167:9000 :octicons-link-16:](//43.134.230.167:9000)
 
-    #### 源自互联网
+    - 源自互联网
 
-    - [openai-pag.wangzhishi.net :octicons-link-16:](//openai-pag.wangzhishi.net)
+        - [openai-pag.wangzhishi.net :octicons-link-16:](//openai-pag.wangzhishi.net)
 
-    #### 如何配置呢？  
+    - 如何配置呢？  
 
-    GUI中openai api地址配置为：`http://openai-pag.wangzhishi.net/v1`
+        GUI中openai api地址配置为：`http://openai-pag.wangzhishi.net/v1`
 
-    ![image](./static/images/luna-ai/253742483-ce47dd53-118e-488a-94d6-0d837db23e6c.png)
+        ![image](./static/images/luna-ai/253742483-ce47dd53-118e-488a-94d6-0d837db23e6c.png)
 
 ## :material-help-circle: `chat_with_file` 模式说明
 
