@@ -869,7 +869,7 @@ pip install -r requirements_talk.txt
 
 ??? note "部署过程问题"
 
-    #### CondaSSLError: OpenSSL appears to be unavailable on this machine
+    - CondaSSLError: OpenSSL appears to be unavailable on this machine
 
     本地已经有 `Anaconda` 环境，在执行 半自动包的`1.创建虚拟环境.bat`时，出现报错 `CondaSSLError: OpenSSL appears to be unavailable on this machine`
 
@@ -877,7 +877,7 @@ pip install -r requirements_talk.txt
 
     解决方案：参考 [blog.csdn.net/mynameisyaxuan/article/details/128323026](//blog.csdn.net/mynameisyaxuan/article/details/128323026)  
 
-    #### ModuleNotFoundError: No module named 'xxx' 大同小异
+    - ModuleNotFoundError: No module named 'xxx' 大同小异
 
     都是依赖库缺失问题，可以打开`requirements_bilibili.txt`/`requirements_dy.txt`/`requirements_ks.txt`内查看需要安装的依赖（可能还是遗漏...）  
 
@@ -893,7 +893,7 @@ pip install -r requirements_talk.txt
     https://pypi.tuna.tsinghua.edu.cn/simple
     ```
 
-    #### ModuleNotFoundError: No module named 'PyQt5'
+    - ModuleNotFoundError: No module named 'PyQt5'
 
     半自动包 运行 `GUI运行.bat` 时，出现
 
@@ -910,7 +910,7 @@ pip install -r requirements_talk.txt
 
     ![image](./static/images/luna-ai/247523915-ee3ad055-b562-4f12-8797-d6aff44331be.png)
 
-    #### ModuleNotFoundError: No module named 'langid'
+    - ModuleNotFoundError: No module named 'langid'
 
     半自动包 运行 `GUI运行.bat` 时，出现
 
@@ -931,7 +931,7 @@ pip install -r requirements_talk.txt
 
     ![image](./static/images/luna-ai/247524637-0f08c00f-f7ac-41dd-a6a4-7f7539efa843.png)
 
-    #### ModuleNotFoundError: No module named 'profanity'
+    - ModuleNotFoundError: No module named 'profanity'
 
     半自动包 运行 `GUI运行.bat` 时，出现  
 
@@ -948,7 +948,7 @@ pip install -r requirements_talk.txt
 
     ![image](./static/images/luna-ai/247524836-3501aaca-9a08-45e3-b7bd-6aa60f9ea4b9.png)
 
-    #### ModuleNotFoundError: No module named 'ahocorasick'
+    - ModuleNotFoundError: No module named 'ahocorasick'
 
     半自动包 运行`3.GUI运行.bat`时，出现  
 
@@ -967,7 +967,7 @@ pip install -r requirements_talk.txt
 
 ??? note "使用过程问题"
 
-    #### openai 接口报错:《empty message》
+    - openai 接口报错:《empty message》
 
     可能是API KEY过期了/额度没了，请检查API KEY是否可用。  
 
@@ -977,7 +977,7 @@ pip install -r requirements_talk.txt
 
     [ChatGPT-Next-Web](//chat-gpt-next-web-ikaros-521.vercel.app)  
 
-    #### ERROR: Cannot install -r requirements_bilibili.txt (line 23), aiohttp and langchain==0.0.142 because these package versions have conflicting dependencies.
+    - ERROR: Cannot install -r requirements_bilibili.txt (line 23), aiohttp and langchain==0.0.142 because these package versions have conflicting dependencies.
 
     依赖冲突问题。可以删除 `requirements_bilibili.txt` 中的 `langchain==0.0.142` 和 `bilibili-api-python==9.1.0` ，然后进行重新安装。安装完成后，手动安装这2个库（按顺序安装）。  
 
@@ -986,14 +986,14 @@ pip install -r requirements_talk.txt
     Miniconda3\python.exe -m pip install langchain==0.0.142
     ```
 
-    #### ERROR: Conmunicate.`__init__`() got an unexpected keyword argument 'text'
+    - ERROR: Conmunicate.`__init__`() got an unexpected keyword argument 'text'
 
     问题根因：Edge-TTS版本过低
 
     解决方案：升级到指定版本 `pip install edge-tts==6.1.6`
 
 
-    #### File ".\flask_api_full_song.py", line 38, in wav2wav  out_audio, out_sr = svc_model.infer(spk, tran, raw_path) ValueError: too many values to unpack (expected 2)
+    - File ".\flask_api_full_song.py", line 38, in wav2wav  out_audio, out_sr = svc_model.infer(spk, tran, raw_path) ValueError: too many values to unpack (expected 2)
     注意！！！如果你是 `4.1` 版本的整合包，很可能就有这个bug，需要修改 `flask_api_full_song.py` 的38行左右：  
     改  
 
@@ -1007,7 +1007,7 @@ pip install -r requirements_talk.txt
     out_audio, out_sr, n_frames = svc_model.infer(spk, tran, raw_path)
     ```
 
-    #### RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+    - RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
 
     问题：pydub依赖ffmpeg，但环境不存在ffmpeg  
 
@@ -1021,13 +1021,13 @@ pip install -r requirements_talk.txt
 
     简述就是下载，解压，配置 ffmpeg 的 bin 到系统环境变量path中，完事。  
 
-    #### qt.qpa.plugin: Could not find the Qt platform plugin "windows" in "" This application failed to start because no Qt platform plugin could be initialized.    Reinstalling the application may fix this problem.
+    - qt.qpa.plugin: Could not find the Qt platform plugin "windows" in "" This application failed to start because no Qt platform plugin could be initialized.    Reinstalling the application may fix this problem.
 
     问题：无法找到Qt。
 
     解决方案：如果你是整合包，那请检查是否在 `中文路径` 下！！！如果是自行安装的，可以尝试重装pyqt5。
 
-    #### 保存配置后没有自动重启，报错 [Errno 2] No such file or directory
+    - 保存配置后没有自动重启，报错 [Errno 2] No such file or directory
 
     现象：  
 
@@ -1042,7 +1042,7 @@ pip install -r requirements_talk.txt
 
     `D:\\GitHub_pro\\AI-Vtuber-20230 729` ——> `D:\\GitHub_pro\\AI-Vtuber-20230729`
 
-    #### 更新后报错 ImportError: cannot import name 'sync' from 'bilibili_api'
+    - 更新后报错 ImportError: cannot import name 'sync' from 'bilibili_api'
 
     完整报错：
 
@@ -1067,7 +1067,7 @@ pip install -r requirements_talk.txt
 
     2.重新安装，可以手动安装 `Miniconda3\python.exe -m pip install bilibili-api-python bilibili-api` ，也可以直接执行`2-2.安装依赖.bat`完成安装。 
 
-    #### 使用ChatGPT API，报错：error_message='You exceeded your current quota, please check your plan and billing details.'
+    - 使用ChatGPT API，报错：error_message='You exceeded your current quota, please check your plan and billing details.'
 
     可能是API KEY过期了/额度没了，请检查API KEY是否可用。  
 
@@ -1077,7 +1077,7 @@ pip install -r requirements_talk.txt
     [ChatGPT-Html](//ikaros521.eu.org/chatgpt-html/)  
     [ChatGPT-Next-Web](//chat-gpt-next-web-ikaros-521.vercel.app/)  
 
-    #### (base) D:\ai3\AI-Vtuber-20230825>Miniconda3\Scripts\playwright.exe install
+    - (base) D:\ai3\AI-Vtuber-20230825>Miniconda3\Scripts\playwright.exe install
 Fatal error in launcher: Unable to create process using '"D:\GitHub_pro\AI-Vtuber-20230729\Miniconda3\python.exe"  "D:\ai3\AI-Vtuber-20230825\Miniconda3\Scripts\playwright.exe" install': ???????????
 
     playwright安装浏览器内核失败。   
@@ -1090,9 +1090,10 @@ Fatal error in launcher: Unable to create process using '"D:\GitHub_pro\AI-Vtube
     playwright install
     ```
 
-    #### ModuleNotFoundError: No module named 'blivedm.models.web'; 'blivedm.models' is not a package
+    - ModuleNotFoundError: No module named 'blivedm.models.web'; 'blivedm.models' is not a package
 
     解决方案：[AI-Vtuber/issues/381#issuecomment-1774128497](//github.com/Ikaros-521/AI-Vtuber/issues/381#issuecomment-1774128497)
+
 
 ## :material-more: 补充
 
@@ -1869,6 +1870,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2023-11-15
         - 修复百度翻译配置读取错误问题
         - 接入 睿声AI（新的在线TTS）
+        - webui 页面配置 新增 账号管理配置，可以自定义是否启用登录功能、修改账号密码
 
     - 2023-11-14
         - 禁用文案的自动播放
