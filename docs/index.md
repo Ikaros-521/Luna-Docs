@@ -1112,7 +1112,7 @@ pip install -r requirements_talk.txt
 注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
 
     - cookie模式下，不配置cookie，获取不到完整用户名。自行选择配置。
-    - 开放平台模式下，请前往 [开放平台 :octicons-link-16:](https://open-live.bilibili.com/) 注册成为开发者，“直播创作者服务中心” 创建项目，获取`项目ID`、`access_key_id`、`access_key_secred`
+    - 开放平台模式下，请前往 开放平台: https://open-live.bilibili.com/ 注册成为开发者，“直播创作者服务中心” 创建项目，获取 项目ID 、 access_key_id 、 access_key_secred 
 
 #### <span id="dy">抖音弹幕获取</span>
 
@@ -1872,7 +1872,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志" 
     - 2023-11-18
         - 优化webui配置项描述
-        
+
     - 2023-11-17
         - unity对接新增密码
         - 着手开发异常报警功能
