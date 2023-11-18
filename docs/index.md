@@ -1111,7 +1111,8 @@ pip install -r requirements_talk.txt
 
 注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
 
-不配置cookie，获取不到完整用户名。自行选择配置。
+    - cookie模式下，不配置cookie，获取不到完整用户名。自行选择配置。
+    - 开放平台模式下，请前往 [开放平台 :octicons-link-16:](https://open-live.bilibili.com/) 注册成为开发者，“直播创作者服务中心” 创建项目，获取`项目ID`、`access_key_id`、`access_key_secred`
 
 #### <span id="dy">抖音弹幕获取</span>
 
