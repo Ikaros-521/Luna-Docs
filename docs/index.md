@@ -1876,6 +1876,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - webui补充遗漏的内置Live2D启动功能
         - 修复webui 聊天页 直接复读无法使用的bug
         - chatgpt增加请求超时时间，默认30s
+        - 修复按键映射描述错误问题
 
     - 2023-11-17
         - unity对接新增密码
