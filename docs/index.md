@@ -1676,6 +1676,14 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 
 视频教程：[BV1uB4y1d7o6](//www.bilibili.com/video/BV1uB4y1d7o6/)  
 
+### 翻译
+
+#### 百度翻译
+
+官方文档：[https://api.fanyi.baidu.com/doc/21](https://api.fanyi.baidu.com/doc/21)  
+
+根据文档提示，注册开发者并完整认证后，申请“通用文本翻译”服务，然后在[http://api.fanyi.baidu.com/manage/developer](http://api.fanyi.baidu.com/manage/developer)，获取`APP ID`和`密钥`，配置上即可使用。
+
 ### 其他
 
 #### Stable Diffusion
