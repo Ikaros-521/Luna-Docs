@@ -42,8 +42,14 @@ hide:
     另外还可以通过特定指令协同 `Stable Diffusion` 进行画图展示。并且可以自定义文案进行循环播放
 
 !!! warning "License"
+
+    这个项目采用 GNU通用公共许可证（GPL） 进行许可。有关详细信息，请参阅 LICENSE 文件。  
+
+    This project is licensed under the `GNU General Public License (GPL)`. Please see the `LICENSE` file for more details.  
+
+    严禁将此项目用于一切违反《中华人民共和国宪法》，《中华人民共和国刑法》，《中华人民共和国治安管理处罚法》和《中华人民共和国民法典》之用途。  
     
-    This project is licensed under the `GNU General Public License (GPL)`. Please see the `LICENSE` file for more details.
+    严禁用于任何政治相关用途。
 
 !!! note "导航"
 
