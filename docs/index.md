@@ -1428,21 +1428,29 @@ ps：cookie有效期较短
 
 官网：[yiyan.baidu.com](//yiyan.baidu.com)  
 
-服务端：[yiyan-api](//github.com/zhuweiyou/yiyan-api)  
+- api
+    百度智能云千帆大模型平台：[https://cloud.baidu.com/product/wenxinworkshop](https://cloud.baidu.com/product/wenxinworkshop)  
 
-下载yiyan-api源码，根据官方教程部署搭建运行即可。简述过程就是安装Node.js >= 18，然后再源码项目文件夹内运行`npm install`，最后运行`npm start`即可。  
+    API文档：[https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11](https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11)  
 
-cookie 获取方式：
+    [在线服务](https://console.bce.baidu.com/qianfan/ais/console/onlineService)，购买`ERNIE-Bot大模型公有云在线调用服务`，[应用接入](https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application) 创建应用，获取`API Key`和`Secret Key`，配置即可。
 
-访问 `yiyan.baidu.com`，登录账号  
+- web
+    服务端：[yiyan-api](//github.com/zhuweiyou/yiyan-api)  
 
-键盘F12 打开开发者工具  
+    下载yiyan-api源码，根据官方教程部署搭建运行即可。简述过程就是安装Node.js >= 18，然后再源码项目文件夹内运行`npm install`，最后运行`npm start`即可。  
 
-找到`源代码`或者`Sources`页，右键`debugger`左侧行号, 选择 `never pause here` 或者叫做 `永不在此处暂停`, 然后再刷新页面  
+    cookie 获取方式：
 
-此时就可以跳过`debugger`和重定向，然后找到`网络`或者`Network`。  
+    访问 `yiyan.baidu.com`，登录账号  
 
-再随便发送一个提问，随便找个XHR请求中，查看请求头内的`cookie`对应的一长串的值，复制粘贴回GUI中保存即可。  
+    键盘F12 打开开发者工具  
+
+    找到`源代码`或者`Sources`页，右键`debugger`左侧行号, 选择 `never pause here` 或者叫做 `永不在此处暂停`, 然后再刷新页面  
+
+    此时就可以跳过`debugger`和重定向，然后找到`网络`或者`Network`。  
+
+    再随便发送一个提问，随便找个XHR请求中，查看请求头内的`cookie`对应的一长串的值，复制粘贴回GUI中保存即可。  
 
 #### 通义千问（不再适配！！！）
 
@@ -1898,6 +1906,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - tts请求新增请求超时，默认60s
         - 接入langchain_chatchat
         - chatgpt兼容0.x.x和1.x.x版本
+        - 接入文心一言官方API（）
 
     - 2023-11-22
         - 修复webui 智谱AI部分配置无法保存的bug

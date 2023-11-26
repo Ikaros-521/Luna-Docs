@@ -3216,7 +3216,16 @@ if __name__ == "__main__":
 <p>ps：cookie有效期较短  </p>
 <h4 id="_32">文心一言</h4>
 <p>官网：<a href="//yiyan.baidu.com">yiyan.baidu.com</a>  </p>
-<p>服务端：<a href="//github.com/zhuweiyou/yiyan-api">yiyan-api</a>  </p>
+<ul>
+<li>
+<p>api
+    百度智能云千帆大模型平台：<a href="https://cloud.baidu.com/product/wenxinworkshop">https://cloud.baidu.com/product/wenxinworkshop</a>  </p>
+<p>API文档：<a href="https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11">https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11</a>  </p>
+<p><a href="https://console.bce.baidu.com/qianfan/ais/console/onlineService">在线服务</a>，购买<code>ERNIE-Bot大模型公有云在线调用服务</code>，<a href="https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application">应用接入</a> 创建应用，获取<code>API Key</code>和<code>Secret Key</code>，配置即可。</p>
+</li>
+<li>
+<p>web
+    服务端：<a href="//github.com/zhuweiyou/yiyan-api">yiyan-api</a>  </p>
 <p>下载yiyan-api源码，根据官方教程部署搭建运行即可。简述过程就是安装Node.js &gt;= 18，然后再源码项目文件夹内运行<code>npm install</code>，最后运行<code>npm start</code>即可。  </p>
 <p>cookie 获取方式：</p>
 <p>访问 <code>yiyan.baidu.com</code>，登录账号  </p>
@@ -3224,6 +3233,8 @@ if __name__ == "__main__":
 <p>找到<code>源代码</code>或者<code>Sources</code>页，右键<code>debugger</code>左侧行号, 选择 <code>never pause here</code> 或者叫做 <code>永不在此处暂停</code>, 然后再刷新页面  </p>
 <p>此时就可以跳过<code>debugger</code>和重定向，然后找到<code>网络</code>或者<code>Network</code>。  </p>
 <p>再随便发送一个提问，随便找个XHR请求中，查看请求头内的<code>cookie</code>对应的一长串的值，复制粘贴回GUI中保存即可。  </p>
+</li>
+</ul>
 <h4 id="_33">通义千问（不再适配！！！）</h4>
 <p>不再适配！！！</p>
 <p>官网：<a href="//qianwen.aliyun.com/">qianwen.aliyun.com</a>   </p>
@@ -3507,6 +3518,7 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <li>tts请求新增请求超时，默认60s</li>
 <li>接入langchain_chatchat</li>
 <li>chatgpt兼容0.x.x和1.x.x版本</li>
+<li>接入文心一言官方API（）</li>
 </ul>
 </li>
 <li>
