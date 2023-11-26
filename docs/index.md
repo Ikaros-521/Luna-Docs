@@ -93,7 +93,7 @@ git clone https://github.com/Ikaros-521/AI-Vtuber.git
 git clone -b owner https://github.com/Ikaros-521/AI-Vtuber.git
 ```
 
-!!! note
+!!! 整合包
 
     Windows整合包下载：
     - [github :octicons-link-16:](//github.com/Ikaros-521/AI-Vtuber/releases)
