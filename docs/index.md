@@ -1429,6 +1429,7 @@ ps：cookie有效期较短
 官网：[yiyan.baidu.com](//yiyan.baidu.com)  
 
 - api
+
     百度智能云千帆大模型平台：[https://cloud.baidu.com/product/wenxinworkshop](https://cloud.baidu.com/product/wenxinworkshop)  
 
     API文档：[https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11](https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11)  
@@ -1436,6 +1437,7 @@ ps：cookie有效期较短
     [在线服务](https://console.bce.baidu.com/qianfan/ais/console/onlineService)，购买`ERNIE-Bot大模型公有云在线调用服务`，[应用接入](https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application) 创建应用，获取`API Key`和`Secret Key`，配置即可。
 
 - web
+
     服务端：[yiyan-api](//github.com/zhuweiyou/yiyan-api)  
 
     下载yiyan-api源码，根据官方教程部署搭建运行即可。简述过程就是安装Node.js >= 18，然后再源码项目文件夹内运行`npm install`，最后运行`npm start`即可。  
@@ -1906,7 +1908,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - tts请求新增请求超时，默认60s
         - 接入langchain_chatchat
         - chatgpt兼容0.x.x和1.x.x版本
-        - 接入文心一言官方API（）
+        - 接入文心一言官方API
 
     - 2023-11-22
         - 修复webui 智谱AI部分配置无法保存的bug
