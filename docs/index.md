@@ -1907,6 +1907,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2023-12-1
         - 智谱AI 新增chatglm_turbo
         - 恢复tts.ai-lab.top的兼容，新使用方法参考文档说明
+        - 优化tts、webui代码
 
     - 2023-11-29
         - 文案页 支持增删文案组
