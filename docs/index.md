@@ -1489,7 +1489,7 @@ ps:cookie有效期估计在6小时左右。
 
 [在线体验官网](https://tts.ai-hobbyist.org/)
 
-注册账号，获取token配置即可使用，token获取地址：[https://tts.ai-hobbyist.org/#/apikey](https://tts.ai-hobbyist.org/#/apikey)  
+注册账号，登录，然后在在线合成页面，按下键盘`F12`打开开发者工具，在选择`Network`网络，随便合成一个音频，然后找到`vits`的一个请求，点进去，点击`负载`，找到`appid`和`token`，配置即可。  
 
 #### VITS（vits-simple-api）
 
@@ -1904,7 +1904,8 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志" 
     - 2023-12-1
         - 智谱AI 新增chatglm_turbo
-        
+        - 恢复tts.ai-lab.top的兼容，新使用方法参考文档说明
+
     - 2023-11-29
         - 文案页 支持增删文案组
         - talk 后移线程到麦克风监听后，规避麦克风监听异常的bug

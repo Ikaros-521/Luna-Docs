@@ -3254,7 +3254,7 @@ if __name__ == "__main__":
 <p>官方视频讲解：<a href="//www.bilibili.com/video/BV1Sg4y1K7kg">【在线合成&amp;效果优化】基于VITS的米哈游全角色语音合成现已发布</a></p>
 <h4 id="ttsai-labtop">tts.ai-lab.top</h4>
 <p><a href="https://tts.ai-hobbyist.org/">在线体验官网</a></p>
-<p>注册账号，获取token配置即可使用，token获取地址：<a href="https://tts.ai-hobbyist.org/#/apikey">https://tts.ai-hobbyist.org/#/apikey</a>  </p>
+<p>注册账号，登录，然后在在线合成页面，按下键盘<code>F12</code>打开开发者工具，在选择<code>Network</code>网络，随便合成一个音频，然后找到<code>vits</code>的一个请求，点进去，点击<code>负载</code>，找到<code>appid</code>和<code>token</code>，配置即可。  </p>
 <h4 id="vitsvits-simple-api">VITS（vits-simple-api）</h4>
 <p>emotional-vits官方仓库：<a href="//github.com/innnky/emotional-vits">emotional-vits</a>  </p>
 <p>接入API：<a href="//github.com/Artrajz/vits-simple-api">vits-simple-api</a>  </p>
@@ -3514,6 +3514,7 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <p>2023-12-1</p>
 <ul>
 <li>智谱AI 新增chatglm_turbo</li>
+<li>恢复tts.ai-lab.top的兼容，新使用方法参考文档说明</li>
 </ul>
 </li>
 <li>
