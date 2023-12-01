@@ -1503,6 +1503,8 @@ vits-simple-api整合包下载：[github.com/Artrajz/vits-simple-api/releases](/
 
 视频教程：[【AI主播-功能篇】新增 纯 VITS 接入，配合vits-simple-api，支持情感控制，语速调控](https://www.bilibili.com/video/BV1ku4y1R73r) , [【AI主播-功能篇】新增 bert-vits2 的接入，配合vits-simple-api食用，强有力的中文TTS让你到达新高度~](https://www.bilibili.com/video/BV1Ph4y1A79w)   
 
+如何白嫖huggingface上的`vits-simple-api`？ 只需要开启魔法，将`API地址`修改为项目提示的接口地址即可，例如：`https://artrajz-vits-simple-api.hf.space`  
+
 vits-simple-api配置，修改 `config.py` ，参考配置如下，路径为追加的相对模型路径和配置文件路径：
 
 ```python
