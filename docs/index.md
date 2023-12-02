@@ -1195,6 +1195,8 @@ openai 后台 [platform.openai.com :octicons-link-16:](//platform.openai.com/)
 
 官方 API 文档 [platform.openai.com/docs/api-reference :octicons-link-16:](//platform.openai.com/docs/api-reference)  
 
+常见报错：[点击前往issue仓库查找，直接搜索报错内容，一次不要复制太多报错，不然搜不到，复制关键的报错点就行，比如最后一行](https://github.com/Ikaros-521/AI-Vtuber/issues)  
+
 #### Claude
 
 实现参考 [claude-in-slack-api :octicons-link-16:](//github.com/yokonsan/claude-in-slack-api)  
