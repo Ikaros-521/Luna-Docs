@@ -1487,7 +1487,7 @@ ps:cookie有效期估计在6小时左右。
 
 #### tts.ai-lab.top
 
-[在线体验官网](https://tts.ai-hobbyist.org/)
+在线体验官网: [https://tts.ai-hobbyist.org/](https://tts.ai-hobbyist.org/)
 
 注册账号，登录，然后在在线合成页面，按下键盘`F12`打开开发者工具，在选择`Network`网络，随便合成一个音频，然后找到`vits`的一个请求，点进去，点击`负载`，找到`appid`和`token`，配置即可。  
 
@@ -1499,9 +1499,9 @@ emotional-vits官方仓库：[emotional-vits](//github.com/innnky/emotional-vits
 
 vits-simple-api整合包下载：[github.com/Artrajz/vits-simple-api/releases](//github.com/Artrajz/vits-simple-api/releases)  
 
-个人提供的已训练好的模型：[点我跳转](//github.com/Ikaros-521/emotional-vits/releases)  
+个人提供的已训练好的模型：[github](//github.com/Ikaros-521/emotional-vits/releases) ,   [迅雷云盘](https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1?path=%2F%E5%88%86%E4%BA%AB%2FTTS%2FVITS%2F%E6%A8%A1%E5%9E%8B)  
 
-视频教程：[【AI主播-功能篇】新增 纯 VITS 接入，配合vits-simple-api，支持情感控制，语速调控](https://www.bilibili.com/video/BV1ku4y1R73r) , [【AI主播-功能篇】新增 bert-vits2 的接入，配合vits-simple-api食用，强有力的中文TTS让你到达新高度~](https://www.bilibili.com/video/BV1Ph4y1A79w)   
+视频教程：[【AI主播-TTS篇】新增 纯 VITS 接入，配合vits-simple-api，支持情感控制，语速调控](https://www.bilibili.com/video/BV1ku4y1R73r) , [【AI主播-TTS篇】新增 bert-vits2 的接入，配合vits-simple-api食用，强有力的中文TTS让你到达新高度~](https://www.bilibili.com/video/BV1Ph4y1A79w)   
 
 如何白嫖huggingface上的`vits-simple-api`？ 只需要开启魔法，将`API地址`修改为项目提示的接口地址即可，例如：`https://artrajz-vits-simple-api.hf.space`  
 
