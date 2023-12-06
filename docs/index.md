@@ -1907,6 +1907,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2023-12-3
         - 优化线程启动实现，功能没启用不启动线程
         - 恢复聊天模式 翻译配置热加载，优化代码实现
+        - text_generation_webui支持上下文记忆
 
     - 2023-12-1
         - 智谱AI 新增chatglm_turbo
