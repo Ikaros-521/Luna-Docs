@@ -113,7 +113,7 @@ MacOS部署问题讨论：[https://github.com/Ikaros-521/AI-Vtuber/issues/423](h
 
 #### Python 版本 `3.10.11`
 
-各个版本的依赖的库在 `requirements_xx.txt` 中，请自行安装。 
+依赖的库在 `requirements.txt` 中，请自行安装。 
  
 !!! danger "注意"
     
@@ -121,16 +121,10 @@ MacOS部署问题讨论：[https://github.com/Ikaros-521/AI-Vtuber/issues/423](h
 
 依赖版本参考 `requirements_common.txt`
 
-安装命令参考（注意文件命名，对应各个版本）：  
+安装命令参考：  
 
 ```shell
-pip install -r requirements_bilibili.txt
-pip install -r requirements_dy.txt
-pip install -r requirements_ks.txt
-pip install -r requirements_talk.txt
-pip install -r requirements_douyu.txt
-pip install -r requirements_youtube.txt
-pip install -r requirements_twitch.txt
+pip install -r requirements.txt
 ```
 
 !!! note
@@ -619,7 +613,7 @@ chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进�
 在命令行中使用以下命令安装所需库：
 
 ```shell
-pip install -r requirements_bilibili.txt
+pip install -r requirements.txt
 ```
 
 注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
@@ -637,7 +631,7 @@ pip install -r requirements_bilibili.txt
 在命令行中使用以下命令安装所需库：
 
 ```shell
-pip install -r requirements_dy.txt
+pip install -r requirements.txt
 ```
 
 先安装第三方弹幕捕获软件，参考 [补充-抖音](#dy)
@@ -655,7 +649,7 @@ pip install -r requirements_dy.txt
 在命令行中使用以下命令安装所需库：
 
 ```shell
-pip install -r requirements_dy.txt
+pip install -r requirements.txt
 ```
 
 运行前请重新生成一下protobuf文件，因为机器系统不一样同时protobuf版本也不一样所以不能拿来直接用～  
@@ -677,7 +671,7 @@ protoc -I . --python_out=. dy.proto
 在命令行中使用以下命令安装所需库：
 
 ```shell
-pip install -r requirements_ks.txt
+pip install -r requirements.txt
 ```
 
 #### 新版本：
@@ -709,7 +703,7 @@ protoc -I . --python_out=. ks.proto
 在命令行中使用以下命令安装所需库：
 
 ```shell
-pip install -r requirements_douyu.txt
+pip install -r requirements.txt
 ```
 
 !!! note
@@ -822,7 +816,7 @@ pip install -r requirements_douyu.txt
 在命令行中使用以下命令安装所需库：
 
 ```shell
-pip install -r requirements_youtube.txt
+pip install -r requirements.txt
 ```
 
 
@@ -837,7 +831,7 @@ pip install -r requirements_youtube.txt
 在命令行中使用以下命令安装所需库：
 
 ```shell
-pip install -r requirements_twitch.txt
+pip install -r requirements.txt
 ```
 
 
@@ -852,7 +846,7 @@ pip install -r requirements_twitch.txt
 在命令行中使用以下命令安装所需库：
 
 ```shell
-pip install -r requirements_talk.txt
+pip install -r requirements.txt
 ```
 
 !!! note
@@ -1917,6 +1911,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志" 
     - 2023-12-9
         - 补充遗漏依赖
+        - 依赖文件统一为一个
 
     - 2023-12-8
         - 删减违禁词
