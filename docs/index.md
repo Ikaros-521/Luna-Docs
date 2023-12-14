@@ -1458,7 +1458,7 @@ ps：cookie有效期较短
 
 当然，还没完，现在官方还在内测，所以你创建了密钥还不能用，需要联系官方开通调用权限。联系方式见 [使用文档-服务支持](https://xingchen.aliyun.com/xingchen/document/service_support)  
 
-#### 千帆大模型
+#### 千帆大模型（有版本冲突，暂不启用）
 
 接入库：[bce-qianfan-sdk](https://github.com/baidubce/bce-qianfan-sdk)  
 
@@ -1917,7 +1917,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 
 ??? note "更新日志" 
     - 2023-12-13
-        - 接入 千帆大模型
+        - 接入 千帆大模型（有版本冲突，暂不启用）
 
     - 2023-12-12
         - 通用配置-音频播放 新增 文本切分启用开关，关闭可以语句一次性合成（TTS吃得消的情况下）
