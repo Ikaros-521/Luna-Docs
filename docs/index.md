@@ -1458,7 +1458,19 @@ ps：cookie有效期较短
 
 当然，还没完，现在官方还在内测，所以你创建了密钥还不能用，需要联系官方开通调用权限。联系方式见 [使用文档-服务支持](https://xingchen.aliyun.com/xingchen/document/service_support)  
 
-#### 千帆大模型（有版本冲突，暂不启用）
+#### 千帆大模型
+
+##### 第三方库
+
+接入库，我对原库做了修改：[WenxinWorkshop-Python-SDK](https://github.com/Ikaros-521/WenxinWorkshop-Python-SDK)  
+
+百度智能云千帆大模型平台：[https://cloud.baidu.com/product/wenxinworkshop](https://cloud.baidu.com/product/wenxinworkshop)  
+
+官方API文档：[https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11](https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11)  
+
+[在线服务](https://console.bce.baidu.com/qianfan/ais/console/onlineService)，购买`ERNIE-Bot大模型公有云在线调用服务`等服务，[应用接入](https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application) 创建应用，获取`API Key`和`Secret Key`，配置即可。  
+
+##### 官方库（有版本冲突，暂不启用）
 
 接入库：[bce-qianfan-sdk](https://github.com/baidubce/bce-qianfan-sdk)  
 
@@ -1916,6 +1928,10 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志" 
+    - 2023-12-15
+        - 新增 千帆大模型的接入；
+        - 对llm相关源码加载和逻辑处理做了大优化，可能有bug，待测试
+    
     - 2023-12-13
         - 接入 千帆大模型（有版本冲突，暂不启用）
         - elevenlabs升级到0.2.8，可以继续正常使用。一定要注意pydantic的版本，不能高于2.0
