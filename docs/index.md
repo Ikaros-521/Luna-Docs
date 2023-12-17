@@ -31,7 +31,7 @@ hide:
 
 !!! quote "介绍"
 
-    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言 和 通义星尘`。这些模型既可以在本地运行，也可以通过云端服务提供支持。
+    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘 和 千帆大模型`。这些模型既可以在本地运行，也可以通过云端服务提供支持。
 
     `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren 和 UE5 结合 Audio2Face` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、斗鱼、YouTube 和 Twitch`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
@@ -1931,6 +1931,8 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2023-12-17
         - 新增 极地极光、曲奇饼干 UI配色
         - 修复api 聊天模式相关bug
+        - 新增按键UI设置
+        - 补充“关于”说明
     
     - 2023-12-16
         - 新增API程序，第三方可以通过api控制程序运行、配置修改、直播数据发送等，后续系统全部功能皆可通过api进行操作
