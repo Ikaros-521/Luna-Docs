@@ -31,7 +31,7 @@ hide:
 
 !!! quote "介绍"
 
-    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘 和 千帆大模型`。这些模型既可以在本地运行，也可以通过云端服务提供支持。
+    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、千帆大模型 和 Gemini`。这些模型既可以在本地运行，也可以通过云端服务提供支持。
 
     `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren 和 UE5 结合 Audio2Face` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、斗鱼、YouTube 和 Twitch`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
@@ -1477,6 +1477,12 @@ ps：cookie有效期较短
 使用文档：[bce-qianfan-sdk#readme](https://github.com/baidubce/bce-qianfan-sdk#readme)  
 
 在使用千帆 SDK 之前，用户需要 [百度智能云控制台 - 安全认证](https://console.bce.baidu.com/iam/#/iam/accesslist) 页面获取 Access Key 与 Secret Key，并在 [千帆控制台](https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application) 中创建应用，选择需要启用的服务，具体流程参见平台 [说明文档](https://cloud.baidu.com/doc/Reference/s/9jwvz2egb)。在获得了 Access Key 与 Secret Key 后，配置好即可开始使用。  
+
+#### Gemini
+
+官方平台：[makersuite.google.com/app](https://makersuite.google.com/app)  
+
+前往 [makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey) 创建一个API KEY，配置到项目中即可使用啦~（记得开魔法配置代理！）  
 
 #### 通义千问（不再适配！！！）
 
