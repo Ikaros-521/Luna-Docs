@@ -33,7 +33,7 @@ hide:
 
     `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、千帆大模型 和 Gemini`。这些模型既可以在本地运行，也可以通过云端服务提供支持。
 
-    `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren 和 UE5 结合 Audio2Face` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、斗鱼、YouTube 和 Twitch`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
+    `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren 和 UE5 结合 Audio2Face` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、斗鱼、YouTube 和 Twitch`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
     为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术，结合文本转语音系统，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top 和 tts.ai-lab.top`。这不仅让它能够生成流畅的回答，还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
 
@@ -620,7 +620,7 @@ pip install -r requirements.txt
 
 !!! note
 
-    运行 GUI `python main.py`
+    运行 webui `python webui.py`
 
     单独运行 方案1 `python bilibili.py`
 
@@ -638,7 +638,7 @@ pip install -r requirements.txt
 
 !!! note
 
-    运行 GUI `python main.py`  
+    运行 webui `python webui.py`  
 
     单独运行 `python dy.py`  
 
@@ -696,7 +696,23 @@ protoc -I . --python_out=. ks.proto
 
 !!! note
 
-    运行 `python main.py`
+    运行 webui `python webui.py`
+
+### 微信视频号版
+
+在命令行中使用以下命令安装所需库：
+
+```shell
+pip install -r requirements.txt
+```  
+
+!!! note
+
+    安装监听程序（不保证安全性，自行斟酌） [wxlivespy](https://github.com/fire4nt/wxlivespy/releases)，设置监听地址为`http://127.0.0.1:8082/wxlive`，开播！开始监听，扫描登录直播的微信号。webui修改平台为`微信视频号`，运行即可。  
+
+!!! note
+
+    运行 webui `python webui.py`
 
 ### 斗鱼版
 
@@ -708,7 +724,7 @@ pip install -r requirements.txt
 
 !!! note
 
-    运行 `python main.py`  
+    运行 webui `python webui.py`  
 
 打开您的浏览器，找到您需要监听的直播间，然后按F12打开开发者工具，点击Console（控制台），复制 `douyu_ws_client.js` 脚本中的内容，粘贴到控制台，回车运行，启动监听服务
 
@@ -822,7 +838,7 @@ pip install -r requirements.txt
 
 !!! note
 
-    运行 GUI `python main.py`
+    运行 webui `python webui.py`
 
     单独运行 `python youtube.py`
 
@@ -837,7 +853,7 @@ pip install -r requirements.txt
 
 !!! note
 
-    运行 GUI `python main.py`
+    运行 webui `python webui.py`
 
     单独运行 `python twitch.py`
 
@@ -851,7 +867,7 @@ pip install -r requirements.txt
 
 !!! note
 
-    运行GUI `python main.py`
+    运行 webui `python webui.py`
 
     单独运行 `python talk.py`
 
@@ -1133,6 +1149,14 @@ pip install -r requirements.txt
 如果你是整合包，项目路径打开cmd，然后使用 `Miniconda3\python.exe Miniconda3\Scripts\playwright.exe install firefox` 进行安装。
 
 `ks_old.py` 旧版本 [kuaishou-live :octicons-link-16:](//github.com/YunzhiYike/kuaishou-live)  
+
+#### 微信视频号监听
+
+监听程序（不保证安全性，自行斟酌）：[wxlivespy](https://github.com/fire4nt/wxlivespy/releases)  
+
+设置监听地址为`http://127.0.0.1:8082/wxlive`，开播！开始监听，扫描登录直播的微信号。webui修改平台为`微信视频号`，运行即可。  
+
+如果希望看到运行日志，可以自己下载项目部署运行。  
 
 #### 斗鱼直播监听
 
@@ -1936,6 +1960,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志" 
     - 2023-12-21
         - TTS新增gradio模式，用于直接配置传参等信息，来适应绝大多数的有gradio接口的tts项目
+        - 接入 微信视频号（暂时只有弹幕和入场数据）
 
     - 2023-12-18
         - 新增 谷歌 Gemini 的接入
