@@ -4056,6 +4056,29 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <summary>更新日志</summary>
 <ul>
 <li>
+<p>2023-12-25</p>
+<ul>
+<li>给log增加颜色，看日志舒服了</li>
+<li>新增 助播模式（需要注意的是此功能的本地问答-文本 情况下语音区分暂未实现） </li>
+<li>优化音频播放逻辑，之前哪些直接插队的本地音频将会老实排队，等前面文本先合成 </li>
+</ul>
+</li>
+<li>
+<p>2023-12-24</p>
+<ul>
+<li>新增bert-vits2 v2.3 hiyori UI的API对接</li>
+<li>优化tts部分代码实现（有点小改动，可能有bug，待测） </li>
+</ul>
+</li>
+<li>
+<p>2023-12-23</p>
+<ul>
+<li>更新多个gpt3.5的模型 </li>
+<li>过滤新增 弹幕过滤前后缀，用于直播间直接聊天而不触发LLM；</li>
+<li>删减违禁词 </li>
+</ul>
+</li>
+<li>
 <p>2023-12-21</p>
 <ul>
 <li>TTS新增gradio模式，用于直接配置传参等信息，来适应绝大多数的有gradio接口的tts项目</li>
