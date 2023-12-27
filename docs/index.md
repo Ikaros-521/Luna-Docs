@@ -610,12 +610,6 @@ chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进�
 
 ### 哔哩哔哩版
 
-在命令行中使用以下命令安装所需库：
-
-```shell
-pip install -r requirements.txt
-```
-
 注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
 
 !!! note
@@ -627,12 +621,6 @@ pip install -r requirements.txt
     单独运行 方案2 `python bilibili2.py`
 
 ### 抖音版
-
-在命令行中使用以下命令安装所需库：
-
-```shell
-pip install -r requirements.txt
-```
 
 先安装第三方弹幕捕获软件，参考 [补充-抖音](#dy)
 
@@ -646,11 +634,6 @@ pip install -r requirements.txt
 
 !!! danger "不稳定"
 
-在命令行中使用以下命令安装所需库：
-
-```shell
-pip install -r requirements.txt
-```
 
 运行前请重新生成一下protobuf文件，因为机器系统不一样同时protobuf版本也不一样所以不能拿来直接用～  
 
@@ -667,12 +650,6 @@ protoc -I . --python_out=. dy.proto
     运行 `python main.py`
 
 ### 快手版
-
-在命令行中使用以下命令安装所需库：
-
-```shell
-pip install -r requirements.txt
-```
 
 #### 新版本：
 
@@ -700,11 +677,6 @@ protoc -I . --python_out=. ks.proto
 
 ### 微信视频号版
 
-在命令行中使用以下命令安装所需库：
-
-```shell
-pip install -r requirements.txt
-```  
 
 !!! note
 
@@ -716,11 +688,6 @@ pip install -r requirements.txt
 
 ### 斗鱼版
 
-在命令行中使用以下命令安装所需库：
-
-```shell
-pip install -r requirements.txt
-```
 
 !!! note
 
@@ -829,12 +796,6 @@ pip install -r requirements.txt
 
 ### YouTube版
 
-在命令行中使用以下命令安装所需库：
-
-```shell
-pip install -r requirements.txt
-```
-
 
 !!! note
 
@@ -843,12 +804,6 @@ pip install -r requirements.txt
     单独运行 `python youtube.py`
 
 ### twitch版
-
-在命令行中使用以下命令安装所需库：
-
-```shell
-pip install -r requirements.txt
-```
 
 
 !!! note
@@ -859,11 +814,6 @@ pip install -r requirements.txt
 
 ### 聊天模式
 
-在命令行中使用以下命令安装所需库：
-
-```shell
-pip install -r requirements.txt
-```
 
 !!! note
 
