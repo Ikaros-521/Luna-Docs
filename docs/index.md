@@ -1981,6 +1981,11 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志" 
     - 2023-12-28
         - 优化chatgpt的测试程序
+        - webui实现异常报警功能
+        - 修复闲时任务随机列表无法关闭的bug
+        - text-gen新增类型配置，默认为coyude
+        - 修改LLM函数统一为get_resp
+        - 删减违禁词
 
     - 2023-12-27
         - 优化chatgpt返回内容
