@@ -1580,7 +1580,7 @@ vits-simple-api整合包下载：[github.com/Artrajz/vits-simple-api/releases](/
 
 如何白嫖huggingface上的`vits-simple-api`？ 只需要开启魔法，将`API地址`修改为项目提示的接口地址即可，例如：`https://artrajz-vits-simple-api.hf.space`  
 
-vits-simple-api配置，修改 `config.py` ，参考配置如下，路径为追加的相对模型路径和配置文件路径：
+vits-simple-api配置，修改 `config.py` ，参考配置如下，路径为追加的相对模型路径和配置文件路径（注意，新版本的变动，配置改到config.yml了，所以你需要直接改yml或者删除yml，修改py，然后重启）：
 
 ```python
 # Fill in the model path here
