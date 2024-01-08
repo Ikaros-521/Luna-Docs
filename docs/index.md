@@ -1200,7 +1200,9 @@ API接口地址根据`api.py`程序配置决定，默认：`http://127.0.0.1:808
 ！！！注意：如果你的token和你监听的直播间是同一个账号，那会自动过滤你自己发送的弹幕！！！  
 
 
-#### 聊天模式 百度
+#### 聊天模式 
+
+##### 百度
 
 新用户+实名认证后有半年的免费额度可以使用。  
 
@@ -1217,6 +1219,12 @@ API接口地址根据`api.py`程序配置决定，默认：`http://127.0.0.1:808
     ![image](./static/images/luna-ai/253623143-7731d5a0-72f5-4a07-bf98-4f6e34f8ef32.png)
 
     ![image](./static/images/luna-ai/253623159-6c2fca12-5c6b-478e-a1d3-d3dead79f192.png)
+
+##### faster_whisper
+
+安装[pytorch :octicons-link-16:](https://pytorch.org/)，自行适配版本，参考安装命令：`pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121`  
+
+录音完后，识别会自动下载模型，模型默认存放在`models`文件夹，可以自行手动下载补充。  
 
 ### LLM
 
