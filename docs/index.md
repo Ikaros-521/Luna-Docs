@@ -1681,6 +1681,8 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 整合包下载：[https://pan.quark.cn/s/936dcae8aba0](https://pan.quark.cn/s/936dcae8aba0)  
 
+天降之物模型分享：[https://github.com/Ikaros-521/GPT-SoVITS/releases](https://github.com/Ikaros-521/GPT-SoVITS/releases)  
+
 运行webui后，启动TTS推理，然后适配配置项即可，注意参考音频路径还有ws的端口即可，别的配置问题不大。  
 
 ### 变声
