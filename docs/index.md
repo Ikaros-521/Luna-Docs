@@ -1664,6 +1664,25 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 整合包下载：[pan.quark.cn/s/b817e285ab41](//pan.quark.cn/s/b817e285ab41)  
 
+#### OpenVoice
+
+官方仓库：[OpenVoice](https://github.com/myshell-ai/OpenVoice)  
+
+视频教程：[OpenVoice 整合包 | 一句话快速克隆？英文可调语气？效果实测【TTS】](https://www.bilibili.com/video/BV1kK4y167WJ)
+
+整合包下载：[迅雷云盘](https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1?path=%2F%E5%88%86%E4%BA%AB%2FTTS%2FOpenVoice), 
+[夸克网盘](https://pan.quark.cn/s/936dcae8aba0#/list/share/56a79e143a8b4877a98a61854e07b229-AI%20Vtuber/5c251d9c745643868c0b17b7b6a0ecb6-TTS/9d6e066f2ed14ae4aef3e74cda6cd078-OpenVoice)
+
+启动webui后就可以对接了，适配gradio监听端口即可。  
+
+#### GPT-SoVITS
+
+官方仓库：[GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)  
+
+整合包下载：[https://pan.quark.cn/s/936dcae8aba0](https://pan.quark.cn/s/936dcae8aba0)  
+
+运行webui后，启动TTS推理，然后适配配置项即可，注意参考音频路径还有ws的端口即可，别的配置问题不大。  
+
 ### 变声
 
 #### DDSP-SVC
