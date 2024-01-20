@@ -1132,6 +1132,13 @@ API接口地址根据`api.py`程序配置决定，默认：`http://127.0.0.1:808
 | msg    | string  | 响应消息，描述请求的处理结果 |
 
 
+## :material-more: 应用实例
+
+### PK、连麦玩法如何配置？
+
+参考配置：[https://github.com/Ikaros-521/AI-Vtuber/issues/579](https://github.com/Ikaros-521/AI-Vtuber/issues/579)  
+
+
 ## :material-more: 补充
 
 #### 补充板块提供了对项目接入的第三方技术或应用的详细说明。如果您需要与第三方应用进行对接，您可以查阅此板块的内容，并访问第三方官方网站以了解其使用方法。  
