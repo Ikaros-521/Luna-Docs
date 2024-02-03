@@ -2015,6 +2015,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志" 
+    - 2024-2-3
+        - gpt-sovits对接CyberWon的WebTTS版的API
+        
     - 2024-2-2
         - 智谱新增glm3-turbo和glm4的接入
         - gpt-sovits新增官方api对接，更加方便高效
