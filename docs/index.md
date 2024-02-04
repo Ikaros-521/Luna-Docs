@@ -2018,6 +2018,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2024-2-4
         - 新增 数据分析 页面，统计分析最热弹幕词云、积分榜单、礼物榜单
         - webui右下角新增返回顶部按钮
+        - webui优化文档和关于
 
     - 2024-2-3
         - gpt-sovits对接CyberWon的WebTTS版的API
