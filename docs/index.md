@@ -35,7 +35,7 @@ hide:
 
     `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren 和 UE5 结合 Audio2Face` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
-    为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术，结合文本转语音系统，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top、tts.ai-lab.top、OpenVoice 和 GPT_SoVITS`。这不仅让它能够生成流畅的回答，还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
+    为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术，结合文本转语音系统，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top、tts.ai-lab.top、OpenVoice、GPT_SoVITS 和 clone-voice`。这不仅让它能够生成流畅的回答，还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
 
     此外，`Luna AI` 还能够通过特定指令与 `Stable Diffusion` 协作，展示画作。用户还可以自定义文案，让 Luna AI 循环播放，以满足不同场合的需求。
 
@@ -1206,6 +1206,9 @@ API接口地址根据`api.py`程序配置决定，默认：`http://127.0.0.1:808
 
 ！！！注意：如果你的token和你监听的直播间是同一个账号，那会自动过滤你自己发送的弹幕！！！  
 
+#### TikTok
+
+视频教程：[BV1GU421o7Wq](https://www.bilibili.com/video/BV1GU421o7Wq)  
 
 #### 聊天模式 
 
@@ -2015,6 +2018,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志" 
+    - 2024-2-9
+        - 接入clone-voice
+
     - 2024-2-7
         - 平台新增 TikTok 的接入，目前支持数据类型：弹幕、礼物、入场。
 
