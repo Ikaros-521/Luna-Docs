@@ -2021,6 +2021,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2024-2-11
         - 文档新增一个vercel的备份
         - 助播模式新增语音合成配置，可以自定义文本匹配后用的语音合成类型，从而区分助播和主播的声音
+        - 文案页-文案音频合成新增语音合成类型选择，可以自定义TTS进行合成，不需要保存就可以切换
 
     - 2024-2-9
         - 接入clone-voice
@@ -2859,8 +2860,6 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ![image](./static/images/luna-ai/invest.png)
 
 ### 合作伙伴
-
-智来星球：[m.zlxqai.com](//m.zlxqai.com) `提供GPT、AI绘图服务`  
 
 青椒云：[qingjiaocloud.com](//account.qingjiaocloud.com/signin?inviteCode=4Q92ROBQ) `AIGC 高性能云桌面`  
 
