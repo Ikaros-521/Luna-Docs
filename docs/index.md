@@ -31,7 +31,7 @@ hide:
 
 !!! quote "介绍"
 
-    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、千帆大模型 和 Gemini`。这些模型既可以在本地运行，也可以通过云端服务提供支持。
+    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、千帆大模型、Gemini 和 Kimi Chat`。这些模型既可以在本地运行，也可以通过云端服务提供支持。
 
     `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren 和 UE5 结合 Audio2Face` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
@@ -1556,11 +1556,11 @@ Kimi官网：[https://kimi.moonshot.cn/](https://kimi.moonshot.cn/)
 API申请：[https://platform.moonshot.cn/console/api-keys](https://platform.moonshot.cn/console/api-keys)  
 
 使用：  
-    - 大语言模型选择：ChatGPT
-    - 配置
-        - API地址：https://api.moonshot.cn/v1
-        - API密钥：上面申请的密钥
-        - 模型：moonshot-v1-8k
+1. 大语言模型选择：ChatGPT
+2. 配置
+    API地址：https://api.moonshot.cn/v1  
+    API密钥：上面申请的密钥  
+    模型：moonshot-v1-8k  
 
 #### 通义千问（不再适配！！！）
 
