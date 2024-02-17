@@ -1549,6 +1549,19 @@ ps：cookie有效期较短
 
 前往 [makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey) 创建一个API KEY，配置到项目中即可使用啦~（记得开魔法配置代理！）  
 
+#### Kimi Chat
+
+Kimi官网：[https://kimi.moonshot.cn/](https://kimi.moonshot.cn/)  
+
+API申请：[https://platform.moonshot.cn/console/api-keys](https://platform.moonshot.cn/console/api-keys)  
+
+使用：  
+    - 大语言模型选择：ChatGPT
+    - 配置
+        - API地址：https://api.moonshot.cn/v1
+        - API密钥：上面申请的密钥
+        - 模型：moonshot-v1-8k
+
 #### 通义千问（不再适配！！！）
 
 不再适配！！！
@@ -2030,6 +2043,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-2-17
+        - 对接Kimi Chat（复用ChatGPT类型，具体使用参考上方文档）
+
     - 2024-2-14
         - 按键映射功能改为按键/文案映射，其中新增了按键触发、文案触发控制，可以实现关键词或礼物触发对应文案（比如：用户打赏了一个 辣条，那么在 文案触发类型 包含了 礼物 的情况下，会在对应文案中随机一个文案合成音频进行播放，此外这个文案也支持动态变量）
 
