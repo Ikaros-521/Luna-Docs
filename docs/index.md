@@ -1691,11 +1691,21 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 官方仓库：[GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS)  
 
-整合包下载：[https://pan.quark.cn/s/936dcae8aba0](https://pan.quark.cn/s/936dcae8aba0)  
+整合包下载：[https://pan.quark.cn/s/936dcae8aba0](https://pan.quark.cn/s/936dcae8aba0)，[https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1](https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1)     
+
+视频教程：[BV1CJ4m1b7pR](https://www.bilibili.com/video/BV1CJ4m1b7pR)  
 
 天降之物模型分享：[https://github.com/Ikaros-521/GPT-SoVITS/releases](https://github.com/Ikaros-521/GPT-SoVITS/releases)  
 
 运行webui后，启动TTS推理，然后适配配置项即可，注意参考音频路径还有ws的端口即可，别的配置问题不大。  
+
+#### clone-voice
+
+官方仓库：[clone-voice](https://github.com/jianchang512/clone-voice)  
+
+整合包下载：[https://pan.quark.cn/s/936dcae8aba0](https://pan.quark.cn/s/936dcae8aba0) ，[https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1](https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1)   
+
+视频教程：[BV17z421d7T9](https://www.bilibili.com/video/BV17z421d7T9/)  
 
 ### 变声
 
