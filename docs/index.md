@@ -133,7 +133,7 @@ pip install -r requirements.txt
 
 ## :material-file-edit: 配置
 
-#### GUI 程序运行后会自动加载配置文件，可以通过 GUI 程序进行配置修改，也可以手动修改配置运行。
+#### WebUI 程序运行后会自动加载配置文件，可以通过 WebUI 程序进行配置修改（清空配置项可以看到配置项的说明），也可以手动修改配置运行。
 
 配置都在 `config.json`（此处只列举了大部分，因为实在是太多了，懒了）
 
@@ -823,7 +823,7 @@ protoc -I . --python_out=. ks.proto
 
 ## :material-image: 效果图
 
-!!! note "GUI 界面"
+!!! note "WebUI 界面"
 
     ![动画](./static/images/luna-ai/261792128-6ba4ba49-aa1b-43b0-989f-58a851dfd054.gif)
 
