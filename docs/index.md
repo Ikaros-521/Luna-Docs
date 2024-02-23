@@ -1566,6 +1566,14 @@ API申请：[https://platform.moonshot.cn/console/api-keys](https://platform.moo
 
 官方仓库：[https://github.com/netease-youdao/QAnything](https://github.com/netease-youdao/QAnything)  
 
+##### 在线
+
+在线官网：[https://ai.youdao.com/saas/qanything/#/home](https://ai.youdao.com/saas/qanything/#/home)  
+
+登录官方平台，完成实名认证获得免费额度，创建应用，获取应用ID和密钥：[https://ai.youdao.com/console/#/app-overview](https://ai.youdao.com/console/#/app-overview)  
+
+##### 本地
+
 部署：Windows部署配合CUDA驱动、WSL2、docker，完成。主要坑点在docker加载cuda相关库上。根据官方仓库的run.sh脚本运行即可，具体报错参考issue。  
   
 参考教程：  
