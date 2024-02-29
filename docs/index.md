@@ -1855,7 +1855,7 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 
 #### EasyAIVtuber
 
-EasyAIVtuber官方仓库： 
+EasyAIVtuber官方仓库：[https://github.com/Ksuriuri/EasyAIVtuber](https://github.com/Ksuriuri/EasyAIVtuber)  
 
 参考官方文档完成部署后启动，虚拟身体选择“EasyAIVtuber”，保存运行即可对接使用。  
 
