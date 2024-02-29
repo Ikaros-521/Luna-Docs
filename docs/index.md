@@ -2069,6 +2069,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志"
     - 2024-2-29
         - 对接EasyAIVtuber
+        - main程序在聊天模式下 主线程运行完没有等待子线程运行导致的edge-tts运行问题修复
 
     - 2024-2-28
         - 删除PyQT相关源码
