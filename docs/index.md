@@ -33,7 +33,7 @@ hide:
 
     `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、千帆大模型、Gemini、Kimi Chat、QAnything、koboldcpp`。这些模型既可以在本地运行，也可以通过云端服务提供支持。
 
-    `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren 和 UE5 结合 Audio2Face` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
+    `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
     为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术，结合文本转语音系统，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top、tts.ai-lab.top、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS`。这不仅让它能够生成流畅的回答，还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
 
@@ -1853,6 +1853,12 @@ xuniren官方仓库：[https://github.com/waityousea/xuniren](//github.com/waity
 
 视频教程：[BV1uB4y1d7o6](//www.bilibili.com/video/BV1uB4y1d7o6/)  
 
+#### EasyAIVtuber
+
+EasyAIVtuber官方仓库：[https://github.com/Ksuriuri/EasyAIVtuber](https://github.com/Ksuriuri/EasyAIVtuber)  
+
+参考官方文档完成部署后启动，虚拟身体选择“EasyAIVtuber”，保存运行即可对接使用。  
+
 ### 翻译
 
 #### 百度翻译
@@ -2061,6 +2067,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-2-29
+        - 对接EasyAIVtuber
+
     - 2024-2-28
         - 删除PyQT相关源码
         - 智谱AI新增 应用 功能的对接
