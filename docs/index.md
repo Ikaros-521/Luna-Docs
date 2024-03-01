@@ -31,7 +31,7 @@ hide:
 
 !!! quote "介绍"
 
-    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、千帆大模型、Gemini、Kimi Chat、QAnything、koboldcpp`。这些模型既可以在本地运行，也可以通过云端服务提供支持。
+    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、通义千问、千帆大模型、Gemini、Kimi Chat、QAnything、koboldcpp`。这些模型既可以在本地运行，也可以通过云端服务提供支持。
 
     `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
@@ -1580,11 +1580,19 @@ API申请：[https://platform.moonshot.cn/console/api-keys](https://platform.moo
 [【2023最新版】Win11: WSL（Ubuntu22.04）使用docker远程容器教程（Windows的Docker Desktop下载安装、迁移到非系统盘、配置国内镜像源、设置 WSL2）](https://blog.csdn.net/m0_63834988/article/details/131816239)  
 [Windows安装网易开源QAnything打造智能客服系统](https://www.bilibili.com/read/cv31412472/)  
 
-#### 通义千问（不再适配！！！）
-
-不再适配！！！
+#### 通义千问
 
 官网：[qianwen.aliyun.com](//qianwen.aliyun.com/)   
+
+##### API类型
+
+API文档：[https://help.aliyun.com/zh/dashscope/developer-reference/quick-start](https://help.aliyun.com/zh/dashscope/developer-reference/quick-start)  
+申请API KEY 文档（文档教程详细，我就不再赘述了）：[https://help.aliyun.com/zh/dashscope/developer-reference/activate-dashscope-and-create-an-api-key](https://help.aliyun.com/zh/dashscope/developer-reference/activate-dashscope-and-create-an-api-key)  
+
+
+##### web类型
+
+依赖库：[revTongYi](https://github.com/leeeduke/revTongYi)  
 
 cookie 获取方式：  
 1. 安装 [Chrome](//chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm)、[Edge](//microsoftedge.microsoft.com/addons/detail/cookie-editor-plus/nbmajjcfigmlcnikhnfhhicidleefhpp) 或 [Firefox](//addons.mozilla.org/en-US/firefox/addon/cookie-editor/) 上的`Cookies Editor`插件
@@ -2067,6 +2075,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-3-1
+        - 新增 通义千问官方API的调用；恢复 web类型下 通义千问 白嫖调用
+
     - 2024-2-29
         - 对接EasyAIVtuber
         - main程序在聊天模式下 主线程运行完没有等待子线程运行导致的edge-tts运行问题修复
