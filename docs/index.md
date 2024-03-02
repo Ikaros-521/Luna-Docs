@@ -1155,8 +1155,8 @@ API接口地址根据`api.py`程序配置决定，默认：`http://127.0.0.1:808
 
 注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
 
-    - cookie模式下，不配置cookie，获取不到完整用户名。自行选择配置。
-    - 开放平台模式下，请前往 开放平台: https://open-live.bilibili.com/ 注册成为开发者，“直播创作者服务中心” 创建项目，获取 项目ID 、 access_key_id 、 access_key_secred 
+- cookie模式下，不配置cookie，获取不到完整用户名。自行选择配置。
+- 开放平台模式下，请前往 开放平台: https://open-live.bilibili.com/ 注册成为开发者，“直播创作者服务中心” 创建项目，获取 项目ID 、 access_key_id 、 access_key_secred 
 
 #### <span id="dy">抖音弹幕获取</span>
 
@@ -2075,6 +2075,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-3-3
+        优化数据分析 页面运转 数据库不存在的异常提示
+    
     - 2024-3-2
         - 通义千问 补充大模型常用配置项 和 联网搜索功能
         
