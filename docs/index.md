@@ -103,13 +103,14 @@ git clone -b owner https://github.com/Ikaros-521/AI-Vtuber.git
 
 #### 操作系统
 
-- Windows 7 及以上
+- Windows 10 及以上
 - MacOS
 - Linux
 
-Windows部署建议直接使用整合包  
+Windows部署建议直接使用整合包！  
 
 MacOS部署问题讨论：[https://github.com/Ikaros-521/AI-Vtuber/issues/423](https://github.com/Ikaros-521/AI-Vtuber/issues/423)  
+Linux部署问题讨论：[https://github.com/Ikaros-521/AI-Vtuber/issues/520](https://github.com/Ikaros-521/AI-Vtuber/issues/520)  
 
 #### Python 版本 `3.10.11`
 
@@ -126,6 +127,8 @@ MacOS部署问题讨论：[https://github.com/Ikaros-521/AI-Vtuber/issues/423](h
 ```shell
 pip install -r requirements.txt
 ```
+
+自行安装依赖100%出现依赖冲突问题，参考仓库issue：[https://github.com/Ikaros-521/AI-Vtuber/issues/655](https://github.com/Ikaros-521/AI-Vtuber/issues/655)  
 
 !!! note
 
