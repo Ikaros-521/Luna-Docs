@@ -1759,6 +1759,13 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 视频教程：[BV17z421d7T9](https://www.bilibili.com/video/BV17z421d7T9/)  
 
+#### Azure TTS
+
+官网：[https://azure.microsoft.com/zh-cn/products/ai-services/text-to-speech/](https://azure.microsoft.com/zh-cn/products/ai-services/text-to-speech/)  
+
+注册账号，领取一年免费试用额度，创建 语音转文本服务，获取 区域 和 密钥，配置后进行使用。  
+
+
 ### 变声
 
 #### DDSP-SVC
