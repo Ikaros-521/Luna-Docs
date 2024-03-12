@@ -35,7 +35,7 @@ hide:
 
     `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber、数字人视频播放器（Easy-Wav2Lip）` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
-    为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术，结合文本转语音系统，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top、tts.ai-lab.top、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS`。这不仅让它能够生成流畅的回答，还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
+    为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术，结合文本转语音系统，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top、tts.ai-lab.top、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS、fish-speech`。这不仅让它能够生成流畅的回答，还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
 
     此外，`Luna AI` 还能够通过特定指令与 `Stable Diffusion` 协作，展示画作。用户还可以自定义文案，让 Luna AI 循环播放，以满足不同场合的需求。
 
@@ -1765,6 +1765,11 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 注册账号，领取一年免费试用额度，创建 语音转文本服务，获取 区域 和 密钥，配置后进行使用。  
 
+#### fish-speech
+
+官方仓库：[fish-speech](https://github.com/fishaudio/fish-speech)  
+
+官方文档：[https://speech.fish.audio/inference/](https://speech.fish.audio/inference/)  
 
 ### 变声
 
@@ -2101,6 +2106,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-3-13
+        - 对接fish-speech
+
     - 2024-3-8
         - 支持讯飞星火v3.5 和 助手API
 
