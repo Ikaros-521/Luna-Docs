@@ -557,7 +557,13 @@ chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进�
 
 ## :fontawesome-solid-user: 使用
 
+!!! note
+
+    运行webui，`python webui.py`，配置平台配置、直播间号等，具体参考视频教程。  
+
 ### 各版本都需要做的前期准备操作。
+
+#### Chatterbot
 
 ??? note "`Chatterbot` 相关安装"
 
@@ -611,29 +617,16 @@ chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进�
 启动 GUI/手动 修改 `config.json` 的配置，配好哈，注意 JSON 数据格式
  
 
-### 哔哩哔哩版
+#### 哔哩哔哩版
 
 注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
 
-!!! note
 
-    运行 webui `python webui.py`
-
-    单独运行 方案1 `python bilibili.py`
-
-    单独运行 方案2 `python bilibili2.py`
-
-### 抖音版
+#### 抖音版
 
 先安装第三方弹幕捕获软件，参考 [补充-抖音](#dy)
 
-!!! note
-
-    运行 webui `python webui.py`  
-
-    单独运行 `python dy.py`  
-
-### 抖音版 旧版
+#### 抖音版 旧版
 
 !!! danger "不稳定"
 
@@ -648,13 +641,10 @@ protoc -I . --python_out=. dy.proto
 
     依赖 [golang :octicons-link-16:](//go.dev/dl/) 环境，还没有的话，手动补一补 [protobuf :octicons-link-16:](//github.com/protocolbuffers/protobuf/releases)
 
-!!! note
 
-    运行 `python main.py`
+#### 快手版
 
-### 快手版
-
-#### 新版本：
+##### 新版本：
 
 请在安装完依赖后，安装火狐浏览器内核。参考命令：`playwright install firefox`
 
@@ -662,7 +652,7 @@ protoc -I . --python_out=. dy.proto
 
 使用新版本时需要注意，请使用小号登录，然后在每次用完之后，把 `cookie` 文件夹下的 `123.json` 文件删掉！！！用过一次后 cookie 就异常了，所以需要删了重新登录！！！  
 
-#### 旧版本：  
+##### 旧版本：  
 
 运行前请重新生成一下 protobuf 文件，因为机器系统不一样同时 protobuf 版本也不一样所以不能拿来直接用～  
 
@@ -674,27 +664,17 @@ protoc -I . --python_out=. ks.proto
 
     依赖 [golang :octicons-link-16:](//go.dev/dl/) 环境，还没有的话，手动补一补 [protobuf :octicons-link-16:](//github.com/protocolbuffers/protobuf/releases)
 
-!!! note
 
-    运行 webui `python webui.py`
-
-### 微信视频号版
+#### 微信视频号版
 
 
 !!! note
 
     安装监听程序（不保证安全性，自行斟酌） [wxlivespy](https://github.com/fire4nt/wxlivespy/releases)，设置监听地址为`http://127.0.0.1:8082/wxlive`，开播！开始监听，扫描登录直播的微信号。webui修改平台为`微信视频号`，运行即可。  
 
-!!! note
 
-    运行 webui `python webui.py`
+#### 斗鱼版
 
-### 斗鱼版
-
-
-!!! note
-
-    运行 webui `python webui.py`  
 
 打开您的浏览器，找到您需要监听的直播间，然后按F12打开开发者工具，点击Console（控制台），复制 `douyu_ws_client.js` 脚本中的内容，粘贴到控制台，回车运行，启动监听服务
 
@@ -797,32 +777,6 @@ protoc -I . --python_out=. ks.proto
     ```
 
 
-### YouTube版
-
-
-!!! note
-
-    运行 webui `python webui.py`
-
-    单独运行 `python youtube.py`
-
-### twitch版
-
-
-!!! note
-
-    运行 webui `python webui.py`
-
-    单独运行 `python twitch.py`
-
-### 聊天模式
-
-
-!!! note
-
-    运行 webui `python webui.py`
-
-    单独运行 `python talk.py`
 
 ## :material-image: 效果图
 
