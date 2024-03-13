@@ -1614,6 +1614,12 @@ ps:cookie有效期估计在6小时左右。
 
 ![image](./static/images/luna-ai/fastgpt-2.png)  
 
+#### koboldcpp
+
+官方仓库：[https://github.com/LostRuins/koboldcpp](https://github.com/LostRuins/koboldcpp)  
+
+exe程序下载(也可以去整合包网盘中下载)：[https://github.com/LostRuins/koboldcpp/releases](https://github.com/LostRuins/koboldcpp/releases)
+
 ### TTS
 
 #### elevenlabs
@@ -2108,6 +2114,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志"
     - 2024-3-13
         - 对接fish-speech
+        - 更新blivedm库，恢复兼容
 
     - 2024-3-9
         - username大一统 将会迎来巨大的危机，请各位更新的幸运儿留意
