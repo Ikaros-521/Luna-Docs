@@ -2069,6 +2069,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2024-3-14
         - TTS中的vits、bert-vits2、gpt-sovits的float类型的相关参数支持范围语法, 如 `0.8-0.9`
         - chatgpt配置项 大标题补充说明兼容的项目和模型
+        - gpt-sovits新增模型配置项，支持动态加载模型
 
     - 2024-3-13
         - 对接fish-speech
