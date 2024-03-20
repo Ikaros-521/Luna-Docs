@@ -2065,6 +2065,10 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-3-20
+        - 补充webui聊天记录回调内容，优化代码实现
+        - 复读处理新增type传参，动态文案数据附带type（配合最新版[audio_player_v2](https://github.com/Ikaros-521/audio_player)，可以自定义音频数据优先级排队！）
+
     - 2024-3-19 
         - webui chatgpt的llm模型下拉框支持搜索、自定义添加模型名（配合ollama这种，方便自定义模型名）
         - 录音按键支持删除和输入，方便找到对应按键
