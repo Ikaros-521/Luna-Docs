@@ -31,7 +31,7 @@ hide:
 
 !!! quote "介绍"
 
-    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型和平台，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、通义千问、千帆大模型、Gemini、Kimi Chat、QAnything、koboldcpp、FastGPT、Ollama、One-API`。这些模型既可以在本地运行，也可以通过云端服务提供支持。当然，为了让对话照进现实，还结合了多模态模型，包括 `Gemini` 的图像识别能力，获取电脑画面进行分析讲解。 
+    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型和平台，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、通义千问、千帆大模型、Gemini、Kimi Chat、QAnything、koboldcpp、FastGPT、Ollama、One-API、AnythingLLM`。这些模型既可以在本地运行，也可以通过云端服务提供支持。当然，为了让对话照进现实，还结合了多模态模型，包括 `Gemini` 的图像识别能力，获取电脑画面进行分析讲解。 
 
     `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber、数字人视频播放器（Easy-Wav2Lip）` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
@@ -1573,6 +1573,14 @@ ps:cookie有效期估计在6小时左右。
 
 exe程序下载(也可以去整合包网盘中下载)：[https://github.com/LostRuins/koboldcpp/releases](https://github.com/LostRuins/koboldcpp/releases)
 
+#### AnythingLLM
+
+官网：[https://useanything.com/](https://useanything.com/)  
+
+下载安装，然后根据官方提示选择对接的LLM、向量数据库等，创建工作区（有知识库检索需求的请在工作区添加文档本导入到需要的工作区内）。  
+
+左下角设置图标进去，到API KEYS创建密钥，复制密钥，配置到项目中，保存配置，读取工作区列表，然后选择你要使用的工作区，保存运行使用即可。  
+
 ### TTS
 
 #### elevenlabs
@@ -2067,6 +2075,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志"
     - 2024-3-24
         - 定时任务 修改定时时间为最小最大时间段内随机，并且新增了按钮来增删任务组
+        - 定时任务、闲时任务、动态文案，支持新语法[1|2|3]，括号中随机一个结果做拼接
+        - 闲时任务加了time动态变量
+        - 闲时任务 时间改成最大最小值内随机，新增了文案模式，纯进行闲时的文案内容复读。闲时任务 文案模式 相较于 文案页的文案，没有打断弹幕的功能（想要打断弹幕可以配合audio player v2使用）这个功能可以在没有弹幕的情况下，播放一些你希望说的一些文本内容，然后会通过tts合成，目前只有一个输入框，要么顺序，要么整体随机，功能还比较简单，请构思好逻辑后再配置使用。
 
     - 2024-3-22
         - 修复tts_ai_lab_top，增加新的选项 语言 
