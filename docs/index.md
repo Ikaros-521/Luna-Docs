@@ -2073,6 +2073,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-3-26
+        - 助播 触发类型转换为中文，追加了几个类型，更方便用户理解
+
     - 2024-3-25
         - 对接 AnythingLLM
         - vits新增gpt-sovits的兼容（vits-simple-api）
