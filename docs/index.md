@@ -643,7 +643,7 @@ protoc -I . --python_out=. dy.proto
 
 #### 快手版
 
-##### 新版本：
+##### 方案1：
 
 请在安装完依赖后，安装火狐浏览器内核。参考命令：`playwright install firefox`
 
@@ -651,7 +651,13 @@ protoc -I . --python_out=. dy.proto
 
 使用新版本时需要注意，请使用小号登录，然后在每次用完之后，把 `cookie` 文件夹下的 `123.json` 文件删掉！！！用过一次后 cookie 就异常了，所以需要删了重新登录！！！  
 
-##### 旧版本：  
+##### 方案2：
+
+配合油猴脚本：[https://greasyfork.org/zh-CN/scripts/490966](https://greasyfork.org/zh-CN/scripts/490966)，在浏览器直播间页面监听DOM变动，WS返回数据。  
+
+浏览器安装[油猴插件](https://www.tampermonkey.net/)后，再安装上面的脚本，打开需要监听的直播间后，就会自动监听弹幕，连接WS服务，然后把AI Vtuber运行起来，进行对接。  
+
+##### 方案0：  
 
 运行前请重新生成一下 protobuf 文件，因为机器系统不一样同时 protobuf 版本也不一样所以不能拿来直接用～  
 
@@ -1124,6 +1130,8 @@ API接口地址根据`api.py`程序配置决定，默认：`http://127.0.0.1:808
 
 #### 快手弹幕获取
 
+##### 快手方案1
+
 `ks.py` 新版本 [kuaishou_websocket :octicons-link-16:](//github.com/Superheroff/kuaishou_websocket)
 
 使用新版本时需要注意，请使用小号登录，然后在每次用完之后，把 `cookie` 文件夹下的 `123.json` 文件删掉！！！用过一次后cookie就异常了，所以需要删了重新登录！！！
@@ -1133,6 +1141,12 @@ API接口地址根据`api.py`程序配置决定，默认：`http://127.0.0.1:808
 如果你是整合包，项目路径打开cmd，然后使用 `Miniconda3\python.exe Miniconda3\Scripts\playwright.exe install firefox` 进行安装。
 
 `ks_old.py` 旧版本 [kuaishou-live :octicons-link-16:](//github.com/YunzhiYike/kuaishou-live)  
+
+##### 快手方案2
+
+配合油猴脚本：[https://greasyfork.org/zh-CN/scripts/490966](https://greasyfork.org/zh-CN/scripts/490966)，在浏览器直播间页面监听DOM变动，WS返回数据。  
+
+浏览器安装[油猴插件](https://www.tampermonkey.net/)后，再安装上面的脚本，打开需要监听的直播间后，就会自动监听弹幕，连接WS服务，然后把AI Vtuber运行起来，进行对接。  
 
 #### 微信视频号监听
 
@@ -2074,8 +2088,11 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 
 ??? note "更新日志"
     - 2024-3-27
+        - 修复 联动程序无法禁用的bug 
         - 新增 油猴脚本，直播弹幕监听 转发至本地WS服务端，可以去greasyfork安装使用
-        
+        - 新增 快手2 方案，配合[油猴脚本](https://greasyfork.org/zh-CN/scripts/490966)使用，暂时仅支持弹幕信息 
+        - pygame音频加载播放增加异常捕获，给予用户一定报错问题的原因猜测 
+
     - 2024-3-26
         - 助播 触发类型转换为中文，追加了几个类型，更方便用户理解
         - 新增CSS主题，蓝天白云
