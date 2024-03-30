@@ -1465,6 +1465,10 @@ ps：cookie有效期较短
 
     [在线服务](https://console.bce.baidu.com/qianfan/ais/console/onlineService)，购买`ERNIE-Bot大模型公有云在线调用服务`，[应用接入](https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application) 创建应用，获取`API Key`和`Secret Key`，配置即可。
 
+- AppBuilder
+
+    百度智能云 AppBuilder 应用中心：[https://console.bce.baidu.com/ai_apaas/appCenter](https://console.bce.baidu.com/ai_apaas/appCenter)，创建一个你的专属应用 —— 知识问答应用（RAG框架），创建好后，在`API调用`新建一个token，配置到AI Vtuber中即可对接使用。  
+
 - web
 
     服务端：[yiyan-api](//github.com/zhuweiyou/yiyan-api)  
@@ -2092,7 +2096,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     
     - 2024-3-29
         - webui新增API，TTS合成、LLM推理。拆出独立的API接口，那么用户即可通过本项目做为中转站实现多项目接口统一管理，集成到自己的项目中使用 
-        
+
     - 2024-3-28
         - 通义千问API调用时，预设不能为空，空时默认一个通用预设
         
