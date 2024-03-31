@@ -1412,6 +1412,8 @@ web配置获取方法：[sparkdesk-api/tree/main/docs](//github.com/HildaM/spark
 
 api申请：提交工单申请，工单提交页 [console.xfyun.cn/services/cbm](//console.xfyun.cn/services/cbm)
 
+助手API：前往[https://xinghuo.xfyun.cn/botcenter/createbot](https://xinghuo.xfyun.cn/botcenter/createbot) 创建助手, 获取“助手ID”，然后协同讯飞星火大模型的其他密钥配置使用即可。  
+
 #### 闻达
 
 官方仓库：[github.com/wenda-LLM/wenda](//github.com/wenda-LLM/wenda)
