@@ -560,6 +560,8 @@ chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进�
 
     运行webui，`python webui.py`，配置平台配置、直播间号等，具体参考视频教程。  
 
+    实战教程：[【AI主播-实战篇】AI前台/客服/看板娘，现实中对话AI，提供聊天/知识问答服务，实际全配置演示，手把手带你应用](https://www.bilibili.com/video/BV1sm411Z79H)  
+
 ### 各版本都需要做的前期准备操作。
 
 #### Chatterbot
@@ -1143,6 +1145,8 @@ API接口地址根据`api.py`程序配置决定，默认：`http://127.0.0.1:808
 `ks_old.py` 旧版本 [kuaishou-live :octicons-link-16:](//github.com/YunzhiYike/kuaishou-live)  
 
 ##### 快手方案2
+
+视频教程：[https://www.bilibili.com/video/BV1HA4m1N7sF](https://www.bilibili.com/video/BV1HA4m1N7sF)  
 
 配合油猴脚本：[https://greasyfork.org/zh-CN/scripts/490966](https://greasyfork.org/zh-CN/scripts/490966)，在浏览器直播间页面监听DOM变动，WS返回数据。  
 
@@ -1785,6 +1789,8 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 #### Azure TTS
 
+视频教程：[【AI主播-TTS篇】接入 Azure TTS，微软官方商用语音合成，随便造（](https://www.bilibili.com/video/BV1aJ4m1h7eY)  
+
 官网：[https://azure.microsoft.com/zh-cn/products/ai-services/text-to-speech/](https://azure.microsoft.com/zh-cn/products/ai-services/text-to-speech/)  
 
 注册账号，领取一年免费试用额度，创建 语音转文本服务，获取 区域 和 密钥，配置后进行使用。  
@@ -1918,9 +1924,19 @@ EasyAIVtuber官方仓库：[https://github.com/Ksuriuri/EasyAIVtuber](https://gi
 
 #### 数字人视频播放器
 
+视频教程：[【AI主播-虚拟身体篇】对接 Easy-Wav2Lip（数字人视频播放器） 实现真人数字人驱动](https://www.bilibili.com/video/BV1iW421P7si)，[https://www.bilibili.com/video/BV1pi421R7N5](https://www.bilibili.com/video/BV1pi421R7N5)  
+
 数字人视频播放器 官方仓库：[https://github.com/Ikaros-521/digital_human_video_player](https://github.com/Ikaros-521/digital_human_video_player)  
 
 参考官方文档完成部署后启动，虚拟身体选择“数字人视频播放器”，保存运行即可对接使用。  
+
+### 图像识别
+
+#### gemini
+
+【AI主播-图像识别篇】新增 摄像头截图功能，可以进行现实互动，未来会继续互动方式：[https://www.bilibili.com/video/BV132421P7WT](https://www.bilibili.com/video/BV132421P7WT)  
+
+【AI主播-图像识别篇】对接 Gemini-Pro-Vision，实时画面识别讲解，可用于游戏讲解等应用场景：[https://www.bilibili.com/video/BV1F6421F767](https://www.bilibili.com/video/BV1F6421F767)  
 
 ### 翻译
 
