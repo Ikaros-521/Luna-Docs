@@ -1391,6 +1391,8 @@ LLM_MODEL = "chatglm-6b-int4"
 
 构建本地向量数据库时，如果本地电脑的配置太低，可以使用 [faiss_text2vec.ipynb](//drive.google.com/file/d/1rbt2Yv7_pC1cmuODwmR2-1_cxFBFOfn8/view?usp=sharing) 云端解析向量数据库，拷贝回本地后再使用即可
 
+视频教程：[https://www.bilibili.com/video/BV1tM4y1v7i5](https://www.bilibili.com/video/BV1tM4y1v7i5)
+
 - author: [HildaM/text2vec_colab](//github.com/HildaM/text2vec_colab)
 
 #### text-generation-webui
@@ -1401,24 +1403,33 @@ LLM_MODEL = "chatglm-6b-int4"
 
 API调用demo：[api-examples](//github.com/oobabooga/text-generation-webui/tree/main/api-examples)
 
+视频教程：[https://www.bilibili.com/video/BV1U14y1d7rz](https://www.bilibili.com/video/BV1U14y1d7rz)
 
 #### 讯飞星火
 
-官网：[xinghuo.xfyun.cn](//xinghuo.xfyun.cn/)
+- web&API
+    官网：[xinghuo.xfyun.cn](//xinghuo.xfyun.cn/)
 
-api库（HildaM开发）：[sparkdesk-api](//github.com/HildaM/sparkdesk-api)
+    api库（HildaM开发）：[sparkdesk-api](//github.com/HildaM/sparkdesk-api)
 
-web配置获取方法：[sparkdesk-api/tree/main/docs](//github.com/HildaM/sparkdesk-api/tree/main/docs)
+    web配置获取方法：[sparkdesk-api/tree/main/docs](//github.com/HildaM/sparkdesk-api/tree/main/docs)
 
-api申请：提交工单申请，工单提交页 [console.xfyun.cn/services/cbm](//console.xfyun.cn/services/cbm)
+    api申请：提交工单申请，工单提交页 [console.xfyun.cn/services/cbm](//console.xfyun.cn/services/cbm)
 
-助手API：前往[https://xinghuo.xfyun.cn/botcenter/createbot](https://xinghuo.xfyun.cn/botcenter/createbot) 创建助手, 获取“助手ID”，然后协同讯飞星火大模型的其他密钥配置使用即可。  
+    视频教程：[https://www.bilibili.com/video/BV1au4y127wW](https://www.bilibili.com/video/BV1au4y127wW)
+
+- 应用API
+    助手API：前往[https://xinghuo.xfyun.cn/botcenter/createbot](https://xinghuo.xfyun.cn/botcenter/createbot) 创建助手, 获取“助手ID”，然后协同讯飞星火大模型的其他密钥配置使用即可。  
+
+    视频教程：[https://www.bilibili.com/video/BV1Zq421A73F](https://www.bilibili.com/video/BV1Zq421A73F)
 
 #### 闻达
 
 官方仓库：[github.com/wenda-LLM/wenda](//github.com/wenda-LLM/wenda)
 
 整合包下载：[pan.quark.cn/s/c4cb08de666e](//pan.quark.cn/s/c4cb08de666e) 提取码：4b4R
+
+视频教程：[https://www.bilibili.com/video/BV1ru4y1B7js](https://www.bilibili.com/video/BV1ru4y1B7js)
 
 接入说明：
 
@@ -1433,7 +1444,9 @@ api申请：提交工单申请，工单提交页 [console.xfyun.cn/services/cbm]
 
 #### ChatterBot
 
-[官方仓库](//github.com/gunthercox/ChatterBot)
+官方仓库：[https://github.com/gunthercox/ChatterBot](https://github.com/gunthercox/ChatterBot)  
+
+视频教程：[https://www.bilibili.com/video/BV1fh411L72s](https://www.bilibili.com/video/BV1fh411L72s)  
 
 ChatterBot 是一个开源的 Python 聊天机器人框架，使用机器学习算法（尤其是自然语言处理、文本语义分析等）来实现基于规则和语境的自动聊天系统。它可以让开发者通过简单的配置和训练，构建出各种类型的聊天机器人，包括问答机器人、任务型机器人、闲聊机器人等。
 
@@ -1458,6 +1471,8 @@ ps：cookie有效期较短
 #### 文心一言
 
 官网：[yiyan.baidu.com](//yiyan.baidu.com)  
+
+视频教程：[https://www.bilibili.com/video/BV1kw411v7z6](https://www.bilibili.com/video/BV1kw411v7z6)  
 
 - api
 
@@ -1489,6 +1504,8 @@ ps：cookie有效期较短
 
 官网：[xingchen.aliyun.com](https://xingchen.aliyun.com/)  
 
+视频教程：[https://www.bilibili.com/video/BV1iu4y1379B](https://www.bilibili.com/video/BV1iu4y1379B)  
+
 进入官网，注册账号，登录，打开`接口管理`页面，点击`API-KEY管理`，`创建密钥`，复制密钥，配置对应配置项。  
 
 角色ID如何获取？ 首页点击`创建角色`，自己创建去！创建完成后，进入角色聊天页，角色头像边上有个`信息`，点进去可以看见`ID`，复制配置即可。
@@ -1501,6 +1518,8 @@ ps：cookie有效期较短
 
 - 千帆大模型
 
+    视频教程：[https://www.bilibili.com/video/BV1EC4y1Q7ob](https://www.bilibili.com/video/BV1EC4y1Q7ob)  
+
     接入库，我对原库做了修改：[WenxinWorkshop-Python-SDK](https://github.com/Ikaros-521/WenxinWorkshop-Python-SDK)  
 
     百度智能云千帆大模型平台：[https://cloud.baidu.com/product/wenxinworkshop](https://cloud.baidu.com/product/wenxinworkshop)  
@@ -1510,6 +1529,8 @@ ps：cookie有效期较短
     [在线服务](https://console.bce.baidu.com/qianfan/ais/console/onlineService)，购买`ERNIE-Bot大模型公有云在线调用服务`等服务，[应用接入](https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application) 创建应用，获取`API Key`和`Secret Key`，配置即可。  
 
 - AppBuilder
+
+    视频教程：[https://www.bilibili.com/video/BV1b1421D7fz](https://www.bilibili.com/video/BV1b1421D7fz)  
 
     百度智能云 AppBuilder 应用中心：[https://console.bce.baidu.com/ai_apaas/appCenter](https://console.bce.baidu.com/ai_apaas/appCenter)，创建一个你的专属应用 —— 知识问答应用（RAG框架），创建好后，在`API调用`新建一个token，配置到AI Vtuber中即可对接使用。  
 
@@ -1527,7 +1548,11 @@ ps：cookie有效期较短
 
 前往 [makersuite.google.com/app/apikey](https://makersuite.google.com/app/apikey) 创建一个API KEY，配置到项目中即可使用啦~（记得开魔法配置代理！）  
 
+视频教程：[https://www.bilibili.com/video/BV1op4y1f7gr](https://www.bilibili.com/video/BV1op4y1f7gr)  
+
 #### Kimi Chat
+
+视频教程：[https://www.bilibili.com/video/BV1Vm411S7zL](https://www.bilibili.com/video/BV1Vm411S7zL)  
 
 Kimi官网：[https://kimi.moonshot.cn/](https://kimi.moonshot.cn/)  
 
@@ -1541,6 +1566,8 @@ API申请：[https://platform.moonshot.cn/console/api-keys](https://platform.moo
     模型：moonshot-v1-8k  
 
 #### QAnything
+
+视频教程：[https://www.bilibili.com/video/BV1p2421F7QE](https://www.bilibili.com/video/BV1p2421F7QE)  
 
 官方仓库：[https://github.com/netease-youdao/QAnything](https://github.com/netease-youdao/QAnything)  
 
@@ -1564,11 +1591,15 @@ API申请：[https://platform.moonshot.cn/console/api-keys](https://platform.moo
 
 ##### API类型
 
+视频教程：[https://www.bilibili.com/video/BV1dx4y1S7Ei](https://www.bilibili.com/video/BV1dx4y1S7Ei)  
+
 API文档：[https://help.aliyun.com/zh/dashscope/developer-reference/quick-start](https://help.aliyun.com/zh/dashscope/developer-reference/quick-start)  
 申请API KEY 文档（文档教程详细，我就不再赘述了）：[https://help.aliyun.com/zh/dashscope/developer-reference/activate-dashscope-and-create-an-api-key](https://help.aliyun.com/zh/dashscope/developer-reference/activate-dashscope-and-create-an-api-key)  
 
 
 ##### web类型
+
+视频教程：[https://www.bilibili.com/video/BV1nc411Z7Db](https://www.bilibili.com/video/BV1nc411Z7Db)  
 
 依赖库：[revTongYi](https://github.com/leeeduke/revTongYi)  
 
@@ -1591,11 +1622,15 @@ ps:cookie有效期估计在6小时左右。
 
 #### koboldcpp
 
+视频教程：[https://www.bilibili.com/video/BV1Ci421o7kt](https://www.bilibili.com/video/BV1Ci421o7kt)  
+
 官方仓库：[https://github.com/LostRuins/koboldcpp](https://github.com/LostRuins/koboldcpp)  
 
 exe程序下载(也可以去整合包网盘中下载)：[https://github.com/LostRuins/koboldcpp/releases](https://github.com/LostRuins/koboldcpp/releases)
 
 #### AnythingLLM
+
+视频教程：[https://www.bilibili.com/video/BV13x421k7Yf](https://www.bilibili.com/video/BV13x421k7Yf)  
 
 官网：[https://useanything.com/](https://useanything.com/)  
 
