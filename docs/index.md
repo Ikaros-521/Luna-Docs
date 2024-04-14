@@ -618,12 +618,12 @@ chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进�
 启动 GUI/手动 修改 `config.json` 的配置，配好哈，注意 JSON 数据格式
  
 
-#### 哔哩哔哩版
+#### 哔哩哔哩
 
 注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
 
 
-#### 抖音版
+#### 抖音
 
 先安装第三方弹幕捕获软件，参考 [补充-抖音](#dy)
 
@@ -643,7 +643,7 @@ protoc -I . --python_out=. dy.proto
     依赖 [golang :octicons-link-16:](//go.dev/dl/) 环境，还没有的话，手动补一补 [protobuf :octicons-link-16:](//github.com/protocolbuffers/protobuf/releases)
 
 
-#### 快手版
+#### 快手
 
 ##### 方案1：
 
@@ -672,7 +672,7 @@ protoc -I . --python_out=. ks.proto
     依赖 [golang :octicons-link-16:](//go.dev/dl/) 环境，还没有的话，手动补一补 [protobuf :octicons-link-16:](//github.com/protocolbuffers/protobuf/releases)
 
 
-#### 微信视频号版
+#### 微信视频号
 
 
 !!! note
@@ -680,7 +680,13 @@ protoc -I . --python_out=. ks.proto
     安装监听程序（不保证安全性，自行斟酌） [wxlivespy](https://github.com/fire4nt/wxlivespy/releases)，设置监听地址为`http://127.0.0.1:8082/wxlive`，开播！开始监听，扫描登录直播的微信号。webui修改平台为`微信视频号`，运行即可。  
 
 
-#### 斗鱼版
+#### 拼多多
+
+配合油猴脚本：[https://greasyfork.org/zh-CN/scripts/490966](https://greasyfork.org/zh-CN/scripts/490966)，在浏览器直播间页面监听DOM变动，WS返回数据。  
+
+浏览器安装[油猴插件](https://www.tampermonkey.net/)后，再安装上面的脚本，打开需要监听的直播间后，就会自动监听弹幕，连接WS服务，然后把AI Vtuber运行起来，进行对接。  
+
+#### 斗鱼
 
 
 打开您的浏览器，找到您需要监听的直播间，然后按F12打开开发者工具，点击Console（控制台），复制 `douyu_ws_client.js` 脚本中的内容，粘贴到控制台，回车运行，启动监听服务
@@ -1159,6 +1165,14 @@ API接口地址根据`api.py`程序配置决定，默认：`http://127.0.0.1:808
 设置监听地址为`http://127.0.0.1:8082/wxlive`，开播！开始监听，扫描登录直播的微信号。webui修改平台为`微信视频号`，运行即可。  
 
 如果希望看到运行日志，可以自己下载项目部署运行。  
+
+#### 拼多多方案
+
+视频教程：[https://www.bilibili.com/video/BV1YE421T7Tm/](https://www.bilibili.com/video/BV1YE421T7Tm/)  
+
+配合油猴脚本：[https://greasyfork.org/zh-CN/scripts/490966](https://greasyfork.org/zh-CN/scripts/490966)，在浏览器直播间页面监听DOM变动，WS返回数据。  
+
+浏览器安装[油猴插件](https://www.tampermonkey.net/)后，再安装上面的脚本，打开需要监听的直播间后，就会自动监听弹幕，连接WS服务，然后把AI Vtuber运行起来，进行对接。 
 
 #### 斗鱼直播监听
 
