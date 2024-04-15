@@ -2161,8 +2161,8 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 
 ??? note "更新日志"
     - 2024-4-15
-        - 兼容CyberWon的webtts-v2
-        
+        - 兼容CyberWon的webtts-v1.4 v2
+
     - 2024-4-14
         - 支持拼多多 弹幕监听，实现逻辑同快手2一样，采用油猴前端监听
         - webui 新增 本地路径指定URL路径访问 功能，即添加映射后，可以通过http下载合成的音频
