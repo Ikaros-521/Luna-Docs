@@ -4877,11 +4877,20 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <details class="note">
 <summary>更新日志</summary>
 <ul>
-<li>2024-4-29<ul>
+<li>
+<p>2024-4-30</p>
+<ul>
+<li>内置的live2d功能移动到main中统一控制，不在需要重启生效</li>
+</ul>
+</li>
+<li>
+<p>2024-4-29</p>
+<ul>
 <li>闲时任务优化，新增待播放音频阈值和计时缩减值，main新增callback接口接收音频播放状态</li>
 <li>优化gradio_tts解析能力 </li>
 <li>【重要更新】修改voice_tmp_path_queue 由Queue改为List，待稳定性测试，为后期音频播放优先级打下基础</li>
 <li>修复部分功能中含随机抽文案功能，在文案为空时会异常的bug</li>
+<li>修复webui 多行输入框的字符串切分bug</li>
 </ul>
 </li>
 <li>
