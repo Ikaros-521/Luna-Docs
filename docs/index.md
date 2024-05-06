@@ -31,11 +31,11 @@ hide:
 
 !!! quote "介绍"
 
-    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它的核心是一系列高效的人工智能模型和平台，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、通义千问、千帆大模型、Gemini、Kimi Chat、QAnything、koboldcpp、FastGPT、Ollama、One-API、AnythingLLM`。这些模型既可以在本地运行，也可以通过云端服务提供支持。当然，为了让对话照进现实，还结合了多模态模型，包括 `Gemini` 的图像识别能力，获取电脑画面进行分析讲解。 
+    `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它整合了很多高效的人工智能模型和平台，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、通义千问、千帆大模型、Gemini、Kimi Chat、QAnything、koboldcpp、FastGPT、Ollama、One-API、AnythingLLM`。通过 Luna AI, 我们既可以在本地运行本地模型，也可以通过云端服务使用开放式 AI 平台的功能。当然，为了让对话照进现实，Luna AI 还结合了多模态模型，包括 `Gemini` 的图像识别能力，获取电脑画面进行分析讲解。 
 
     `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber、数字人视频播放器（Easy-Wav2Lip）` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、拼多多、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
-    为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术，结合文本转语音系统，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top、tts.ai-lab.top、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS、fish-speech`。这不仅让它能够生成流畅的回答，还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
+    为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术和文本转语音技术，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top、tts.ai-lab.top、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS、fish-speech`。这些技术能够生成流畅的回答，而且 Luna AI 还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
 
     此外，`Luna AI` 还能够通过特定指令与 `Stable Diffusion` 协作，展示画作。用户还可以自定义文案，让 Luna AI 循环播放，以满足不同场合的需求。
 
@@ -510,32 +510,32 @@ pip install -r requirements.txt
 
 #### 模式简介
 
-用户上传预先设定好的“人物设定”文件（pdf、txt等文本文件），让用户自定义配置角色背景信息、设定
 
-1. 当用户输入一个查询时，这个系统首先会在本地文档集合中进行相似性搜索，寻找与查询最相关的文档
+用户上传的“人物设定”文件（如PDF、TXT等格式），允许用户自定义并配置角色的背景信息和设定。
 
-2. 然后，它会把这些相关文档以及用户的查询作为输入，传递给语言模型。这个语言模型会基于这些输入生成一个答案
+1.用户提出查询时，系统首先在本地文档库中执行相似性搜索，以寻找与查询最相关的文档。
 
-3. 如果系统在本地文档集合中找不到任何与用户查询相关的文档，或者如果语言模型无法基于给定的输入生成一个有意义的答案，那么这个系统可能就无法回答用户的查询
+2.接着，系统将这些相关文档连同用户的查询一起作为输入，提交给语言模型。该模型据此生成答案。
+
+3.如果系统在本地文档库中未能找到与用户查询相关的文档，或者语言模型无法基于当前输入生成有意义的答案，系统可能无法回应用户的查询。
 
 
 #### 模式配置
 
-chat_type设置为 `chat_with_file` 方可使用。使用前必须先设置好 `opeanai、claude` 等模型的访问 `token` 相关的配置
+为了使用`chat_with_file`功能，您需要将`chat_type`设置为`chat_with_file`。在启用此功能之前，请确保您已经配置好了如`openai`、`claude`等模型的访问`token`。
+`chat_with_file`支持以下几种模式，您可以通过设置`chat_mode`来选择相应的模式：
 
-chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进行配置
+- **`claude`**：选择`claude`作为聊天模型。请确保您已经完成了相关配置。
 
-- `claude` 使用claude作为聊天模型，需要同时设置好
+- **`local_vector_embedding_model`**：使用本地向量数据库模式。在此模式下，系统会利用本地向量数据库来存储和检索数据。
 
-- `local_vector_embedding_model` 本地向量数据库。该模式会使用本地向量数据库存储数据
+- **`openai_vector_search`**：仅利用向量数据库进行查询，而不调用GPT模型，这样可以节省`token`，并且能够进行快速的本地数据搜索。目前，此模式采用`OpenAIEmbedding`进行数据的向量化处理，因此需要您提前配置好OpenAI的相关设置。
 
-- `openai_vector_search` 仅仅使用向量数据库作查询，不做gpt的调用，可以节省token，做个简单的本地数据搜索。目前使用OpenAIEmbedding进行向量化，所以需要配置好OpenAI信息
+- **`openai_gpt`**：在向量数据库中检索到相关信息后，将其作为输入传递给GPT模型进行更深层次的处理。
 
-- `openai_gpt` 从向量数据库中查询到相关信息后，将其传递给gpt模型，让模型作进一步处理
+我们推荐使用`claude`模式，因为它可以免费使用，并且不会消耗`openai`的`token`。
 
-推荐使用 `claude` 模式，这样可以免费使用，无需消耗 `openai` 的 `token`
-
-后续会支持更多免费模型，如 `文心一言、讯飞星火` 等
+后续会支持更多免费模型，如 `文心一言、讯飞星火` 等。
 
 !!! note "注意"
 
@@ -573,14 +573,27 @@ chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进�
     - `Python 3.6+`
 
     ## 安装依赖
-    在命令行中使用以下命令安装所需库：
-    ```bash
-    pip install spacy ChatterBot
-    ```
+    在命令行中安装所需的Python库，您可以使用以下命令：
 
-    如果ChatterBot安装报错，请前往 [ChatterBot_update :octicons-link-16:](//github.com/RaSan147/ChatterBot_update) 安装新版本。下载下来输入 `python setup.py install` 即可
+```bash
+pip install spacy ChatterBot
+```
 
-    安装慢，可以拆开来装  `pip install SQLAlchemy==1.3.24`
+如果遇到ChatterBot安装错误，您可以尝试安装更新版本的ChatterBot。首先，访问ChatterBot的更新版本仓库：
+
+[ChatterBot_update :octicons-link-16:](https://github.com/RaSan147/ChatterBot_update)
+
+从该GitHub仓库下载更新版本的ChatterBot后，您可以在下载的文件夹内运行以下命令来安装：
+
+```bash
+python setup.py install
+```
+
+如果您在安装过程中遇到速度慢的问题，可以考虑单独安装依赖项。例如，如果您需要安装SQLAlchemy，可以使用以下命令：
+
+```bash
+pip install SQLAlchemy==1.3.24
+```
 
     ## 如何训练自己的AI？
 
@@ -620,7 +633,7 @@ chat_with_file 目前支持以下模式，在相关配置下的 `chat_mode` 进�
 
 #### 哔哩哔哩
 
-注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
+注意：如果使用方案2，需要手动克隆官方项目仓库的 [blivedm](https://github.com/xfgryujk/blivedm) 到`site-packages`  
 
 
 #### 抖音
@@ -903,6 +916,16 @@ protoc -I . --python_out=. ks.proto
     ![image](./static/images/luna-ai/247523915-ee3ad055-b562-4f12-8797-d6aff44331be.png)
 
 ??? note "使用过程问题"
+
+    - 启动 webui 时报错:  No module named 'g4f'
+
+    未安装 g4f，手动安装一下
+
+    ```shell
+    pip install g4f
+    ```
+
+    诸如此类依赖的报错需要在启动的时候注意，全部解决掉，否则即便 webui 正常打开了， web 服务依然是启动失败的，运行某些功能的时候会报错: HTTPConnectionPool(host='127.0.0.1', port=8082)
 
     - openai 接口报错:《empty message》
 
