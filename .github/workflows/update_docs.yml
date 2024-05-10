@@ -3,7 +3,7 @@ name: Update Docs
 on:
   push:
     branches:
-      - main  # 设置你的主要分支，这里以 "main" 为例
+      - main
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.10'  # 设置你的Python版本
+          python-version: '3.10'
 
       - name: Install dependencies
         run: |
@@ -26,11 +26,14 @@ jobs:
         run: |
           mkdocs build
 
+      - name: Move documentation to site folder
+        run: |
+          cp -r site/* .
+
       - name: Deploy to server
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # 使用GitHub Token作为环境变量
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.email "327209194@qq.com"
           git config --global user.name "Ikaros-521"
           mkdocs gh-deploy --force
-
