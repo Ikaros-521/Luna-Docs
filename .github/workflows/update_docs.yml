@@ -25,8 +25,12 @@ jobs:
       - name: Build documentation
         run: |
           mkdocs build
-          ls -al
-
+          
+      - name: Copy site content to site/site
+        run: |
+          mkdir -p site/site
+          rsync -av --exclude='site/' * site/
+      
       - name: Deploy to server
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
