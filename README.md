@@ -9,3 +9,5 @@
 构建静态网站 `mkdocs build`  
 
 文档本地实时预览 `mkdocs serve`  
+
+使用github actions自动进行构建发布更新  
