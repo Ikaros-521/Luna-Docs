@@ -26,15 +26,12 @@ jobs:
         run: |
           mkdocs build
           
-      - name: Copy site content to site/site
-        run: |
-          mkdir -p site/site
-          rsync -av --exclude='site/' * site/
-      
       - name: Deploy to server
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           git config --global user.email "327209194@qq.com"
           git config --global user.name "Ikaros-521"
-          mkdocs gh-deploy --force
+          git add -A
+          git commit -m "Action：更新文档"
+          git push origin gh-deploy
