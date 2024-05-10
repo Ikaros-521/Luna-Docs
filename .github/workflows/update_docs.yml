@@ -25,6 +25,7 @@ jobs:
       - name: Build documentation
         run: |
           mkdocs build
+          ls -al
 
       - name: Deploy to server
         env:
@@ -32,4 +33,3 @@ jobs:
         run: |
           git config --global user.email "327209194@qq.com"
           git config --global user.name "Ikaros-521"
-          mkdocs gh-deploy --force
