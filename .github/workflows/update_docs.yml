@@ -32,6 +32,7 @@ jobs:
         run: |
           git config --global user.email "327209194@qq.com"
           git config --global user.name "Ikaros-521"
-          git add -A
+          git checkout -b gh-deploy
+          git add .
           git commit -m "Action：更新文档"
           git push origin gh-deploy
