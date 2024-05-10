@@ -32,10 +32,9 @@ jobs:
         run: |
           git config --global user.email "327209194@qq.com"
           git config --global user.name "Ikaros-521"
-          git checkout -b gh-deploy
           git add .
           git commit -m "Action：更新文档"
-          git push origin gh-deploy
+          git push origin main
           
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
