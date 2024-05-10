@@ -36,3 +36,9 @@ jobs:
           git add .
           git commit -m "Action：更新文档"
           git push origin gh-deploy
+          
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.GH_TOKEN }}
+          publish_dir: ./site  # 指定要部署的目录
