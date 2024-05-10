@@ -2245,6 +2245,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - fish speech支持在线web调用
         - 按键映射新增本地音频的映射配置（不过后端没实现）
         - 更新文档至：[Ikaros-521/Luna-Docs](https://github.com/Ikaros-521/Luna-Docs)
+        - 按键映射 新增 本地音频的映射，同样可以通过关键词或礼物触发
 
     - 2024-5-8
         - 优先级补充 入场欢迎 优先级
