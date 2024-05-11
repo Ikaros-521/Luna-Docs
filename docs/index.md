@@ -1895,6 +1895,12 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 官方文档：[https://speech.fish.audio/inference/](https://speech.fish.audio/inference/)  
 
+##### 在线web
+
+官网：[https://fs.firefly.matce.cn/](https://fs.firefly.matce.cn/)  
+
+进入官网，选好参数，F12打开开发者工具，抓包 网络，ws，点击 Generate 合成音频，查看 join请求，展开后可以看到 参考音频的绝对路径和其他配置，配置到webui保存 运行即可使用。  
+
 ### 变声
 
 #### DDSP-SVC
