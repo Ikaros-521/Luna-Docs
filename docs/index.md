@@ -2252,6 +2252,8 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - 答谢、积分板块 礼物答谢 新增变量gift_num，unit_price，total_price，cur_time
         - 按键映射板块 文案通用也支持礼物答谢相关的变量
         - fish speech支持填入说话人 随机获取参考音频信息
+        - 优化webui anythingLLM获取工作区的逻辑，直接获取webui配置进行获取，并优化了提示
+        - 优化按键录音逻辑，不支持多次按录音键
 
     - 2024-5-11
         - webui多行配置 空配置情况下 有迭代出错问题，已修复
