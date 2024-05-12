@@ -2248,6 +2248,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-5-12
+        - 答谢板块 礼物答谢 新增变量gift_num，unit_price，total_price，cur_time
+
     - 2024-5-11
         - webui多行配置 空配置情况下 有迭代出错问题，已修复
         - 修复gpt-sovits 0322的自动识别语言bug；杂项更新
