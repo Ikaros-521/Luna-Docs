@@ -2249,7 +2249,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 
 ??? note "更新日志"
     - 2024-5-12
-        - 答谢板块 礼物答谢 新增变量gift_num，unit_price，total_price，cur_time
+        - 答谢、积分板块 礼物答谢 新增变量gift_num，unit_price，total_price，cur_time
+        - 按键映射板块 文案通用也支持礼物答谢相关的变量
+        - fish speech支持填入说话人 随机获取参考音频信息
 
     - 2024-5-11
         - webui多行配置 空配置情况下 有迭代出错问题，已修复
