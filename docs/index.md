@@ -2251,7 +2251,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2024-5-13
         - 优化报错提示
         - 智谱AI 兼容zhipuai 1.x 2.x库版本
-        - 新增了glm-4v的调用函数
+        - 图像识别板块 新增智谱AI glm-4v
 
     - 2024-5-12
         - 答谢、积分板块 礼物答谢 新增变量gift_num，unit_price，total_price，cur_time
