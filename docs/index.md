@@ -506,52 +506,52 @@ pip install -r requirements.txt
 
         ![image](./static/images/luna-ai/253742483-ce47dd53-118e-488a-94d6-0d837db23e6c.png)
 
-## :material-help-circle: `chat_with_file` 模式说明
+??? :material-help-circle: `chat_with_file` 模式说明
 
-#### 模式简介
-
-
-用户上传的“人物设定”文件（如PDF、TXT等格式），允许用户自定义并配置角色的背景信息和设定。
-
-1.用户提出查询时，系统首先在本地文档库中执行相似性搜索，以寻找与查询最相关的文档。
-
-2.接着，系统将这些相关文档连同用户的查询一起作为输入，提交给语言模型。该模型据此生成答案。
-
-3.如果系统在本地文档库中未能找到与用户查询相关的文档，或者语言模型无法基于当前输入生成有意义的答案，系统可能无法回应用户的查询。
+    #### 模式简介
 
 
-#### 模式配置
+    用户上传的“人物设定”文件（如PDF、TXT等格式），允许用户自定义并配置角色的背景信息和设定。
 
-为了使用`chat_with_file`功能，您需要将`chat_type`设置为`chat_with_file`。在启用此功能之前，请确保您已经配置好了如`openai`、`claude`等模型的访问`token`。
-`chat_with_file`支持以下几种模式，您可以通过设置`chat_mode`来选择相应的模式：
+    1.用户提出查询时，系统首先在本地文档库中执行相似性搜索，以寻找与查询最相关的文档。
 
-- **`claude`**：选择`claude`作为聊天模型。请确保您已经完成了相关配置。
+    2.接着，系统将这些相关文档连同用户的查询一起作为输入，提交给语言模型。该模型据此生成答案。
 
-- **`local_vector_embedding_model`**：使用本地向量数据库模式。在此模式下，系统会利用本地向量数据库来存储和检索数据。
+    3.如果系统在本地文档库中未能找到与用户查询相关的文档，或者语言模型无法基于当前输入生成有意义的答案，系统可能无法回应用户的查询。
 
-- **`openai_vector_search`**：仅利用向量数据库进行查询，而不调用GPT模型，这样可以节省`token`，并且能够进行快速的本地数据搜索。目前，此模式采用`OpenAIEmbedding`进行数据的向量化处理，因此需要您提前配置好OpenAI的相关设置。
 
-- **`openai_gpt`**：在向量数据库中检索到相关信息后，将其作为输入传递给GPT模型进行更深层次的处理。
+    #### 模式配置
 
-我们推荐使用`claude`模式，因为它可以免费使用，并且不会消耗`openai`的`token`。
+    为了使用`chat_with_file`功能，您需要将`chat_type`设置为`chat_with_file`。在启用此功能之前，请确保您已经配置好了如`openai`、`claude`等模型的访问`token`。
+    `chat_with_file`支持以下几种模式，您可以通过设置`chat_mode`来选择相应的模式：
 
-后续会支持更多免费模型，如 `文心一言、讯飞星火` 等。
+    - **`claude`**：选择`claude`作为聊天模型。请确保您已经完成了相关配置。
 
-!!! note "注意"
+    - **`local_vector_embedding_model`**：使用本地向量数据库模式。在此模式下，系统会利用本地向量数据库来存储和检索数据。
 
-    1. 所有模型都应该采用 `HuggingFace` 模型，暂未适配其他模型
+    - **`openai_vector_search`**：仅利用向量数据库进行查询，而不调用GPT模型，这样可以节省`token`，并且能够进行快速的本地数据搜索。目前，此模式采用`OpenAIEmbedding`进行数据的向量化处理，因此需要您提前配置好OpenAI的相关设置。
 
-    2. 本地模型存储目录是 `data/text2vec_models` ，将自己的模型存储到该位置，在 `config.json` 配置中填写该模型的 `文件夹名字` 即可
+    - **`openai_gpt`**：在向量数据库中检索到相关信息后，将其作为输入传递给GPT模型进行更深层次的处理。
 
-    3. 如果需要其他模型，可以从 `HuggingFace` 中下载下来，存放到对应位置即可
+    我们推荐使用`claude`模式，因为它可以免费使用，并且不会消耗`openai`的`token`。
 
-    4. 也可以直接输入 `HuggingFace` 的模型名字，如 [GanymedeNil/text2vec-large-chinese :octicons-link-16:](//huggingface.co/GanymedeNil/text2vec-large-chinese) ，项目会自动从远程仓库下载。
+    后续会支持更多免费模型，如 `文心一言、讯飞星火` 等。
 
-        1. 请确保能够连接上 `HuggingFace` (可能需要科学上网)
+    !!! note "注意"
 
-        2. 远程仓库下载的模型，一般存储在系统cache中。win端一般是 `C:\Users\用户\.cache\torch\sentence_transformers` 。也可以将其移动到项目模型存储目录下使用
+        1. 所有模型都应该采用 `HuggingFace` 模型，暂未适配其他模型
 
-    5. `openai_vector_search` 和 `openai_gpt` 读取本地数据的内容默认以换行为分隔符，所以可能导致大标题数据丢失问题，需要注意你的数据内容在编辑时不要将核心的内容放在标题部分单独一行，导致丢失 核心数据，尽量将标题和正文写在一行，在真的需要分割的部分进行换行。  
+        2. 本地模型存储目录是 `data/text2vec_models` ，将自己的模型存储到该位置，在 `config.json` 配置中填写该模型的 `文件夹名字` 即可
+
+        3. 如果需要其他模型，可以从 `HuggingFace` 中下载下来，存放到对应位置即可
+
+        4. 也可以直接输入 `HuggingFace` 的模型名字，如 [GanymedeNil/text2vec-large-chinese :octicons-link-16:](//huggingface.co/GanymedeNil/text2vec-large-chinese) ，项目会自动从远程仓库下载。
+
+            1. 请确保能够连接上 `HuggingFace` (可能需要科学上网)
+
+            2. 远程仓库下载的模型，一般存储在系统cache中。win端一般是 `C:\Users\用户\.cache\torch\sentence_transformers` 。也可以将其移动到项目模型存储目录下使用
+
+        5. `openai_vector_search` 和 `openai_gpt` 读取本地数据的内容默认以换行为分隔符，所以可能导致大标题数据丢失问题，需要注意你的数据内容在编辑时不要将核心的内容放在标题部分单独一行，导致丢失 核心数据，尽量将标题和正文写在一行，在真的需要分割的部分进行换行。  
 
 
 ## :fontawesome-solid-user: 使用
