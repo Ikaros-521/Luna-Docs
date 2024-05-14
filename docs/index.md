@@ -566,70 +566,68 @@ pip install -r requirements.txt
 
 #### Chatterbot
 
-??? note "`Chatterbot` 相关安装"
+??? note "`Chatterbot` 相关安装&使用"
 
-    ## 运行环境
+    ##### 运行环境
 
     - `Python 3.6+`
 
-    ## 安装依赖
+    ##### 安装依赖
     在命令行中安装所需的Python库，您可以使用以下命令：
 
-```bash
-pip install spacy ChatterBot
-```
-
-如果遇到ChatterBot安装错误，您可以尝试安装更新版本的ChatterBot。首先，访问ChatterBot的更新版本仓库：
-
-[ChatterBot_update :octicons-link-16:](https://github.com/RaSan147/ChatterBot_update)
-
-从该GitHub仓库下载更新版本的ChatterBot后，您可以在下载的文件夹内运行以下命令来安装：
-
-```bash
-python setup.py install
-```
-
-如果您在安装过程中遇到速度慢的问题，可以考虑单独安装依赖项。例如，如果您需要安装SQLAlchemy，可以使用以下命令：
-
-```bash
-pip install SQLAlchemy==1.3.24
-```
-
-    ## 如何训练自己的AI？
-
-    - 打开 `data/db.txt` ，写入你想要训练的内容，格式如下
-
-    ```
-    问
-    答
-    问
-    答
+    ```bash
+    pip install spacy ChatterBot
     ```
 
-    - 将文件重命名为 `data/db.txt`
-    - 在命令行中运行以下命令启动程序：
+    如果遇到ChatterBot安装错误，您可以尝试安装更新版本的ChatterBot。首先，访问ChatterBot的更新版本仓库：
+
+    [ChatterBot_update :octicons-link-16:](https://github.com/RaSan147/ChatterBot_update)
+
+    从该GitHub仓库下载更新版本的ChatterBot后，您可以在下载的文件夹内运行以下命令来安装：
 
     ```bash
-    python train.py
+    python setup.py install
     ```
 
-    - 训练完的模型名叫 `db.sqlite3` ，直接双击 `main.py` 即可使用
-
-    ## 常见问题
-    1. 提示缺少 `en-core-web-sm` ，打开终端输入
+    如果您在安装过程中遇到速度慢的问题，可以考虑单独安装依赖项。例如，如果您需要安装SQLAlchemy，可以使用以下命令：
 
     ```bash
-    python -m spacy download en_core_web_sm
+    pip install SQLAlchemy==1.3.24
     ```
 
-    2. 报错：no module named ‘spacy’解决办法
+        ##### 如何训练自己的AI？
 
-    ```bash
-    pip install spacy
-    ```
+        - 打开 `data/db.txt` ，写入你想要训练的内容，格式如下
 
-启动 GUI/手动 修改 `config.json` 的配置，配好哈，注意 JSON 数据格式
- 
+        ```
+        问
+        答
+        问
+        答
+        ```
+
+        - 将文件重命名为 `data/db.txt`
+        - 在命令行中运行以下命令启动程序：
+
+        ```bash
+        python train.py
+        ```
+
+        - 训练完的模型名叫 `db.sqlite3` ，直接双击 `main.py` 即可使用
+
+        ##### 常见问题
+        1. 提示缺少 `en-core-web-sm` ，打开终端输入
+
+        ```bash
+        python -m spacy download en_core_web_sm
+        ```
+
+        2. 报错：no module named ‘spacy’解决办法
+
+        ```bash
+        pip install spacy
+        ```
+    
 
 #### 哔哩哔哩
 

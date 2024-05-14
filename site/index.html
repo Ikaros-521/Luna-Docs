@@ -404,32 +404,27 @@
     Chatterbot
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Chatterbot">
+      <ul class="md-nav__list">
         
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     运行环境
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     安装依赖
   </a>
   
-    <nav class="md-nav" aria-label="安装依赖">
-      <ul class="md-nav__list">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
@@ -504,6 +499,11 @@
   <a href="#_18" class="md-nav__link">
     斗鱼
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -1787,32 +1787,27 @@
     Chatterbot
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Chatterbot">
+      <ul class="md-nav__list">
         
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     运行环境
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     安装依赖
   </a>
   
-    <nav class="md-nav" aria-label="安装依赖">
-      <ul class="md-nav__list">
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
@@ -1887,6 +1882,11 @@
   <a href="#_18" class="md-nav__link">
     斗鱼
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -3567,14 +3567,13 @@ Linux部署问题讨论：<a href="https://github.com/Ikaros-521/AI-Vtuber/issue
 <h3 id="_9">各版本都需要做的前期准备操作。</h3>
 <h4 id="chatterbot">Chatterbot</h4>
 <details class="note">
-<summary><code>Chatterbot</code> 相关安装</summary>
-<h2 id="_10">运行环境</h2>
+<summary><code>Chatterbot</code> 相关安装&amp;使用</summary>
+<h5 id="_10">运行环境</h5>
 <ul>
 <li><code>Python 3.6+</code></li>
 </ul>
-<h2 id="_11">安装依赖</h2>
+<h5 id="_11">安装依赖</h5>
 <p>在命令行中安装所需的Python库，您可以使用以下命令：</p>
-</details>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>spacy<span class="w"> </span>ChatterBot
 </code></pre></div>
 <p>如果遇到ChatterBot安装错误，您可以尝试安装更新版本的ChatterBot。首先，访问ChatterBot的更新版本仓库：</p>
@@ -3585,7 +3584,7 @@ Linux部署问题讨论：<a href="https://github.com/Ikaros-521/AI-Vtuber/issue
 <p>如果您在安装过程中遇到速度慢的问题，可以考虑单独安装依赖项。例如，如果您需要安装SQLAlchemy，可以使用以下命令：</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">SQLAlchemy</span><span class="o">==</span><span class="m">1</span>.3.24
 </code></pre></div>
-<pre><code>## 如何训练自己的AI？
+<pre><code>##### 如何训练自己的AI？
 
 - 打开 `data/db.txt` ，写入你想要训练的内容，格式如下
 
@@ -3605,7 +3604,7 @@ python train.py
 
 - 训练完的模型名叫 `db.sqlite3` ，直接双击 `main.py` 即可使用
 
-## 常见问题
+##### 常见问题
 1. 提示缺少 `en-core-web-sm` ，打开终端输入
 
 ```bash
@@ -3618,7 +3617,7 @@ python -m spacy download en_core_web_sm
 pip install spacy
 ```
 </code></pre>
-<p>启动 GUI/手动 修改 <code>config.json</code> 的配置，配好哈，注意 JSON 数据格式</p>
+</details>
 <h4 id="_12">哔哩哔哩</h4>
 <p>注意：如果使用方案2，需要手动克隆官方项目仓库的 <a href="https://github.com/xfgryujk/blivedm">blivedm</a> 到<code>site-packages</code>  </p>
 <h4 id="_13">抖音</h4>
