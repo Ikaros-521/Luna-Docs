@@ -3481,16 +3481,12 @@ Linux部署问题讨论：<a href="https://github.com/Ikaros-521/AI-Vtuber/issue
 </div>
 <details class="note">
 <summary><code>chat_with_file</code> 模式说明</summary>
-<ol>
-<li>模式简介</li>
-</ol>
+<p>一. 模式简介</p>
 <p>用户上传的“人物设定”文件（如PDF、TXT等格式），允许用户自定义并配置角色的背景信息和设定。</p>
 <p>1.用户提出查询时，系统首先在本地文档库中执行相似性搜索，以寻找与查询最相关的文档。</p>
 <p>2.接着，系统将这些相关文档连同用户的查询一起作为输入，提交给语言模型。该模型据此生成答案。</p>
 <p>3.如果系统在本地文档库中未能找到与用户查询相关的文档，或者语言模型无法基于当前输入生成有意义的答案，系统可能无法回应用户的查询。</p>
-<ol>
-<li>模式配置</li>
-</ol>
+<p>二. 模式配置</p>
 <p>为了使用<code>chat_with_file</code>功能，您需要将<code>chat_type</code>设置为<code>chat_with_file</code>。在启用此功能之前，请确保您已经配置好了如<code>openai</code>、<code>claude</code>等模型的访问<code>token</code>。
 <code>chat_with_file</code>支持以下几种模式，您可以通过设置<code>chat_mode</code>来选择相应的模式：</p>
 <ul>
