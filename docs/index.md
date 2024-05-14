@@ -3341,3 +3341,10 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 
 ![image](./static/images/luna-ai/alipay.png){ width="200" }
 ![image](./static/images/luna-ai/wechatpay.png){ width="200" }
+
+## 黑名单
+
+| 用户信息 | 名人名言 |
+|--------|------|
+| QQ：750359376 | 笑死，连点开源精神都没有 |
+
