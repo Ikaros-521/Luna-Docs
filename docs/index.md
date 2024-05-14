@@ -506,7 +506,7 @@ pip install -r requirements.txt
 
         ![image](./static/images/luna-ai/253742483-ce47dd53-118e-488a-94d6-0d837db23e6c.png)
 
-??? :material-help-circle: `chat_with_file` 模式说明
+???  note "`chat_with_file` 模式说明"
 
     #### 模式简介
 
