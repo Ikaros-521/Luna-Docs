@@ -595,38 +595,38 @@ pip install -r requirements.txt
     pip install SQLAlchemy==1.3.24
     ```
 
-        ##### 如何训练自己的AI？
+    ##### 如何训练自己的AI？
 
-        - 打开 `data/db.txt` ，写入你想要训练的内容，格式如下
+    - 打开 `data/db.txt` ，写入你想要训练的内容，格式如下
 
-        ```
-        问
-        答
-        问
-        答
-        ```
+    ```
+    问
+    答
+    问
+    答
+    ```
 
-        - 将文件重命名为 `data/db.txt`
-        - 在命令行中运行以下命令启动程序：
+    - 将文件重命名为 `data/db.txt`
+    - 在命令行中运行以下命令启动程序：
 
-        ```bash
-        python train.py
-        ```
+    ```bash
+    python train.py
+    ```
 
-        - 训练完的模型名叫 `db.sqlite3` ，直接双击 `main.py` 即可使用
+    - 训练完的模型名叫 `db.sqlite3` ，直接双击 `main.py` 即可使用
 
-        ##### 常见问题
-        1. 提示缺少 `en-core-web-sm` ，打开终端输入
+    ##### 常见问题
+    1. 提示缺少 `en-core-web-sm` ，打开终端输入
 
-        ```bash
-        python -m spacy download en_core_web_sm
-        ```
+    ```bash
+    python -m spacy download en_core_web_sm
+    ```
 
-        2. 报错：no module named ‘spacy’解决办法
+    2. 报错：no module named ‘spacy’解决办法
 
-        ```bash
-        pip install spacy
-        ```
+    ```bash
+    pip install spacy
+    ```
     
 
 #### 哔哩哔哩
