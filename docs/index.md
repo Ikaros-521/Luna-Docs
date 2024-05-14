@@ -506,9 +506,10 @@ pip install -r requirements.txt
 
         ![image](./static/images/luna-ai/253742483-ce47dd53-118e-488a-94d6-0d837db23e6c.png)
 
+
 ??? note "`chat_with_file` 模式说明"
 
-    #### 模式简介
+    1. 模式简介
 
 
     用户上传的“人物设定”文件（如PDF、TXT等格式），允许用户自定义并配置角色的背景信息和设定。
@@ -520,7 +521,7 @@ pip install -r requirements.txt
     3.如果系统在本地文档库中未能找到与用户查询相关的文档，或者语言模型无法基于当前输入生成有意义的答案，系统可能无法回应用户的查询。
 
 
-    #### 模式配置
+    2. 模式配置
 
     为了使用`chat_with_file`功能，您需要将`chat_type`设置为`chat_with_file`。在启用此功能之前，请确保您已经配置好了如`openai`、`claude`等模型的访问`token`。
     `chat_with_file`支持以下几种模式，您可以通过设置`chat_mode`来选择相应的模式：
