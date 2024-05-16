@@ -2250,6 +2250,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2024-5-16
         - 对接fish-speech-V1.1.0本地整合包API 
         - 修复fish-speech 在线调用功能
+        - fish-speech在线api支持参考音频过期后自动更新功能，以便长期使用
 
     - 2024-5-15
         - 数字人视频播放器 支持local类型，直接播放本地视频，支持 MuseTalk 对接
