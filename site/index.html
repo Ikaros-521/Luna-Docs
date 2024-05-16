@@ -1227,6 +1227,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#api-110" class="md-nav__link">
+    api 1.1.0
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2600,6 +2607,13 @@
           <li class="md-nav__item">
   <a href="#web_1" class="md-nav__link">
     在线web
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-110" class="md-nav__link">
+    api 1.1.0
   </a>
   
 </li>
@@ -4503,8 +4517,9 @@ if __name__ == "__main__":
 </li>
 <li>
 <p>AppBuilder</p>
-<p>视频教程：<a href="https://www.bilibili.com/video/BV1b1421D7fz">https://www.bilibili.com/video/BV1b1421D7fz</a>  </p>
-<p>百度智能云 AppBuilder 应用中心：<a href="https://console.bce.baidu.com/ai_apaas/appCenter">https://console.bce.baidu.com/ai_apaas/appCenter</a>，创建一个你的专属应用 —— 知识问答应用（RAG框架），创建好后，在<code>API调用</code>新建一个token，配置到AI Vtuber中即可对接使用。  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1b1421D7fz">旧版API教程</a>  </p>
+<p>百度智能云 AppBuilder 应用中心：<a href="https://console.bce.baidu.com/ai_apaas/appCenter">https://console.bce.baidu.com/ai_apaas/appCenter</a>，创建一个你的专属应用 —— 知识问答应用（RAG框架），创建好后，获取应用ID：<a href="https://console.bce.baidu.com/ai_apaas/personalSpace">https://console.bce.baidu.com/ai_apaas/personalSpace</a>。获取密钥token：<a href="https://console.bce.baidu.com/ai_apaas/secretKey">https://console.bce.baidu.com/ai_apaas/secretKey</a>  </p>
+<p>图文文档：<a href="https://github.com/Ikaros-521/AI-Vtuber/pull/830">https://github.com/Ikaros-521/AI-Vtuber/pull/830</a>  </p>
 </li>
 </ul>
 <h5 id="_54">官方库（有版本冲突，暂不启用）</h5>
@@ -4658,6 +4673,9 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <p>官网：<a href="https://fs.firefly.matce.cn/">https://fs.firefly.matce.cn/</a>  </p>
 <p>进入官网，选好参数，F12打开开发者工具，抓包 网络，ws，点击 Generate 合成音频，查看 join请求，展开后可以看到 参考音频的绝对路径和其他配置，配置到webui保存 运行即可使用。  </p>
 <p><img alt="参考图" src="https://private-user-images.githubusercontent.com/40910637/329521947-c123e1e1-ac26-4275-a8be-4e8f6224d1d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU0MTk3NTEsIm5iZiI6MTcxNTQxOTQ1MSwicGF0aCI6Ii80MDkxMDYzNy8zMjk1MjE5NDctYzEyM2UxZTEtYWMyNi00Mjc1LWE4YmUtNGU4ZjYyMjRkMWQyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTExVDA5MjQxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQwYmQ0ZGJjNmNiZmY5NzE2ZGQ1OWJmZGNlMDJkNjY2ZjA2MGZhM2E5ODVmMDRhZDlkODAzODJiZDM2NTc4ZWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.sMJEI5tYYLZnPv0bZWXeoeMWL9yYpFOvYJDjN157HMQ" />  </p>
+<h5 id="api-110">api 1.1.0</h5>
+<p>B站找个对应版本的整合包，启动API的bat脚本。然后把配置都配上就行了。<br />
+图文文档：<a href="https://github.com/Ikaros-521/AI-Vtuber/pull/827">https://github.com/Ikaros-521/AI-Vtuber/pull/827</a>  </p>
 <h3 id="_59">变声</h3>
 <h4 id="ddsp-svc">DDSP-SVC</h4>
 <p>官方仓库：<a href="//github.com/yxlllc/DDSP-SVC">DDSP-SVC</a>  </p>
@@ -4879,6 +4897,7 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <li>对接fish-speech-V1.1.0本地整合包API </li>
 <li>修复fish-speech 在线调用功能</li>
 <li>fish-speech在线api支持参考音频过期后自动更新功能，以便长期使用</li>
+<li>千帆AppBuilder更新新接口的对接</li>
 </ul>
 </li>
 <li>

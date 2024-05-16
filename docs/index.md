@@ -1621,9 +1621,11 @@ ps：cookie有效期较短
 
 - AppBuilder
 
-    视频教程：[https://www.bilibili.com/video/BV1b1421D7fz](https://www.bilibili.com/video/BV1b1421D7fz)  
+    视频教程：[旧版API教程](https://www.bilibili.com/video/BV1b1421D7fz)  
 
-    百度智能云 AppBuilder 应用中心：[https://console.bce.baidu.com/ai_apaas/appCenter](https://console.bce.baidu.com/ai_apaas/appCenter)，创建一个你的专属应用 —— 知识问答应用（RAG框架），创建好后，在`API调用`新建一个token，配置到AI Vtuber中即可对接使用。  
+    百度智能云 AppBuilder 应用中心：[https://console.bce.baidu.com/ai_apaas/appCenter](https://console.bce.baidu.com/ai_apaas/appCenter)，创建一个你的专属应用 —— 知识问答应用（RAG框架），创建好后，获取应用ID：[https://console.bce.baidu.com/ai_apaas/personalSpace](https://console.bce.baidu.com/ai_apaas/personalSpace)。获取密钥token：[https://console.bce.baidu.com/ai_apaas/secretKey](https://console.bce.baidu.com/ai_apaas/secretKey)  
+
+    图文文档：[https://github.com/Ikaros-521/AI-Vtuber/pull/830](https://github.com/Ikaros-521/AI-Vtuber/pull/830)  
 
 ##### 官方库（有版本冲突，暂不启用）
 
@@ -1901,6 +1903,12 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 进入官网，选好参数，F12打开开发者工具，抓包 网络，ws，点击 Generate 合成音频，查看 join请求，展开后可以看到 参考音频的绝对路径和其他配置，配置到webui保存 运行即可使用。  
 
 ![参考图](https://private-user-images.githubusercontent.com/40910637/329521947-c123e1e1-ac26-4275-a8be-4e8f6224d1d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU0MTk3NTEsIm5iZiI6MTcxNTQxOTQ1MSwicGF0aCI6Ii80MDkxMDYzNy8zMjk1MjE5NDctYzEyM2UxZTEtYWMyNi00Mjc1LWE4YmUtNGU4ZjYyMjRkMWQyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTExVDA5MjQxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQwYmQ0ZGJjNmNiZmY5NzE2ZGQ1OWJmZGNlMDJkNjY2ZjA2MGZhM2E5ODVmMDRhZDlkODAzODJiZDM2NTc4ZWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.sMJEI5tYYLZnPv0bZWXeoeMWL9yYpFOvYJDjN157HMQ)  
+
+##### api 1.1.0
+
+B站找个对应版本的整合包，启动API的bat脚本。然后把配置都配上就行了。  
+图文文档：[https://github.com/Ikaros-521/AI-Vtuber/pull/827](https://github.com/Ikaros-521/AI-Vtuber/pull/827)  
+
 
 ### 变声
 
@@ -2251,6 +2259,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - 对接fish-speech-V1.1.0本地整合包API 
         - 修复fish-speech 在线调用功能
         - fish-speech在线api支持参考音频过期后自动更新功能，以便长期使用
+        - 千帆AppBuilder更新新接口的对接
 
     - 2024-5-15
         - 数字人视频播放器 支持local类型，直接播放本地视频，支持 MuseTalk 对接
