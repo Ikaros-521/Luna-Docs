@@ -2257,6 +2257,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志"
     - 2024-5-17
         - fish-speech v1.1.0的参考音频参数传参错误问题修复
+        - 优化github issue模板等
+        - 语音聊天的数据 新增talk类型，用于区分语言和弹幕数据（待测）
+
     - 2024-5-16
         - 对接fish-speech-V1.1.0本地整合包API 
         - 修复fish-speech 在线调用功能
