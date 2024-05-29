@@ -4891,7 +4891,15 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <details class="note">
 <summary>更新日志</summary>
 <ul>
-<li>2024-5-23<ul>
+<li>
+<p>2024-5-26</p>
+<ul>
+<li>违禁词新增到7w行（一定程度上会拖慢处理速度）</li>
+</ul>
+</li>
+<li>
+<p>2024-5-23</p>
+<ul>
 <li>faster_whisper新增语言设定</li>
 <li>修复录音解析失败无法重复录音bug</li>
 <li>新增音频信息回调开关（因为这个音频信息回调是提供给闲时任务计时重置用的，但因为通过http实现，所以会有较大延迟，而这个延迟会阻塞音频播放。</li>
