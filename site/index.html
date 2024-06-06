@@ -3129,6 +3129,7 @@ Linux部署问题讨论：<a href="https://github.com/Ikaros-521/AI-Vtuber/issue
 <p>安装命令参考：  </p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
 </code></pre></div>
+<p>直接安装会版本冲突，需要注释冲突部分，手动安装，部分库向下兼容，版本参考<code>requirements_comment.txt</code>：<a href="https://github.com/Ikaros-521/AI-Vtuber/issues/868">issue#868</a>  </p>
 <p>自行安装依赖100%出现依赖冲突问题，参考仓库issue：<a href="https://github.com/Ikaros-521/AI-Vtuber/issues/655">https://github.com/Ikaros-521/AI-Vtuber/issues/655</a>  </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -4892,10 +4893,20 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <summary>更新日志</summary>
 <ul>
 <li>
+<p>2024-6-7</p>
+<ul>
+<li>cv2移到函数内导入；</li>
+<li>补充遗漏依赖版本；</li>
+<li>默认配置删除容易违禁的接口</li>
+</ul>
+</li>
+<li>
 <p>2024-6-4</p>
 <ul>
 <li>删除无用文档</li>
 <li>更新脚本默认执行备份脚本</li>
+<li>补充遗漏依赖和指定版本号</li>
+<li>针对webui运行程序功能不兼容问题进行修复（linux运行请使用root用户）</li>
 </ul>
 </li>
 <li>
