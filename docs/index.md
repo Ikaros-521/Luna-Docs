@@ -33,7 +33,7 @@ hide:
 
     `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它整合了很多高效的人工智能模型和平台，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、文心一言、通义星尘、通义千问、千帆大模型、Gemini、Kimi Chat、QAnything、koboldcpp、FastGPT、Ollama、One-API、AnythingLLM`。通过 Luna AI, 我们既可以在本地运行本地模型，也可以通过云端服务使用开放式 AI 平台的功能。当然，为了让对话照进现实，Luna AI 还结合了多模态模型，包括 `Gemini` 的图像识别能力，获取电脑画面进行分析讲解。 
 
-    `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber、数字人视频播放器（Easy-Wav2Lip、Sadtalker、GeneFace++、MuseTalk、本地视频）` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、拼多多、1688、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
+    `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber、数字人视频播放器（Easy-Wav2Lip、Sadtalker、GeneFace++、MuseTalk、本地视频）、metahuman-stream（ernerf、musetalk）` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、拼多多、1688、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
     为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术和文本转语音技术，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top、tts.ai-lab.top、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS、fish-speech、ChatTTS`。这些技术能够生成流畅的回答，而且 Luna AI 还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
 
@@ -2040,6 +2040,13 @@ EasyAIVtuber官方仓库：[https://github.com/Ksuriuri/EasyAIVtuber](https://gi
 数字人视频播放器 官方仓库：[https://github.com/Ikaros-521/digital_human_video_player](https://github.com/Ikaros-521/digital_human_video_player)  
 
 参考官方文档完成部署后启动，虚拟身体选择“数字人视频播放器”，保存运行即可对接使用。  
+
+#### metahuman-stream
+
+metahuman-stream 官方仓库：[https://github.com/lipku/metahuman-stream](https://github.com/lipku/metahuman-stream)  
+官方部署教程：[https://www.bilibili.com/video/BV1kr421G7ho](https://www.bilibili.com/video/BV1kr421G7ho)  
+
+使用概览：[https://github.com/Ikaros-521/AI-Vtuber/pull/881](https://github.com/Ikaros-521/AI-Vtuber/pull/881)  
 
 ### 图像识别
 
