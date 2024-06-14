@@ -2257,6 +2257,13 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-6-14
+        - bert_vits2 新增 刘悦-中文特化API 的对接；
+
+    - 2024-6-14
+        - 增加mentahuman和musetalk([metahuman-stream](https://github.com/lipku/metahuman-stream))实时交互数字人接入ai-vtuber的能力，可以直播带货，也可以做数字分身
+        - 重新整理虚拟身体板块 排序
+        
     - 2024-6-12
         - 音频mixer初始化增加异常捕获，针对声卡异常情况下给予提示，以不影响播放逻辑运行
 
