@@ -3435,9 +3435,11 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 
 ### 合作伙伴
 
-青椒云：[qingjiaocloud.com](//account.qingjiaocloud.com/signin?inviteCode=4Q92ROBQ) `AIGC 高性能云桌面`  
+青椒云：[qingjiaocloud.com](https://account.qingjiaocloud.com/signin?inviteCode=4Q92ROBQ)  ———— AIGC 高性能云桌面  
 
-睿声AI：[reecho.ai](//www.reecho.ai/) `瞬时创建 超级拟真的 人工智能克隆语音`  
+睿声AI：[reecho.ai](https://www.reecho.ai/)  ———— 瞬时创建 超级拟真的 人工智能克隆语音  
+
+AIHubMix: [aihubmix.com](https://aihubmix.com/register?aff=1BMI)  ———— OpenAI,Google,通义千问等大语言模型API代理站  
 
 ### 🙌赞助
 
