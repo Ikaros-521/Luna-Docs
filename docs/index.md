@@ -2277,6 +2277,8 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志"
     - 2024-6-16
         - LLM新增 LLM_TPU 的gradio对接 
+        - 补充webui的配置提示；
+        - 新增串口类（为后期串口控制功能做准备）
 
     - 2024-6-15
         - 优化metahuman-stream对接部分源码（运行逻辑部分待调整）
