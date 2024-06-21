@@ -2275,6 +2275,10 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-6-21
+        - ChatTTS gradio新增 0621版的兼容 
+        - 针对无桌面情况，将pyautogui移到运行处导入
+
     - 2024-6-18
         - chattts api调用改get为post请求
 
