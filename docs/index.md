@@ -2278,6 +2278,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
     - 2024-6-22
         - 针对通义星尘 上下文长度配置项数据类型错误问题进行修复
         - metahuman-stream 支持wav2lip
+        - 新增 抖音2 监听方案（以便适配非win平台）
 
     - 2024-6-21
         - ChatTTS gradio新增 0621版的兼容 
