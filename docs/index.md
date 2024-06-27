@@ -1845,6 +1845,14 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 整合包视频教程2：[【VITS一键包】本地训练独属于你的AI嘴替？训练部署AI语音合成教程](//www.bilibili.com/video/BV1B841197Em)  
 
+#### 睿声
+
+官网：[https://www.reecho.ai/](https://www.reecho.ai/)  
+
+在 [角色管理](https://dash.reecho.ai/voices) 页面，创建训练一个你想用使用的角色的声音模型，点击更多，顶部可以看到一串字符串，就是角色ID，配置到配置项中。  
+
+申请API Key：[https://dash.reecho.ai/apiKey](https://dash.reecho.ai/apiKey)，配置到对应配置项中，保存即可。
+
 #### VALL-E-X
 
 官方仓库：[VALL-E-X](//github.com/Plachtaa/VALL-E-X)  
@@ -2264,6 +2272,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 
 
 ### 长期计划
+
 - [ ] 懒人包优化
 - [ ] 接入更多的LLM（new bing等）
 - [ ] 接入更多的TTS方案
@@ -2275,6 +2284,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-6-27
+        - 修复睿声调用，音频后缀名改为mp3
+
     - 2024-6-26
         - 聊天页 补充参数CHANNELS RATE的设置 
         - 全局替换日志 logging为loguru 
