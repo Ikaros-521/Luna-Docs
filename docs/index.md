@@ -1253,6 +1253,10 @@ API接口地址根据配置文件中webui的ip端口地址决定，默认：`htt
 
 借鉴 [Live-Barrage :octicons-link-16:](//github.com/XiaoXinYo/Live-Barrage)  
 
+浏览器安装`油猴`插件，然后在前往 插件商店安装 直播弹幕监听 转发至本地WS服务端-[https://greasyfork.org/zh-CN/scripts/490966](https://greasyfork.org/zh-CN/scripts/490966) 插件，安装完成后，前往你想捕获的直播间，按F12打开开发者工具，看看console 控制台的输出，是否有监听到弹幕信息，有的话就没事了，没有的话可以刷新重试或者手动在console注入js运行。  
+
+最后AI Vtuber选择`斗鱼`平台，然后运行就可以了，ws会传输弹幕信息。  
+
 #### YouTube直播监听
 
 依赖库：[pytchat](//github.com/taizan-hokuto/pytchat/tree/master)  
