@@ -2064,7 +2064,9 @@ metahuman-stream 官方仓库：[https://github.com/lipku/metahuman-stream](http
 
 使用概览：[https://github.com/Ikaros-521/AI-Vtuber/pull/881](https://github.com/Ikaros-521/AI-Vtuber/pull/881)  
 
-视频教程：[https://www.bilibili.com/video/BV1Jy411q7sy](https://www.bilibili.com/video/BV1Jy411q7sy)  
+对接使用视频教程：[https://www.bilibili.com/video/BV1Jy411q7sy](https://www.bilibili.com/video/BV1Jy411q7sy)  
+
+训练模型视频教程：[https://www.bilibili.com/video/BV1rJ4m1u7sy/](https://www.bilibili.com/video/BV1rJ4m1u7sy/)  
 
 ### 图像识别
 
@@ -2288,6 +2290,10 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-7-2
+        - webui 通用配置的聊天类型 改名为 大语言模型
+        - 通用函数增加异常捕获
+
     - 2024-6-27
         - 修复睿声调用，音频后缀名改为mp3
         - 睿声AI 新增新版API的几个参数，可以支持V2.0的调用（没测过，不确定）
