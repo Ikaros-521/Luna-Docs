@@ -35,7 +35,7 @@ hide:
 
     `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber、数字人视频播放器（Easy-Wav2Lip、Sadtalker、GeneFace++、MuseTalk、本地视频）、metahuman-stream（ernerf、musetalk、wav2lip）` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、拼多多、1688、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
-    为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术和文本转语音技术，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top、tts.ai-lab.top、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS、fish-speech、ChatTTS`。这些技术能够生成流畅的回答，而且 Luna AI 还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
+    为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术和文本转语音技术，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、genshinvoice.top、tts.ai-lab.top、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS、fish-speech、ChatTTS、CosyVoice`。这些技术能够生成流畅的回答，而且 Luna AI 还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
 
     此外，`Luna AI` 还能够通过特定指令与 `Stable Diffusion` 协作，展示画作。用户还可以自定义文案，让 Luna AI 循环播放，以满足不同场合的需求。
 
@@ -1927,6 +1927,11 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 B站找个对应版本的整合包，启动API的bat脚本。然后把配置都配上就行了。  
 图文文档：[https://github.com/Ikaros-521/AI-Vtuber/pull/827](https://github.com/Ikaros-521/AI-Vtuber/pull/827)  
 
+#### CosyVoice
+
+官方仓库：[https://github.com/FunAudioLLM/CosyVoice](https://github.com/FunAudioLLM/CosyVoice)  
+
+
 
 ### 变声
 
@@ -2294,6 +2299,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - 修复串口功能无法使用的bug（单例模式没有，串口的等待数据返回删了，会影响运行，只发送，不接收）
         - 修复了串口页的数据保存bug
         - 串口页的按钮仍有bug
+        - 对接CosyVoice（使用刘悦佬0707的版本）
 
     - 2024-7-7
         - 串口功能发布，在串口页完成配置和连接后，可以在通用配置-按键映射配置串口的映射关系（适用于弹幕现实游戏-串口控制功能）
