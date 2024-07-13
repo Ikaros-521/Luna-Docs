@@ -1927,11 +1927,17 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 B站找个对应版本的整合包，启动API的bat脚本。然后把配置都配上就行了。  
 图文文档：[https://github.com/Ikaros-521/AI-Vtuber/pull/827](https://github.com/Ikaros-521/AI-Vtuber/pull/827)  
 
+#### ChatTTS
+
+官方仓库：[https://github.com/2noise/ChatTTS](https://github.com/2noise/ChatTTS)  
+
+视频教程：[https://www.bilibili.com/video/BV17D421g7cx](https://www.bilibili.com/video/BV17D421g7cx)  
+
 #### CosyVoice
 
 官方仓库：[https://github.com/FunAudioLLM/CosyVoice](https://github.com/FunAudioLLM/CosyVoice)  
 
-
+视频教程：[https://www.bilibili.com/video/BV1iw4m1a7zx/](https://www.bilibili.com/video/BV1iw4m1a7zx/)  
 
 ### 变声
 
@@ -2295,6 +2301,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-7-13
+        - 修正 录音配置的描述
+
     - 2024-7-8
         - 修复串口功能无法使用的bug（单例模式没有，串口的等待数据返回删了，会影响运行，只发送，不接收）
         - 修复了串口页的数据保存bug
