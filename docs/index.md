@@ -133,6 +133,8 @@ pip install -r requirements.txt
 
 自行安装依赖100%出现依赖冲突问题，参考仓库issue：[https://github.com/Ikaros-521/AI-Vtuber/issues/655](https://github.com/Ikaros-521/AI-Vtuber/issues/655)  
 
+（听劝的已经下载整合包了）  
+
 !!! note
 
     部署视频教程 [哔哩哔哩 :octicons-link-16:](//www.bilibili.com/video/BV1fV4y1C77r)  
@@ -1749,6 +1751,12 @@ exe程序下载(也可以去整合包网盘中下载)：[https://github.com/Lost
 
 官方仓库：[https://github.com/sophgo/LLM-TPU](https://github.com/sophgo/LLM-TPU)  
 
+#### Dify
+
+官方仓库: [https://github.com/langgenius/dify](https://github.com/langgenius/dify)  
+
+图文教程：[https://github.com/Ikaros-521/AI-Vtuber/pull/924](https://github.com/Ikaros-521/AI-Vtuber/pull/924)  
+
 ### TTS
 
 #### elevenlabs
@@ -2303,6 +2311,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-7-19
+        - 【webui】gpt新增gpt-4o-mini模型
+
     - 2024-7-17
         - 接入Dify 聊天助手的API
         
