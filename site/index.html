@@ -4119,7 +4119,7 @@ playwright<span class="w"> </span>install
 <td>状态码，200为成功，小于0为错误代码，大于0为部分成功代码</td>
 </tr>
 <tr>
-<td>msg</td>
+<td>message</td>
 <td>string</td>
 <td>响应消息，描述请求的处理结果</td>
 </tr>
@@ -4173,7 +4173,7 @@ playwright<span class="w"> </span>install
 <td>状态码，200为成功，小于0为错误代码，大于0为部分成功代码</td>
 </tr>
 <tr>
-<td>msg</td>
+<td>message</td>
 <td>string</td>
 <td>响应消息，描述请求的处理结果</td>
 </tr>
@@ -4227,7 +4227,7 @@ playwright<span class="w"> </span>install
 <td>状态码，200为成功，小于0为错误代码，大于0为部分成功代码</td>
 </tr>
 <tr>
-<td>msg</td>
+<td>message</td>
 <td>string</td>
 <td>响应消息，描述请求的处理结果</td>
 </tr>
@@ -4287,7 +4287,7 @@ playwright<span class="w"> </span>install
 <td>状态码，200为成功，小于0为错误代码，大于0为部分成功代码</td>
 </tr>
 <tr>
-<td>msg</td>
+<td>message</td>
 <td>string</td>
 <td>响应消息，描述请求的处理结果</td>
 </tr>
@@ -4364,14 +4364,14 @@ playwright<span class="w"> </span>install
 <td>状态码，200为成功，小于0为错误代码，大于0为部分成功代码</td>
 </tr>
 <tr>
-<td>msg</td>
+<td>message</td>
 <td>string</td>
 <td>响应消息，描述请求的处理结果</td>
 </tr>
 <tr>
 <td>data</td>
 <td>object</td>
-<td>数据内容，含传参外还有一个result键值，里面就有合成情况内容，和最后合成后文件存储路径，配合本地路径映射到URL路径，即可实现跨网段文件下载（json）。例如：{"result":{"code":200,"msg":"合成成功","audio_path":"E:\GitHub_pro\AI-Vtuber\out\gpt_sovits_4.wav"},其他键值对忽略}</td>
+<td>数据内容，含传参外还有一个result键值，里面就有合成情况内容，和最后合成后文件存储路径，配合本地路径映射到URL路径，即可实现跨网段文件下载（json）。例如：{"result":{"code":200,"message":"合成成功","audio_path":"E:\GitHub_pro\AI-Vtuber\out\gpt_sovits_4.wav"},其他键值对忽略}</td>
 </tr>
 </tbody>
 </table>
@@ -5051,6 +5051,7 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <p>2024-7-23</p>
 <ul>
 <li>弃用flask，改用fastapi（测试了 聊天页发送、微信号对接，暂时没有发现问题。稳定性待测试）</li>
+<li>补充webui遗漏的API set_config接口，规范化api实现。api返回键值msg改为message</li>
 </ul>
 </li>
 <li>
