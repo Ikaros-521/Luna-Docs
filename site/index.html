@@ -5048,6 +5048,12 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <summary>更新日志</summary>
 <ul>
 <li>
+<p>2024-7-24</p>
+<ul>
+<li>audio.py中 pygame部分导入、实例化和调用统一改至播放器配置为pygame时生效，避免pygame异常情况下无法正常使用的问题</li>
+</ul>
+</li>
+<li>
 <p>2024-7-23</p>
 <ul>
 <li>弃用flask，改用fastapi（测试了 聊天页发送、微信号对接，暂时没有发现问题。稳定性待测试）</li>

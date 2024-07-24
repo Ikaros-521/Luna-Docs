@@ -2315,6 +2315,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-7-24
+        - audio.py中 pygame部分导入、实例化和调用统一改至播放器配置为pygame时生效，避免pygame异常情况下无法正常使用的问题
+
     - 2024-7-23
         - 弃用flask，改用fastapi（测试了 聊天页发送、微信号对接，暂时没有发现问题。稳定性待测试）
         - 补充webui遗漏的API set_config接口，规范化api实现。api返回键值msg改为message
