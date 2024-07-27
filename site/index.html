@@ -5111,6 +5111,12 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <summary>更新日志</summary>
 <ul>
 <li>
+<p>2024-7-27</p>
+<ul>
+<li>聊天模式 STT识别为空 过滤不触发</li>
+</ul>
+</li>
+<li>
 <p>2024-7-26</p>
 <ul>
 <li>使用poetry锁定依赖环境</li>
@@ -5123,6 +5129,7 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <ul>
 <li>audio.py中 pygame部分导入、实例化和调用统一改至播放器配置为pygame时生效，避免pygame异常情况下无法正常使用的问题</li>
 <li>删除文心一言，请统一使用 千帆大模型</li>
+<li>聊天页新增 SenseVoice，需要安装funasr，模型请自行下载（如魔塔社区、huggingface、我网盘备份等），ASR速度大大提升 </li>
 </ul>
 </li>
 <li>
