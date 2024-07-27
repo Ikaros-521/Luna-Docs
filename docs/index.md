@@ -129,8 +129,32 @@ Linux部署问题讨论：[https://github.com/Ikaros-521/AI-Vtuber/issues/520](h
 
 安装命令参考：  
 
+##### pip
+
 ```shell
 pip install -r requirements.txt
+```
+
+##### poetry
+
+1. 安装 Poetry
+```shell
+pip install poetry
+```
+
+2. 安装依赖
+```shell
+poetry install
+```
+
+3. 激活虚拟环境
+```shell
+poetry shell
+```
+
+4. 验证安装
+```shell
+poetry show
 ```
 
 直接安装会版本冲突，需要注释冲突部分，手动安装，部分库向下兼容，版本参考`requirements_comment.txt`：[issue#868](https://github.com/Ikaros-521/AI-Vtuber/issues/868)  
@@ -2314,6 +2338,11 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-7-26
+        - 使用poetry锁定依赖环境
+        - 聊天页 新增 唤醒词和睡眠词，可以通过此功能唤醒ai对话，不需要时使用睡眠词停止回复，配合连续对话使用 
+        - 部分第三方库版本升级，简单测试暂时没发现问题（待稳定性测试）
+
     - 2024-7-24
         - audio.py中 pygame部分导入、实例化和调用统一改至播放器配置为pygame时生效，避免pygame异常情况下无法正常使用的问题
         - 删除文心一言，请统一使用 千帆大模型
