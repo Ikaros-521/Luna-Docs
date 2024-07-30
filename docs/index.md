@@ -127,41 +127,44 @@ Linux部署问题讨论：[https://github.com/Ikaros-521/AI-Vtuber/issues/520](h
 
 依赖版本参考 `requirements_common.txt`
 
+使用uv安装 解决冲突。直接安装会版本冲突，需要注释冲突部分，手动安装，部分库向下兼容，版本参考`requirements_comment.txt`：[issue#868](https://github.com/Ikaros-521/AI-Vtuber/issues/868)  
+
+依赖冲突问题参考仓库issue：[https://github.com/Ikaros-521/AI-Vtuber/issues/655](https://github.com/Ikaros-521/AI-Vtuber/issues/655)  
+
+（听劝的已经下载整合包了）  
+
 安装命令参考：  
 
 ##### pip
 
 ```shell
+pip install requests
 pip install -r requirements.txt
 ```
 
-##### poetry
+##### uv (解决冲突问题)
 
-1. 安装 Poetry
-```shell
-pip install poetry
+```
+pip install uv requests
+
+uv venv  # Create a virtual environment at `.venv`.
+
+# On macOS and Linux.
+source .venv/bin/activate
+
+# On Windows.
+.venv\Scripts\activate
 ```
 
-2. 安装依赖
-```shell
-poetry install
+然后使用以下命令安装依赖：
+
 ```
+uv pip install -r requirements.txt --override overrides.txt
 
-3. 激活虚拟环境
-```shell
-poetry shell
+# 或使用
+
+uv pip install -r pyproject.toml --override overrides.txt
 ```
-
-4. 验证安装
-```shell
-poetry show
-```
-
-直接安装会版本冲突，需要注释冲突部分，手动安装，部分库向下兼容，版本参考`requirements_comment.txt`：[issue#868](https://github.com/Ikaros-521/AI-Vtuber/issues/868)  
-
-自行安装依赖100%出现依赖冲突问题，参考仓库issue：[https://github.com/Ikaros-521/AI-Vtuber/issues/655](https://github.com/Ikaros-521/AI-Vtuber/issues/655)  
-
-（听劝的已经下载整合包了）  
 
 !!! note
 
@@ -2338,6 +2341,13 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-7-31
+        - 讯飞星火 模型命名改为官方新命名，新增4.0和pro-128k，使用请先更新库 [sparkdesk-api](https://github.com/Ikaros-521/sparkdesk-api)
+        - 聊天页 聊天框提前到核心配置下，省得拉到底下才能对话
+
+    - 2024-7-30
+        - 使用uv 进行环境安装
+
     - 2024-7-28
         - 修复qwen漏改的log
 
