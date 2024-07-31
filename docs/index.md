@@ -2345,6 +2345,8 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
         - 讯飞星火 模型命名改为官方新命名，新增4.0和pro-128k，使用请先更新库 [sparkdesk-api](https://github.com/Ikaros-521/sparkdesk-api)
         - 聊天页 聊天框提前到核心配置下，省得拉到底下才能对话
         - 修复音频播放间隔的随机数生成后 没有int化的bug
+        - OpenAI接口支持流式输出（简单测试暂时没啥问题），默认OpenAI ChatGPT模式使用流式 提速
+        - 弹幕日志相关记录封装函数，降低冗余
 
     - 2024-7-30
         - 使用uv 进行环境安装
