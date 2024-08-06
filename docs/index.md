@@ -39,7 +39,7 @@ hide:
 
     `Luna AI` 是一款结合了最先进技术的虚拟AI主播。它整合了很多高效的人工智能模型和平台，包括 `ChatterBot、GPT、Claude、langchain、chatglm、text-generation-webui、讯飞星火、智谱AI、谷歌Bard、通义星尘、通义千问、千帆大模型（文心一言）、Gemini、Kimi Chat、QAnything、koboldcpp、FastGPT、Ollama、One-API、AnythingLLM、LLM_TPU、Dify`。通过 Luna AI, 我们既可以在本地运行本地模型，也可以通过云端服务使用开放式 AI 平台的功能。当然，为了让对话照进现实，Luna AI 还结合了多模态模型，包括 `Gemini` 的图像识别能力，获取电脑画面进行分析讲解。 
 
-    `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber、数字人视频播放器（Easy-Wav2Lip、Sadtalker、GeneFace++、MuseTalk、本地视频）、metahuman-stream（ernerf、musetalk、wav2lip）` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、拼多多、1688、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
+    `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber、数字人视频播放器（Easy-Wav2Lip、Sadtalker、GeneFace++、MuseTalk、本地视频）、metahuman-stream（ernerf、musetalk、wav2lip）、DH_live` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、拼多多、1688、斗鱼、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
     为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术和文本转语音技术，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS、fish-speech、ChatTTS、CosyVoice`。这些技术能够生成流畅的回答，而且 Luna AI 还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
 
@@ -2119,6 +2119,12 @@ metahuman-stream 官方仓库：[https://github.com/lipku/metahuman-stream](http
 
 训练模型视频教程：[https://www.bilibili.com/video/BV1rJ4m1u7sy/](https://www.bilibili.com/video/BV1rJ4m1u7sy/)  
 
+#### DH_live
+
+官方仓库：[https://github.com/kleinlee/DH_live](https://github.com/kleinlee/DH_live)  
+
+对接时，虚拟身体选择“其他”，运行DH_live[整合包](https://pan.quark.cn/s/936dcae8aba0#/list/share/56a79e143a8b4877a98a61854e07b229-AI%20Vtuber/741f94606e414157b8d0a021d3a9ca77-%E8%99%9A%E6%8B%9F%E8%BA%AB%E4%BD%93/f7a1815edf4846ca874c53c4ed9afcbd-DH_live)（就是项目整合包内可以找到）的 麦克风驱动脚本即可。
+
 ### 图像识别
 
 #### gemini
@@ -2341,6 +2347,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-8-6
+        - webui配置保存提示优化（提示当前平台、LLM、TTS等选项）
+
     - 2024-8-1
         - 协同 数字人视频播放器-v0.2.2 接入AniTalker
         
