@@ -1718,9 +1718,13 @@ API申请：[https://platform.moonshot.cn/console/api-keys](https://platform.moo
 [【2023最新版】Win11: WSL（Ubuntu22.04）使用docker远程容器教程（Windows的Docker Desktop下载安装、迁移到非系统盘、配置国内镜像源、设置 WSL2）](https://blog.csdn.net/m0_63834988/article/details/131816239)  
 [Windows安装网易开源QAnything打造智能客服系统](https://www.bilibili.com/read/cv31412472/)  
 
-#### 通义千问
+#### 阿里云百炼（通义千问、百川、月之暗面、零一万物、MiniMax）
 
 官网：[qianwen.aliyun.com](//qianwen.aliyun.com/)   
+
+阿里云百炼平台：[bailian.console.aliyun.com](https://bailian.console.aliyun.com/)  
+
+开通模型服务，申请API密钥，配置密钥到webui，选中模型，保存配置运行即可。
 
 ##### API类型
 
