@@ -2129,6 +2129,14 @@ metahuman-stream 官方仓库：[https://github.com/lipku/metahuman-stream](http
 
 对接时，虚拟身体选择“其他”，运行DH_live[整合包](https://pan.quark.cn/s/936dcae8aba0#/list/share/56a79e143a8b4877a98a61854e07b229-AI%20Vtuber/741f94606e414157b8d0a021d3a9ca77-%E8%99%9A%E6%8B%9F%E8%BA%AB%E4%BD%93/f7a1815edf4846ca874c53c4ed9afcbd-DH_live)（就是项目整合包内可以找到）的 麦克风驱动脚本即可。
 
+#### live2d-TTS-LLM-GPT-SoVITS-Vtuber
+
+视频教程：[【AI主播-虚拟身体篇】对接 刘悦佬Live2D项目 源码魔改，提供API 实现音频URL传入来驱动口型](https://www.bilibili.com/video/BV1fz421v7Yx)  
+
+对接项目地址: [https://github.com/Ikaros-521/live2d-TTS-LLM-GPT-SoVITS-Vtuber](https://github.com/Ikaros-521/live2d-TTS-LLM-GPT-SoVITS-Vtuber)  
+
+原始项目地址：[https://github.com/v3ucn/live2d-TTS-LLM-GPT-SoVITS-Vtuber](https://github.com/v3ucn/live2d-TTS-LLM-GPT-SoVITS-Vtuber)  
+
 ### 图像识别
 
 #### gemini
@@ -2353,7 +2361,7 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ??? note "更新日志"
     - 2024-8-11
         - 虚拟身体对接 live2d_TTS_LLM_GPT_SoVITS_Vtuber
-        
+
     - 2024-8-8
         - 通义千问支持流式输出，另外追加了 阿里云百炼支持的几个其他公司的大模型（百川、月之暗面、Yi）
 
