@@ -2359,6 +2359,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-9-1
+        优化：GPT-SOVITS 模型加载兼容V2的API
+        
     - 2024-8-31
         - 新增：GPT-SOVITS-V2 0821整合包API对接
         
