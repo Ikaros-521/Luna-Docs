@@ -1467,7 +1467,7 @@ api key申请地址：[open.bigmodel.cn/usercenter/apikeys](//open.bigmodel.cn/u
 
 #### langchain-ChatGLM
 
-官方仓库：[langchain-ChatGLM](//github.com/chatchat-space/langchain-ChatGLM)  
+官方仓库：[langchain-ChatGLM](https://github.com/chatchat-space/langchain-ChatGLM)  
 
 个人提供的整合包：[pan.quark.cn/s/8d8904fd4b30](//pan.quark.cn/s/8d8904fd4b30)  
 
@@ -1515,6 +1515,11 @@ LLM_MODEL = "chatglm-6b-int4"
 ```
 
 运行 `api.py` ，然后接入本项目。  
+
+#### langchain-chatchat
+
+官方仓库：[https://github.com/chatchat-space/Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat)  
+视频教程：[https://www.bilibili.com/video/BV1c94y1n7Ga/](https://www.bilibili.com/video/BV1c94y1n7Ga/)  
 
 #### chat_with_file
 
