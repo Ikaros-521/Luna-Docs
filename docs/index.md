@@ -1465,6 +1465,15 @@ api key申请地址：[open.bigmodel.cn/usercenter/apikeys](//open.bigmodel.cn/u
 
 注意，需要在"设置"->"账号设置"中完成实名认证后，才能使用API。新账号默认赠送了18元的免费额度。  
 
+##### 智能体
+
+图文教程：[https://github.com/Ikaros-521/AI-Vtuber/pull/1015](https://github.com/Ikaros-521/AI-Vtuber/pull/1015)  
+智能体创建：[https://chatglm.cn/main/toolsCenter?lang=zh](https://chatglm.cn/main/toolsCenter?lang=zh)  
+密钥获取：[https://chatglm.cn/developersPanel/apiSet](https://chatglm.cn/developersPanel/apiSet)  
+智能体 ID，浏览器打开智能体对话页后，可通过URL地址栏查看。例如：`https://chatglm.cn/main/gdetail/6706907a6c06eb2f71087d47?lang=zh`,那么ID为`6706907a6c06eb2f71087d47`  
+
+模型选择“智能体”，配置密钥等，保存重新运行即可。  
+
 #### langchain-ChatGLM
 
 官方仓库：[langchain-ChatGLM](https://github.com/chatchat-space/langchain-ChatGLM)  
@@ -2364,6 +2373,9 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-10-10
+        - 新增：对接智谱AI 智能体
+
     - 2024-10-9
         - 优化：基础配置页面排版，对配置板块进行分类到抽屉，便于用户理解
         - 待办：尝试兼容新版gemini
