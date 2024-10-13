@@ -1088,6 +1088,13 @@ protoc -I . --python_out=. ks.proto
 
     解决方案：[AI-Vtuber/issues/381#issuecomment-1774128497](//github.com/Ikaros-521/AI-Vtuber/issues/381#issuecomment-1774128497)
 
+??? note "如何 不使用audio player，指定ai vtb的音频输出到指定声卡/扬声器？"
+
+    在线图文教程：[issues/1018 :octicons-link-16:](https://github.com/Ikaros-521/AI-Vtuber/issues/1018)  
+
+    ![image](./static/images/luna-ai/set_app_audio_to_custom_device.png)
+
+
 ## API
 
 API接口地址根据配置文件中webui的ip端口地址决定，默认：`http://127.0.0.1:8081`  
