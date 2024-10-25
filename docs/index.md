@@ -3742,8 +3742,7 @@ AIHubMix: [aihubmix.com](https://aihubmix.com/register?aff=1BMI)  ———— O
 
 ### 🙌赞助
 
-![image](./static/images/luna-ai/alipay.png){ width="200" }
-![image](./static/images/luna-ai/wechatpay.png){ width="200" }
+![image](./static/images/luna-ai/zfb-wx.png){ width="400" }
 
 ## 黑名单
 
