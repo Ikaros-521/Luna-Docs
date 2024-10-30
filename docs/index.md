@@ -2004,6 +2004,13 @@ B站找个对应版本的整合包，启动API的bat脚本。然后把配置都�
 
 视频教程：[https://www.bilibili.com/video/BV1iw4m1a7zx/](https://www.bilibili.com/video/BV1iw4m1a7zx/)  
 
+#### MultiTTS
+
+图文文档：[https://github.com/Ikaros-521/AI-Vtuber/pull/1042](https://github.com/Ikaros-521/AI-Vtuber/pull/1042)  
+
+视频教程：[https://www.bilibili.com/video/BV1DRSbYaEP3/](https://www.bilibili.com/video/BV1DRSbYaEP3/)  
+
+
 ### 变声
 
 #### DDSP-SVC
@@ -2380,6 +2387,10 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-10-30
+        - 新增：对接MultiTTS
+    - 2024-10-29
+        - UI：修改webui默认选中样式（换个口味）
     - 2024-10-26
         - 修复：快手弹幕监听失败的bug；
         - 新增：对接 让弹幕飞（多直播平台弹幕监听平台）
