@@ -1098,6 +1098,7 @@ protoc -I . --python_out=. ks.proto
 ## API
 
 API接口地址根据配置文件中webui的ip端口地址决定，默认：`http://127.0.0.1:8081`  
+API在线文档：[https://apifox.com/apidoc/shared-3b2abc65-37f3-4812-a604-ffc35c8ec3ec](https://apifox.com/apidoc/shared-3b2abc65-37f3-4812-a604-ffc35c8ec3ec)  
 
 ### 配置config
 
@@ -1317,6 +1318,7 @@ API接口地址根据配置文件中webui的ip端口地址决定，默认：`htt
 #### TikTok
 
 视频教程：[BV1GU421o7Wq](https://www.bilibili.com/video/BV1GU421o7Wq)  
+监听项目：[https://github.com/isaackogan/TikTokLive](https://github.com/isaackogan/TikTokLive)  
 
 #### 聊天模式 
 
@@ -2387,8 +2389,16 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-12-16
+        - 新增：增加get_sys_info接口，可以获取系统当前待播放音频数、等待合成消息数量
+
+    - 2024-12-12
+        - 修复：GSV删除ws配置导致的运行bug 
+
     - 2024-11-26
         - 新增：对接MeloTTS API
+        - 删除：GSV ws配置，旧版gradio废弃 
+
     - 2024-11-14
         - 修复：异常报警 和 DDSP配置保存错乱bug
         - 修复：补充遗漏的火山引擎 显隐开关功能

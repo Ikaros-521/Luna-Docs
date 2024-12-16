@@ -4220,7 +4220,8 @@ playwright<span class="w"> </span>install
 </ul>
 </details>
 <h2 id="api">API</h2>
-<p>API接口地址根据配置文件中webui的ip端口地址决定，默认：<code>http://127.0.0.1:8081</code>  </p>
+<p>API接口地址根据配置文件中webui的ip端口地址决定，默认：<code>http://127.0.0.1:8081</code><br />
+API在线文档：<a href="https://apifox.com/apidoc/shared-3b2abc65-37f3-4812-a604-ffc35c8ec3ec">https://apifox.com/apidoc/shared-3b2abc65-37f3-4812-a604-ffc35c8ec3ec</a>  </p>
 <h3 id="config">配置config</h3>
 <h4 id="_20">概述</h4>
 <ul>
@@ -4576,7 +4577,8 @@ playwright<span class="w"> </span>install
 <p>其中token获取方式，通过访问<a href="//twitchapps.com/tmi/">https://twitchapps.com/tmi/</a>，登录twitch账号授权后即可获取返回的token:<code>oauth:xxxxx</code>  </p>
 <p>！！！注意：如果你的token和你监听的直播间是同一个账号，那会自动过滤你自己发送的弹幕！！！  </p>
 <h4 id="tiktok">TikTok</h4>
-<p>视频教程：<a href="https://www.bilibili.com/video/BV1GU421o7Wq">BV1GU421o7Wq</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1GU421o7Wq">BV1GU421o7Wq</a><br />
+监听项目：<a href="https://github.com/isaackogan/TikTokLive">https://github.com/isaackogan/TikTokLive</a>  </p>
 <h4 id="_46">聊天模式</h4>
 <h5 id="_47">百度</h5>
 <p>新用户+实名认证后有半年的免费额度可以使用。  </p>
@@ -5218,8 +5220,23 @@ error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is
 <details class="note">
 <summary>更新日志</summary>
 <ul>
-<li>2024-11-26<ul>
+<li>
+<p>2024-12-16</p>
+<ul>
+<li>新增：增加get_sys_info接口，可以获取系统当前待播放音频数、等待合成消息数量</li>
+</ul>
+</li>
+<li>
+<p>2024-12-12</p>
+<ul>
+<li>修复：GSV删除ws配置导致的运行bug </li>
+</ul>
+</li>
+<li>
+<p>2024-11-26</p>
+<ul>
 <li>新增：对接MeloTTS API</li>
+<li>删除：GSV ws配置，旧版gradio废弃 </li>
 </ul>
 </li>
 <li>
