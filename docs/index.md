@@ -2389,6 +2389,8 @@ pyautogui官方文档：[传送门，官方对按键名的定义](//pyautogui.re
 ## 📝更新日志
 
 ??? note "更新日志"
+    - 2024-12-31
+        - 新增：webui和main增加https ssl证书的demo例程；main新增tts合成接口；main新增本地路径挂载功能
     - 2024-12-29
         - 优化：LLM流式响应 openai接口的数据时，有的服务端会返回none数据，进行特殊处理
         
