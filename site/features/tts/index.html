@@ -1,0 +1,1440 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../llm/">
+      
+      
+        <link rel="next" href="../svc/">
+      
+      
+      <link rel="icon" href="../../static/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>语音合成 - Luna AI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-FR32RDV2MT"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-FR32RDV2MT",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-FR32RDV2MT",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tts" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Luna AI" class="md-header__button md-logo" aria-label="Luna AI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M160.8 96.5c14 17 31 30.9 49.5 42.2 25.9 15.8 53.7 25.9 77.7 31.6v-31.5c-22.2-30.3-38-67.3-39.4-110.8-.4-11.3-7.5-21.5-18.4-24.4-7.6-2-15.8-.2-21 5.8-13.3 15.4-32.7 44.6-48.4 87.2zM320 144v64c-60.8-5.1-185-43.8-219.3-157.2C97.4 40 87.9 32 76.6 32c-7.9 0-15.3 3.9-18.8 11C46.8 65.9 32 112.1 32 176c0 116.9 80.1 180.5 118.4 202.8L11.8 416.6C6.7 418 2.6 421.8.9 426.8s-.8 10.6 2.3 14.8C21.7 466.2 77.3 512 160 512c3.6 0 7.2-1.2 10-3.5l75.6-60.5H320c88.4 0 160-71.6 160-160V128l29.9-44.9c1.3-2 2.1-4.4 2.1-6.8 0-6.8-5.5-12.3-12.3-12.3H400c-44.2 0-80 35.8-80 80m80-16a16 16 0 1 1 0 32 16 16 0 1 1 0-32"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Luna AI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              语音合成
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Ikaros-521/AI-Vtuber" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Luna AI
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../install/" class="md-tabs__link">
+        
+  
+    
+  
+  安装
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../use/" class="md-tabs__link">
+        
+  
+    
+  
+  使用
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../basic/" class="md-tabs__link">
+          
+  
+  功能介绍
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+    
+  
+  常见问题
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../develop/" class="md-tabs__link">
+        
+  
+    
+  
+  开发&项目相关
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../plans/todo/" class="md-tabs__link">
+          
+  
+  开发计划
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+    
+  
+  更新日志
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  关于
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Luna AI" class="md-nav__button md-logo" aria-label="Luna AI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M160.8 96.5c14 17 31 30.9 49.5 42.2 25.9 15.8 53.7 25.9 77.7 31.6v-31.5c-22.2-30.3-38-67.3-39.4-110.8-.4-11.3-7.5-21.5-18.4-24.4-7.6-2-15.8-.2-21 5.8-13.3 15.4-32.7 44.6-48.4 87.2zM320 144v64c-60.8-5.1-185-43.8-219.3-157.2C97.4 40 87.9 32 76.6 32c-7.9 0-15.3 3.9-18.8 11C46.8 65.9 32 112.1 32 176c0 116.9 80.1 180.5 118.4 202.8L11.8 416.6C6.7 418 2.6 421.8.9 426.8s-.8 10.6 2.3 14.8C21.7 466.2 77.3 512 160 512c3.6 0 7.2-1.2 10-3.5l75.6-60.5H320c88.4 0 160-71.6 160-160V128l29.9-44.9c1.3-2 2.1-4.4 2.1-6.8 0-6.8-5.5-12.3-12.3-12.3H400c-44.2 0-80 35.8-80 80m80-16a16 16 0 1 1 0 32 16 16 0 1 1 0-32"/></svg>
+
+    </a>
+    Luna AI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Ikaros-521/AI-Vtuber" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Luna AI
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    安装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    使用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    功能介绍
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            功能介绍
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API接口
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../platform/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    平台
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../llm/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    大语言模型
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    语音合成
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    语音合成
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tts" class="md-nav__link">
+    <span class="md-ellipsis">
+      TTS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TTS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elevenlabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      elevenlabs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genshinvoicetop" class="md-nav__link">
+    <span class="md-ellipsis">
+      genshinvoice.top
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ttsai-labtop" class="md-nav__link">
+    <span class="md-ellipsis">
+      tts.ai-lab.top
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vitsvits-simple-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      VITS（vits-simple-api）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vits-fast-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      VITS-fast-fine-tuning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      睿声
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vall-e-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      VALL-E-X
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openvoice" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenVoice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt-sovits" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPT-SoVITS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-voice" class="md-nav__link">
+    <span class="md-ellipsis">
+      clone-voice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-tts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure TTS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fish-speech" class="md-nav__link">
+    <span class="md-ellipsis">
+      fish-speech
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="fish-speech">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      在线web
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-110" class="md-nav__link">
+    <span class="md-ellipsis">
+      api 1.1.0
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chattts" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatTTS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosyvoice" class="md-nav__link">
+    <span class="md-ellipsis">
+      CosyVoice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multitts" class="md-nav__link">
+    <span class="md-ellipsis">
+      MultiTTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../svc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    变声
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual_body/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    虚拟身体
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    其他
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../develop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开发&项目相关
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    开发计划
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            开发计划
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/todo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    待办列表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/long-term/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    长期规划
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    更新日志
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    关于
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tts" class="md-nav__link">
+    <span class="md-ellipsis">
+      TTS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TTS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#elevenlabs" class="md-nav__link">
+    <span class="md-ellipsis">
+      elevenlabs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#genshinvoicetop" class="md-nav__link">
+    <span class="md-ellipsis">
+      genshinvoice.top
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ttsai-labtop" class="md-nav__link">
+    <span class="md-ellipsis">
+      tts.ai-lab.top
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vitsvits-simple-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      VITS（vits-simple-api）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vits-fast-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      VITS-fast-fine-tuning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      睿声
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vall-e-x" class="md-nav__link">
+    <span class="md-ellipsis">
+      VALL-E-X
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openvoice" class="md-nav__link">
+    <span class="md-ellipsis">
+      OpenVoice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt-sovits" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPT-SoVITS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-voice" class="md-nav__link">
+    <span class="md-ellipsis">
+      clone-voice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#azure-tts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Azure TTS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fish-speech" class="md-nav__link">
+    <span class="md-ellipsis">
+      fish-speech
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="fish-speech">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      在线web
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api-110" class="md-nav__link">
+    <span class="md-ellipsis">
+      api 1.1.0
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chattts" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatTTS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cosyvoice" class="md-nav__link">
+    <span class="md-ellipsis">
+      CosyVoice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multitts" class="md-nav__link">
+    <span class="md-ellipsis">
+      MultiTTS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>语音合成</h1>
+
+<h3 id="tts">TTS</h3>
+<h4 id="elevenlabs">elevenlabs</h4>
+<p><a href="//beta.elevenlabs.io">elevenlabs官网</a></p>
+<p><a href="//docs.elevenlabs.io/api-reference/quick-start/introduction">官方文档</a></p>
+<p>不注册账号也可以使用，不过应该是有限制的（具体多少未知）。免费账号拥有每月1万字的额度。</p>
+<h4 id="genshinvoicetop">genshinvoice.top</h4>
+<p><a href="//genshinvoice.top">在线体验官网</a></p>
+<p><a href="//github.com/Stardust-minus/vits">官方GitHub仓库</a>，内含api使用说明</p>
+<p>官方视频讲解：<a href="//www.bilibili.com/video/BV1Sg4y1K7kg">【在线合成&amp;效果优化】基于VITS的米哈游全角色语音合成现已发布</a></p>
+<h4 id="ttsai-labtop">tts.ai-lab.top</h4>
+<p>在线体验官网: <a href="https://tts.ai-hobbyist.org/">https://tts.ai-hobbyist.org/</a></p>
+<p>注册账号，登录，然后在在线合成页面，按下键盘<code>F12</code>打开开发者工具，在选择<code>Network</code>网络，随便合成一个音频，然后找到<code>vits</code>的一个请求，点进去，点击<code>负载</code>，找到<code>appid</code>和<code>token</code>，配置即可。  </p>
+<h4 id="vitsvits-simple-api">VITS（vits-simple-api）</h4>
+<p>emotional-vits官方仓库：<a href="//github.com/innnky/emotional-vits">emotional-vits</a>  </p>
+<p>接入API：<a href="//github.com/Artrajz/vits-simple-api">vits-simple-api</a>  </p>
+<p>vits-simple-api整合包下载：<a href="//github.com/Artrajz/vits-simple-api/releases">github.com/Artrajz/vits-simple-api/releases</a>  </p>
+<p>个人提供的已训练好的模型：<a href="//github.com/Ikaros-521/emotional-vits/releases">github</a> ,   <a href="https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1?path=%2F%E5%88%86%E4%BA%AB%2FTTS%2FVITS%2F%E6%A8%A1%E5%9E%8B">迅雷云盘</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1ku4y1R73r">【AI主播-TTS篇】新增 纯 VITS 接入，配合vits-simple-api，支持情感控制，语速调控</a> , <a href="https://www.bilibili.com/video/BV1Ph4y1A79w">【AI主播-TTS篇】新增 bert-vits2 的接入，配合vits-simple-api食用，强有力的中文TTS让你到达新高度~</a>   </p>
+<p>如何白嫖huggingface上的<code>vits-simple-api</code>？ 只需要开启魔法，将<code>API地址</code>修改为项目提示的接口地址即可，例如：<code>https://artrajz-vits-simple-api.hf.space</code>  </p>
+<p>vits-simple-api配置，修改 <code>config.py</code> ，参考配置如下，路径为追加的相对模型路径和配置文件路径（注意，新版本的变动，配置改到config.yml了，所以你需要直接改yml或者删除yml，修改py，然后重启）：</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Fill in the model path here</span>
+<span class="n">MODEL_LIST</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># VITS</span>
+    <span class="p">[</span><span class="n">ABS_PATH</span> <span class="o">+</span> <span class="s2">&quot;/Model/ikaros/G_95500.pth&quot;</span><span class="p">,</span> <span class="n">ABS_PATH</span> <span class="o">+</span> <span class="s2">&quot;/Model/ikaros/config.json&quot;</span><span class="p">],</span>
+    <span class="c1"># Bert-VITS2</span>
+    <span class="p">[</span><span class="n">ABS_PATH</span> <span class="o">+</span> <span class="s2">&quot;/bert_vits2/G_0.pth&quot;</span><span class="p">,</span> <span class="n">ABS_PATH</span> <span class="o">+</span> <span class="s2">&quot;/bert_vits2/config.json&quot;</span><span class="p">],</span>
+</code></pre></div>
+<p>如果使用 <code>bert_vits2</code> ，需要注意 <code>vits-simple-api\bert_vits2\bert\chinese-roberta-wwm-ext-large</code> 路径下 <code>flax_model.msgpack</code> 等模型文件是否缺失，如果缺失，可以从隔壁 <code>bert_vits2</code> 整合包中拷贝进来 或者 从<code>huggingface</code>下载：<a href="//huggingface.co/hfl/chinese-roberta-wwm-ext-large/tree/main">hfl/chinese-roberta-wwm-ext-large</a> 。另外模型需要存放在 <code>bert_vits2</code> 目录里面。  </p>
+<p>相关模型备份：<a href="//pan.quark.cn/s/0ec7deae974a">夸克网盘</a>  </p>
+<p>另外如果运行闪退、报错  </p>
+<div class="highlight"><pre><span></span><code><span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s2">&quot;E:</span><span class="se">\v</span><span class="s2">its-simple-api</span><span class="se">\a</span><span class="s2">pp.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">49</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="n">tts</span> <span class="o">=</span> <span class="n">merge_model</span><span class="p">(</span><span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;MODEL_LIST&quot;</span><span class="p">])</span>
+  <span class="n">File</span> <span class="s2">&quot;E:</span><span class="se">\v</span><span class="s2">its-simple-api\utils\merge.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">117</span><span class="p">,</span> <span class="ow">in</span> <span class="n">merge_model</span>
+    <span class="k">for</span> <span class="nb">id</span><span class="p">,</span> <span class="n">name</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">get_speakers</span><span class="p">()):</span>
+  <span class="n">File</span> <span class="s2">&quot;E:</span><span class="se">\v</span><span class="s2">its-simple-api\utils\utils.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">29</span><span class="p">,</span> <span class="ow">in</span> <span class="fm">__getitem__</span>
+    <span class="k">return</span> <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
+<span class="ne">TypeError</span><span class="p">:</span> <span class="nb">getattr</span><span class="p">():</span> <span class="n">attribute</span> <span class="n">name</span> <span class="n">must</span> <span class="n">be</span> <span class="n">string</span>
+</code></pre></div>
+<p>需要修改 <code>utils\merge.py</code> 116行左右。</p>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="nb">id</span><span class="p">,</span> <span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">obj</span><span class="o">.</span><span class="n">get_speakers</span><span class="p">()</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+<span class="c1"># for id, name in enumerate(obj.get_speakers()):</span>
+</code></pre></div>
+<p>如果在使用<code>bert-vits2</code>时，报错：</p>
+<div class="highlight"><pre><span></span><code>error,<span class="w"> </span>ref_enc.convs.0.bias<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>checkpoint
+error,<span class="w"> </span>ref_enc.convs.0.weight_g<span class="w"> </span>is<span class="w"> </span>not<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>checkpoint
+......
+</code></pre></div>
+<p>解决方案参考：<a href="https://github.com/Ikaros-521/AI-Vtuber/issues/311">issues/311</a>  </p>
+<p>改 <code>bert_vits2/models.py</code> 中第<code>646</code>行 <code>if n_speakers &gt; 1:</code> 修改为 <code>if n_speakers &gt;= 1:</code>  </p>
+<h4 id="vits-fast-fine-tuning">VITS-fast-fine-tuning</h4>
+<p>官方仓库：<a href="//github.com/Plachtaa/VITS-fast-fine-tuning">VITS-fast-fine-tuning</a>  </p>
+<p>官方推理包：<a href="//github.com/Plachtaa/VITS-fast-fine-tuning/releases/tag/webui-v1.1">inference-webui-v1.1</a>  </p>
+<p>个人提供的已训练好的模型：<a href="//github.com/Ikaros-521/VITS-fast-fine-tuning/releases">点我跳转</a>  </p>
+<p>视频教程：<a href="//www.bilibili.com/video/BV1Lm4y1r7Pi">【AI语音合成-数据集篇#00】模型使用简单讲解，手把手演示</a> ，<a href="https://www.bilibili.com/video/BV1Tm4y1J71B">【AI主播-功能篇】TTS语音合成 VITS-Fast怎么使用？为什么没有合成语音？VITS不行吗？模型兼容吗？</a>   </p>
+<p>训练用整合包（原作者整合包备份）：<a href="//pan.quark.cn/s/da52e78983da">pan.quark.cn/s/da52e78983da</a>  </p>
+<p>整合包视频教程：<a href="//www.bilibili.com/video/BV1K94y1k7Bw">AI声音克隆又进化了，10分钟学会声音克隆！一键启动包发布！</a>  </p>
+<p>整合包视频教程2：<a href="//www.bilibili.com/video/BV1B841197Em">【VITS一键包】本地训练独属于你的AI嘴替？训练部署AI语音合成教程</a>  </p>
+<h4 id="_1">睿声</h4>
+<p>官网：<a href="https://www.reecho.ai/">https://www.reecho.ai/</a>  </p>
+<p>在 <a href="https://dash.reecho.ai/voices">角色管理</a> 页面，创建训练一个你想用使用的角色的声音模型，点击更多，顶部可以看到一串字符串，就是角色ID，配置到配置项中。  </p>
+<p>申请API Key：<a href="https://dash.reecho.ai/apiKey">https://dash.reecho.ai/apiKey</a>，配置到对应配置项中，保存即可。</p>
+<h4 id="vall-e-x">VALL-E-X</h4>
+<p>官方仓库：<a href="//github.com/Plachtaa/VALL-E-X">VALL-E-X</a>  </p>
+<p>个人提供的已训练好的preset预设：<a href="//github.com/Ikaros-521/VALL-E-X/releases/tag/preset">点我跳转</a>  </p>
+<p>官方视频讲解：<a href="//www.bilibili.com/video/av617666708">仅需3秒音频实现声音克隆！我开源了微软的最新语音合成模型VALL-E X</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1Zh4y1T7YU">【AI主播-功能篇】接入 VALL-E-X（整合包附赠），进行TTS，3秒声音克隆，“好用”喵hhh</a>  </p>
+<p>整合包下载：<a href="//pan.quark.cn/s/b817e285ab41">pan.quark.cn/s/b817e285ab41</a>  </p>
+<h4 id="openvoice">OpenVoice</h4>
+<p>官方仓库：<a href="https://github.com/myshell-ai/OpenVoice">OpenVoice</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1kK4y167WJ">OpenVoice 整合包 | 一句话快速克隆？英文可调语气？效果实测【TTS】</a></p>
+<p>整合包下载：<a href="https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1?path=%2F%E5%88%86%E4%BA%AB%2FTTS%2FOpenVoice">迅雷云盘</a>, 
+<a href="https://pan.quark.cn/s/936dcae8aba0#/list/share/56a79e143a8b4877a98a61854e07b229-AI%20Vtuber/5c251d9c745643868c0b17b7b6a0ecb6-TTS/9d6e066f2ed14ae4aef3e74cda6cd078-OpenVoice">夸克网盘</a></p>
+<p>启动webui后就可以对接了，适配gradio监听端口即可。  </p>
+<h4 id="gpt-sovits">GPT-SoVITS</h4>
+<p>官方仓库：<a href="https://github.com/RVC-Boss/GPT-SoVITS">GPT-SoVITS</a>  </p>
+<p>整合包下载：<a href="https://pan.quark.cn/s/936dcae8aba0">https://pan.quark.cn/s/936dcae8aba0</a>，<a href="https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1">https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1</a>     </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1CJ4m1b7pR">BV1CJ4m1b7pR</a>  </p>
+<p>天降之物模型分享：<a href="https://github.com/Ikaros-521/GPT-SoVITS/releases">https://github.com/Ikaros-521/GPT-SoVITS/releases</a>  </p>
+<p>运行webui后，启动TTS推理，然后适配配置项即可，注意参考音频路径还有ws的端口即可，别的配置问题不大。  </p>
+<h4 id="clone-voice">clone-voice</h4>
+<p>官方仓库：<a href="https://github.com/jianchang512/clone-voice">clone-voice</a>  </p>
+<p>整合包下载：<a href="https://pan.quark.cn/s/936dcae8aba0">https://pan.quark.cn/s/936dcae8aba0</a> ，<a href="https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1">https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1</a>   </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV17z421d7T9/">BV17z421d7T9</a>  </p>
+<h4 id="azure-tts">Azure TTS</h4>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1aJ4m1h7eY">【AI主播-TTS篇】接入 Azure TTS，微软官方商用语音合成，随便造（</a>  </p>
+<p>官网：<a href="https://azure.microsoft.com/zh-cn/products/ai-services/text-to-speech/">https://azure.microsoft.com/zh-cn/products/ai-services/text-to-speech/</a>  </p>
+<p>注册账号，领取一年免费试用额度，创建 语音转文本服务，获取 区域 和 密钥，配置后进行使用。  </p>
+<h4 id="fish-speech">fish-speech</h4>
+<p>官方仓库：<a href="https://github.com/fishaudio/fish-speech">fish-speech</a>  </p>
+<p>官方文档：<a href="https://speech.fish.audio/inference/">https://speech.fish.audio/inference/</a>  </p>
+<h5 id="web">在线web</h5>
+<p>官网：<a href="https://fs.firefly.matce.cn/">https://fs.firefly.matce.cn/</a>  </p>
+<p>进入官网，选好参数，F12打开开发者工具，抓包 网络，ws，点击 Generate 合成音频，查看 join请求，展开后可以看到 参考音频的绝对路径和其他配置，配置到webui保存 运行即可使用。  </p>
+<p><img alt="参考图" src="https://private-user-images.githubusercontent.com/40910637/329521947-c123e1e1-ac26-4275-a8be-4e8f6224d1d2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTU0MTk3NTEsIm5iZiI6MTcxNTQxOTQ1MSwicGF0aCI6Ii80MDkxMDYzNy8zMjk1MjE5NDctYzEyM2UxZTEtYWMyNi00Mjc1LWE4YmUtNGU4ZjYyMjRkMWQyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA1MTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNTExVDA5MjQxMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQwYmQ0ZGJjNmNiZmY5NzE2ZGQ1OWJmZGNlMDJkNjY2ZjA2MGZhM2E5ODVmMDRhZDlkODAzODJiZDM2NTc4ZWUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.sMJEI5tYYLZnPv0bZWXeoeMWL9yYpFOvYJDjN157HMQ" />  </p>
+<h5 id="api-110">api 1.1.0</h5>
+<p>B站找个对应版本的整合包，启动API的bat脚本。然后把配置都配上就行了。<br />
+图文文档：<a href="https://github.com/Ikaros-521/AI-Vtuber/pull/827">https://github.com/Ikaros-521/AI-Vtuber/pull/827</a>  </p>
+<h4 id="chattts">ChatTTS</h4>
+<p>官方仓库：<a href="https://github.com/2noise/ChatTTS">https://github.com/2noise/ChatTTS</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV17D421g7cx">https://www.bilibili.com/video/BV17D421g7cx</a>  </p>
+<h4 id="cosyvoice">CosyVoice</h4>
+<p>官方仓库：<a href="https://github.com/FunAudioLLM/CosyVoice">https://github.com/FunAudioLLM/CosyVoice</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1iw4m1a7zx/">https://www.bilibili.com/video/BV1iw4m1a7zx/</a>  </p>
+<h4 id="multitts">MultiTTS</h4>
+<p>图文文档：<a href="https://github.com/Ikaros-521/AI-Vtuber/pull/1042">https://github.com/Ikaros-521/AI-Vtuber/pull/1042</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1DRSbYaEP3/">https://www.bilibili.com/video/BV1DRSbYaEP3/</a>  </p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 <a href="https://github.com/Ikaros-521/AI-Vtuber">AI-Vtuber</a> & Ikaros-521
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "content.tabs.link", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>

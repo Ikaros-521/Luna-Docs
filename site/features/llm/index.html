@@ -1,0 +1,2051 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../platform/">
+      
+      
+        <link rel="next" href="../tts/">
+      
+      
+      <link rel="icon" href="../../static/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.50">
+    
+    
+      
+        <title>大语言模型 - Luna AI</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-FR32RDV2MT"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-FR32RDV2MT",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-FR32RDV2MT",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#llm" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="Luna AI" class="md-header__button md-logo" aria-label="Luna AI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M160.8 96.5c14 17 31 30.9 49.5 42.2 25.9 15.8 53.7 25.9 77.7 31.6v-31.5c-22.2-30.3-38-67.3-39.4-110.8-.4-11.3-7.5-21.5-18.4-24.4-7.6-2-15.8-.2-21 5.8-13.3 15.4-32.7 44.6-48.4 87.2zM320 144v64c-60.8-5.1-185-43.8-219.3-157.2C97.4 40 87.9 32 76.6 32c-7.9 0-15.3 3.9-18.8 11C46.8 65.9 32 112.1 32 176c0 116.9 80.1 180.5 118.4 202.8L11.8 416.6C6.7 418 2.6 421.8.9 426.8s-.8 10.6 2.3 14.8C21.7 466.2 77.3 512 160 512c3.6 0 7.2-1.2 10-3.5l75.6-60.5H320c88.4 0 160-71.6 160-160V128l29.9-44.9c1.3-2 2.1-4.4 2.1-6.8 0-6.8-5.5-12.3-12.3-12.3H400c-44.2 0-80 35.8-80 80m80-16a16 16 0 1 1 0 32 16 16 0 1 1 0-32"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Luna AI
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              大语言模型
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Ikaros-521/AI-Vtuber" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Luna AI
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../install/" class="md-tabs__link">
+        
+  
+    
+  
+  安装
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../use/" class="md-tabs__link">
+        
+  
+    
+  
+  使用
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../basic/" class="md-tabs__link">
+          
+  
+  功能介绍
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+    
+  
+  常见问题
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../develop/" class="md-tabs__link">
+        
+  
+    
+  
+  开发&项目相关
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../plans/todo/" class="md-tabs__link">
+          
+  
+  开发计划
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../changelog/" class="md-tabs__link">
+        
+  
+    
+  
+  更新日志
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  关于
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Luna AI" class="md-nav__button md-logo" aria-label="Luna AI" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M160.8 96.5c14 17 31 30.9 49.5 42.2 25.9 15.8 53.7 25.9 77.7 31.6v-31.5c-22.2-30.3-38-67.3-39.4-110.8-.4-11.3-7.5-21.5-18.4-24.4-7.6-2-15.8-.2-21 5.8-13.3 15.4-32.7 44.6-48.4 87.2zM320 144v64c-60.8-5.1-185-43.8-219.3-157.2C97.4 40 87.9 32 76.6 32c-7.9 0-15.3 3.9-18.8 11C46.8 65.9 32 112.1 32 176c0 116.9 80.1 180.5 118.4 202.8L11.8 416.6C6.7 418 2.6 421.8.9 426.8s-.8 10.6 2.3 14.8C21.7 466.2 77.3 512 160 512c3.6 0 7.2-1.2 10-3.5l75.6-60.5H320c88.4 0 160-71.6 160-160V128l29.9-44.9c1.3-2 2.1-4.4 2.1-6.8 0-6.8-5.5-12.3-12.3-12.3H400c-44.2 0-80 35.8-80 80m80-16a16 16 0 1 1 0 32 16 16 0 1 1 0-32"/></svg>
+
+    </a>
+    Luna AI
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Ikaros-521/AI-Vtuber" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Luna AI
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    安装
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../use/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    使用
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    功能介绍
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            功能介绍
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    基础功能
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API接口
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../platform/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    平台
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    大语言模型
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    大语言模型
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LLM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatGPT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      Claude
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Claude">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      授权以及获取user-token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude-appid" class="md-nav__link">
+    <span class="md-ellipsis">
+      获取 claude appid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Claude2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatglm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatGLM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChatGLM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chatglm3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatGLM3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      智谱AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="智谱AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能体
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#langchain-chatglm" class="md-nav__link">
+    <span class="md-ellipsis">
+      langchain-ChatGLM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#langchain-chatchat" class="md-nav__link">
+    <span class="md-ellipsis">
+      langchain-chatchat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat_with_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      chat_with_file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-generation-webui" class="md-nav__link">
+    <span class="md-ellipsis">
+      text-generation-webui
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      讯飞星火
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      闻达
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatterbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatterBot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      文心一言（已弃用，更换千帆大模型）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      通义星尘
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      千帆大模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="千帆大模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      第三方库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      官方库（有版本冲突，暂不启用）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gemini" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gemini
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kimi-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kimi Chat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qanything" class="md-nav__link">
+    <span class="md-ellipsis">
+      QAnything
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="QAnything">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      在线
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      本地
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimax" class="md-nav__link">
+    <span class="md-ellipsis">
+      阿里云百炼（通义千问、百川、月之暗面、零一万物、MiniMax）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="阿里云百炼（通义千问、百川、月之暗面、零一万物、MiniMax）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      API类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      web类型
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      FastGPT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FastGPT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      在线
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#koboldcpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      koboldcpp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anythingllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      AnythingLLM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt4free" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPT4Free
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llm-tpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM-TPU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dify
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    语音合成
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../svc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    变声
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visual_body/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    虚拟身体
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../other/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    其他
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    常见问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../develop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开发&项目相关
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    开发计划
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            开发计划
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/todo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    待办列表
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plans/long-term/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    长期规划
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    更新日志
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    关于
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="LLM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chatgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatGPT
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude" class="md-nav__link">
+    <span class="md-ellipsis">
+      Claude
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Claude">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      授权以及获取user-token
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude-appid" class="md-nav__link">
+    <span class="md-ellipsis">
+      获取 claude appid
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#claude2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Claude2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatglm" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatGLM
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ChatGLM">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#chatglm3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatGLM3
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      智谱AI
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="智谱AI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      智能体
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#langchain-chatglm" class="md-nav__link">
+    <span class="md-ellipsis">
+      langchain-ChatGLM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#langchain-chatchat" class="md-nav__link">
+    <span class="md-ellipsis">
+      langchain-chatchat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chat_with_file" class="md-nav__link">
+    <span class="md-ellipsis">
+      chat_with_file
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-generation-webui" class="md-nav__link">
+    <span class="md-ellipsis">
+      text-generation-webui
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      讯飞星火
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      闻达
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chatterbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      ChatterBot
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bard
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      文心一言（已弃用，更换千帆大模型）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      通义星尘
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      千帆大模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="千帆大模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      第三方库
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      官方库（有版本冲突，暂不启用）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gemini" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gemini
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kimi-chat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kimi Chat
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qanything" class="md-nav__link">
+    <span class="md-ellipsis">
+      QAnything
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="QAnything">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      在线
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      本地
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimax" class="md-nav__link">
+    <span class="md-ellipsis">
+      阿里云百炼（通义千问、百川、月之暗面、零一万物、MiniMax）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="阿里云百炼（通义千问、百川、月之暗面、零一万物、MiniMax）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      API类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" class="md-nav__link">
+    <span class="md-ellipsis">
+      web类型
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      FastGPT
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FastGPT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      在线
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#koboldcpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      koboldcpp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anythingllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      AnythingLLM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt4free" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPT4Free
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#llm-tpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM-TPU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dify" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dify
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>大语言模型</h1>
+
+<h3 id="llm">LLM</h3>
+<h4 id="chatgpt">ChatGPT</h4>
+<p>官网 <a href="//chat.openai.com/chat">chat.openai.com/chat <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+<p>openai 后台 <a href="//platform.openai.com/">platform.openai.com <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+<p>新建 API KEY <a href="//platform.openai.com/account/api-keys">platform.openai.com/account/api-keys <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a> </p>
+<p>查看账号额度 <a href="//platform.openai.com/account/usage">platform.openai.com/account/usage <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+<p>官方 API 文档 <a href="//platform.openai.com/docs/api-reference">platform.openai.com/docs/api-reference <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+<p>常见报错：<a href="https://github.com/Ikaros-521/AI-Vtuber/issues">点击前往issue仓库查找，直接搜索报错内容，一次不要复制太多报错，不然搜不到，复制关键的报错点就行，比如最后一行</a>  </p>
+<h4 id="claude">Claude</h4>
+<p>实现参考 <a href="//github.com/yokonsan/claude-in-slack-api">claude-in-slack-api <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+<p>API申请方法（内含各个参数的获取方式） <a href="//github.com/bincooo/claude-api">claude-api <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+<p>slack 官网 <a href="//slack.com/intl/zh-cn/">slack.com/intl/zh-cn <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+<p>添加 claude 到 slack <a href="//www.anthropic.com/claude-in-slack">www.anthropic.com/claude-in-slack <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+<div class="admonition note">
+<p class="admonition-title">视频教程</p>
+<p><a href="//www.bilibili.com/video/BV1PP41127mQ">完美替代 chatGPT！保姆级 Claude 注册教程及使用上的优点和缺点 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+<p><a href="//www.bilibili.com/video/BV17k4y1H7aa">解决现阶段 slack 新建工作区 Claude 不回复 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+</div>
+<p>以下文档转自：<a href="//github.com/bincooo/claude-api">claude-api <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a>  </p>
+<h5 id="user-token">授权以及获取user-token</h5>
+<p>网页(<a href="https://app.slack.com">登录</a>)后, 进入api配置页面(<a href="https://api.slack.com/">点我跳转</a>)。</p>
+<p>〉》点击 【Create an app】</p>
+<p>​   〉》主页看见Your Apps并弹出窗口【Create an app】  〉》  点击【From scratch】</p>
+<p>​   〉》填写app名称以及选择工作空间（例：name: Bot, workspace: chat）  〉》  点击【Create App】</p>
+<p>​   〉》点击左侧边栏上的【OAuth &amp; Permissions】  〉》  下拉至【Scopes】卡片，在 【User Token Scopes】 项下添加权限，如下：</p>
+<p>​                           channels:history,  channels:read,  channels:write,  groups:history,  groups:read,  groups:write, </p>
+<p>​                           chat:write,  im:history,  im:write,  mpim:history,  mpim:write</p>
+<p>​   〉》回到顶部【OAuth Tokens for Your Workspace】栏，点击【Install to Workspace】，然后确认授权即可</p>
+<p>至此，获得拥有一定权限的user-token</p>
+<p><img src="https://github.com/bincooo/claude-api/blob/main/static/%E6%88%AA%E5%B1%8F2023-04-18%2009.10.56.png?raw=true" alt="截屏2023-04-18 09.10.56" style="zoom:50%;" /></p>
+<p><img src="https://github.com/bincooo/claude-api/blob/main/static/%E6%88%AA%E5%B1%8F2023-04-18%2009.14.41.png?raw=true" alt="截屏2023-04-18 09.14.41" style="zoom:50%;" /></p>
+<h5 id="claude-appid">获取 claude appid</h5>
+<p><img src="https://github.com/bincooo/claude-api/blob/main/static/%E6%88%AA%E5%B1%8F2023-04-18%2008.49.20.png?raw=true" alt="截屏2023-04-18 08.49.20" style="zoom:50%;" /></p>
+<h4 id="claude2">Claude2</h4>
+<p><a href="//github.com/wwwzhouhui/Claude2-PyAPI">Claude2-PyAPI <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a></p>
+<p>claude2 官网 <a href="//claude.ai">claude.ai <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg></span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Cookie 获取方式</p>
+<p>F12 抓包 XHR ，然后请求头获取 cookie`</p>
+</div>
+<h4 id="chatglm">ChatGLM</h4>
+<p>官方仓库：<a href="//github.com/THUDM/ChatGLM-6B">ChatGLM-6B</a></p>
+<p>整合包：<a href="//www.bilibili.com/video/BV1E24y1u7Go">【ChatGLM】本地版ChatGPT？6G显存可用！ChatGLM-6B 清华开源模型一键包发布 可更新</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1NN411a7zG">【AI主播-功能篇】ChatGLM如何接入？上下文记忆~ 不需魔法，本地跑，省钱了喵~</a>  </p>
+<p>运行 <code>api.py</code> ，然后配置相关信息接入本项目。</p>
+<div class="admonition note">
+<p class="admonition-title">参考</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">tokenizer</span> <span class="o">=</span> <span class="n">AutoTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;THUDM\chatglm-6b-int4&quot;</span><span class="p">,</span> <span class="n">trust_remote_code</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">AutoModel</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;THUDM\chatglm-6b-int4&quot;</span><span class="p">,</span> <span class="n">trust_remote_code</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">half</span><span class="p">()</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
+    <span class="n">uvicorn</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8000</span><span class="p">,</span> <span class="n">workers</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+</div>
+<h5 id="chatglm3">ChatGLM3</h5>
+<p>官方仓库：<a href="//github.com/THUDM/ChatGLM3">ChatGLM3</a>  </p>
+<p>整合包：<a href="https://pan.quark.cn/s/c2ded75100ac">https://pan.quark.cn/s/c2ded75100ac</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1M94y137h4">【AI主播-功能篇】接入ChatGLM3，含整合包，看看有没有提升（</a>  </p>
+<p>运行 <code>1.运行api.bat</code> ，然后配置相关信息接入本项目（聊天类型：<code>ChatGPT/闻达</code>，API地址：<code>http://localhost:8000/v1</code>，模型：<code>chatglm3-6b</code>）。  </p>
+<p>!!! openai_api.py "参考"</p>
+<pre><code>```python
+if __name__ == "__main__":
+    tokenizer = AutoTokenizer.from_pretrained("THUDM\\chatglm3-6b-int4", trust_remote_code=True)
+    model = AutoModel.from_pretrained("THUDM\\chatglm3-6b-int4", trust_remote_code=True).cuda()
+    # 多显卡支持，使用下面两行代替上面一行，将num_gpus改为你实际的显卡数量
+    # from utils import load_model_on_gpus
+    # model = load_model_on_gpus("THUDM\\chatglm3-6b-int4", num_gpus=2)
+```
+</code></pre>
+<h4 id="ai">智谱AI</h4>
+<p>官方：<a href="//open.bigmodel.cn/">open.bigmodel.cn</a>  </p>
+<p>api key申请地址：<a href="//open.bigmodel.cn/usercenter/apikeys">open.bigmodel.cn/usercenter/apikeys</a>  </p>
+<p>注意，需要在"设置"-&gt;"账号设置"中完成实名认证后，才能使用API。新账号默认赠送了18元的免费额度。  </p>
+<h5 id="_1">智能体</h5>
+<p>图文教程：<a href="https://github.com/Ikaros-521/AI-Vtuber/pull/1015">https://github.com/Ikaros-521/AI-Vtuber/pull/1015</a><br />
+智能体创建：<a href="https://chatglm.cn/main/toolsCenter?lang=zh">https://chatglm.cn/main/toolsCenter?lang=zh</a><br />
+密钥获取：<a href="https://chatglm.cn/developersPanel/apiSet">https://chatglm.cn/developersPanel/apiSet</a><br />
+智能体 ID，浏览器打开智能体对话页后，可通过URL地址栏查看。例如：<code>https://chatglm.cn/main/gdetail/6706907a6c06eb2f71087d47?lang=zh</code>,那么ID为<code>6706907a6c06eb2f71087d47</code>  </p>
+<p>模型选择“智能体”，配置密钥等，保存重新运行即可。  </p>
+<h4 id="langchain-chatglm">langchain-ChatGLM</h4>
+<p>官方仓库：<a href="https://github.com/chatchat-space/langchain-ChatGLM">langchain-ChatGLM</a>  </p>
+<p>个人提供的整合包：<a href="//pan.quark.cn/s/8d8904fd4b30">pan.quark.cn/s/8d8904fd4b30</a>  </p>
+<p>chatglm-6b-int4模型下载(其实这个官方就行，有会员的话网盘快点)：<a href="//pan.quark.cn/s/a483e0c3e5fa">pan.quark.cn/s/a483e0c3e5fa</a>  </p>
+<p>官方模型仓库：<a href="//huggingface.co/THUDM">huggingface.co/THUDM</a>  </p>
+<p>配置相关信息，编辑 <code>configs</code> 文件夹下的 <code>model_config.py</code> ，模型路径需要是绝对路径，win的用户路径参考：<code>E:\\langchain-ChatGLM\\THUDM\\chatglm-6b-int4</code>  </p>
+<p>修改部分参考：  </p>
+<div class="highlight"><pre><span></span><code><span class="n">embedding_model_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;ernie-tiny&quot;</span><span class="p">:</span> <span class="s2">&quot;nghuyong/ernie-3.0-nano-zh&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ernie-base&quot;</span><span class="p">:</span> <span class="s2">&quot;nghuyong/ernie-3.0-base-zh&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;text2vec-base&quot;</span><span class="p">:</span> <span class="s2">&quot;shibing624/text2vec-base-chinese&quot;</span><span class="p">,</span>
+    <span class="c1"># 下一行是改的地方</span>
+    <span class="s2">&quot;text2vec&quot;</span><span class="p">:</span> <span class="s2">&quot;E:</span><span class="se">\\</span><span class="s2">langchain-ChatGLM</span><span class="se">\\</span><span class="s2">GanymedeNil</span><span class="se">\\</span><span class="s2">text2vec-large-chinese&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;text2vec-base-multilingual&quot;</span><span class="p">:</span> <span class="s2">&quot;shibing624/text2vec-base-multilingual&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;text2vec-base-chinese-sentence&quot;</span><span class="p">:</span> <span class="s2">&quot;shibing624/text2vec-base-chinese-sentence&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;text2vec-base-chinese-paraphrase&quot;</span><span class="p">:</span> <span class="s2">&quot;shibing624/text2vec-base-chinese-paraphrase&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;m3e-small&quot;</span><span class="p">:</span> <span class="s2">&quot;moka-ai/m3e-small&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;m3e-base&quot;</span><span class="p">:</span> <span class="s2">&quot;moka-ai/m3e-base&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+
+
+<span class="n">llm_model_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;chatglm-6b-int4-qe&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;chatglm-6b-int4-qe&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;pretrained_model_name&quot;</span><span class="p">:</span> <span class="s2">&quot;THUDM/chatglm-6b-int4-qe&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;local_model_path&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;provides&quot;</span><span class="p">:</span> <span class="s2">&quot;ChatGLMLLMChain&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;chatglm-6b-int4&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;chatglm-6b-int4&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;pretrained_model_name&quot;</span><span class="p">:</span> <span class="s2">&quot;THUDM/chatglm-6b-int4&quot;</span><span class="p">,</span>
+        <span class="c1"># 下一行是改的地方</span>
+        <span class="s2">&quot;local_model_path&quot;</span><span class="p">:</span> <span class="s2">&quot;E:</span><span class="se">\\</span><span class="s2">langchain-ChatGLM</span><span class="se">\\</span><span class="s2">THUDM</span><span class="se">\\</span><span class="s2">chatglm-6b-int4&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;provides&quot;</span><span class="p">:</span> <span class="s2">&quot;ChatGLMLLMChain&quot;</span>
+    <span class="p">},</span>
+
+
+<span class="c1"># LLM 名称 改成你要用的模型name，没有的话会自动下载</span>
+<span class="n">LLM_MODEL</span> <span class="o">=</span> <span class="s2">&quot;chatglm-6b-int4&quot;</span>
+</code></pre></div>
+<p>运行 <code>api.py</code> ，然后接入本项目。  </p>
+<h4 id="langchain-chatchat">langchain-chatchat</h4>
+<p>官方仓库：<a href="https://github.com/chatchat-space/Langchain-Chatchat">https://github.com/chatchat-space/Langchain-Chatchat</a><br />
+视频教程：<a href="https://www.bilibili.com/video/BV1c94y1n7Ga/">https://www.bilibili.com/video/BV1c94y1n7Ga/</a>  </p>
+<h4 id="chat_with_file">chat_with_file</h4>
+<p>参考：<a href="//github.com/Ikaros-521/LangChainSummarize">LangChainSummarize</a></p>
+<p>构建本地向量数据库时，如果本地电脑的配置太低，可以使用 <a href="//drive.google.com/file/d/1rbt2Yv7_pC1cmuODwmR2-1_cxFBFOfn8/view?usp=sharing">faiss_text2vec.ipynb</a> 云端解析向量数据库，拷贝回本地后再使用即可</p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1tM4y1v7i5">https://www.bilibili.com/video/BV1tM4y1v7i5</a></p>
+<ul>
+<li>author: <a href="//github.com/HildaM/text2vec_colab">HildaM/text2vec_colab</a></li>
+</ul>
+<h4 id="text-generation-webui">text-generation-webui</h4>
+<p>官方仓库：<a href="//github.com/oobabooga/text-generation-webui">text-generation-webui</a></p>
+<p>懒人包：b站：coyude <a href="//www.bilibili.com/video/BV1tP411d7wo">AI对话 懒人包v1发布 图形化启动界面(oobabooga/text-generation-webui)可用chatglm/rwkv/vicuna</a></p>
+<p>API调用demo：<a href="//github.com/oobabooga/text-generation-webui/tree/main/api-examples">api-examples</a></p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1U14y1d7rz">https://www.bilibili.com/video/BV1U14y1d7rz</a></p>
+<h4 id="_2">讯飞星火</h4>
+<ul>
+<li>
+<p>web&amp;API
+    官网：<a href="//xinghuo.xfyun.cn/">xinghuo.xfyun.cn</a></p>
+<p>api库（HildaM开发）：<a href="//github.com/HildaM/sparkdesk-api">sparkdesk-api</a></p>
+<p>web配置获取方法：<a href="//github.com/HildaM/sparkdesk-api/tree/main/docs">sparkdesk-api/tree/main/docs</a></p>
+<p>api申请：提交工单申请，工单提交页 <a href="//console.xfyun.cn/services/cbm">console.xfyun.cn/services/cbm</a></p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1au4y127wW">https://www.bilibili.com/video/BV1au4y127wW</a></p>
+</li>
+<li>
+<p>应用API
+    助手API：前往<a href="https://xinghuo.xfyun.cn/botcenter/createbot">https://xinghuo.xfyun.cn/botcenter/createbot</a> 创建助手, 获取“助手ID”，然后协同讯飞星火大模型的其他密钥配置使用即可。  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1Zq421A73F">https://www.bilibili.com/video/BV1Zq421A73F</a></p>
+</li>
+</ul>
+<h4 id="_3">闻达</h4>
+<p>官方仓库：<a href="//github.com/wenda-LLM/wenda">github.com/wenda-LLM/wenda</a></p>
+<p>整合包下载：<a href="//pan.quark.cn/s/c4cb08de666e">pan.quark.cn/s/c4cb08de666e</a> 提取码：4b4R</p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1ru4y1B7js">https://www.bilibili.com/video/BV1ru4y1B7js</a></p>
+<p>接入说明：</p>
+<p>启动 <code>RWKV-Runner</code> ，配置配配好，模型搞搞好，然后启动。  </p>
+<p>如果遇到midi2audio等库缺失的报错，你可以选中整合包的python环境下的python.exe，进行库补装，参考命令 <code>python.exe -m pip midi2audio mido lm_dataformat GPUtil sse_starlette</code>  </p>
+<p><img alt="image" src="./static/images/luna-ai/258466304-2c3167ae-13ad-4f68-911b-d4262210e81d.png" /></p>
+<p><img alt="闻达-接入说明" src="./static/images/luna-ai/258465928-228da499-9de6-45a3-8bb3-5cc684569c00.png" /></p>
+<h4 id="chatterbot">ChatterBot</h4>
+<p>官方仓库：<a href="https://github.com/gunthercox/ChatterBot">https://github.com/gunthercox/ChatterBot</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1fh411L72s">https://www.bilibili.com/video/BV1fh411L72s</a>  </p>
+<p>ChatterBot 是一个开源的 Python 聊天机器人框架，使用机器学习算法（尤其是自然语言处理、文本语义分析等）来实现基于规则和语境的自动聊天系统。它可以让开发者通过简单的配置和训练，构建出各种类型的聊天机器人，包括问答机器人、任务型机器人、闲聊机器人等。</p>
+<p>ChatterBot 的核心思想是：基于历史对话数据，使用机器学习和自然语言处理技术来分析和预测用户输入，然后生成响应。基于这种方法，聊天机器人的反应会更加智能、灵活、接近人类对话的方式。此外，ChatterBot 支持多种存储方式，如 JSON、SQLAlchemy、MongoDB 等，以及多种接口调用方式，如 RESTful API、WebSocket 等，方便开发者在不同场景中进行集成。</p>
+<p>总的来说，ChatterBot 是一个非常强大、灵活、易用的聊天机器人框架，帮助开发者快速搭建出个性化、定制化的聊天机器人，从而提升用户体验和服务质量。  </p>
+<h4 id="bard">Bard</h4>
+<p>官方：<a href="//bard.google.com">bard.google.com</a></p>
+<p>token获取方式：  </p>
+<p>访问 <code>bard.google.com</code>，登录账号  </p>
+<p>键盘F12 打开开发者工具  </p>
+<p>应用程序 → Cookie → 复制 Cookie 中 __Secure-1PSID 对应的值。  </p>
+<p>ps：cookie有效期较短  </p>
+<h4 id="_4">文心一言（已弃用，更换千帆大模型）</h4>
+<p>官网：<a href="//yiyan.baidu.com">yiyan.baidu.com</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1kw411v7z6">https://www.bilibili.com/video/BV1kw411v7z6</a>  </p>
+<ul>
+<li>
+<p>api</p>
+<p>百度智能云千帆大模型平台：<a href="https://cloud.baidu.com/product/wenxinworkshop">https://cloud.baidu.com/product/wenxinworkshop</a>  </p>
+<p>API文档：<a href="https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11">https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11</a>  </p>
+<p><a href="https://console.bce.baidu.com/qianfan/ais/console/onlineService">在线服务</a>，购买<code>ERNIE-Bot大模型公有云在线调用服务</code>，<a href="https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application">应用接入</a> 创建应用，获取<code>API Key</code>和<code>Secret Key</code>，配置即可。</p>
+</li>
+<li>
+<p>web</p>
+<p>服务端：<a href="//github.com/zhuweiyou/yiyan-api">yiyan-api</a>  </p>
+<p>下载yiyan-api源码，根据官方教程部署搭建运行即可。简述过程就是安装Node.js &gt;= 18，然后再源码项目文件夹内运行<code>npm install</code>，最后运行<code>npm start</code>即可。  </p>
+<p>cookie 获取方式：</p>
+<p>访问 <code>yiyan.baidu.com</code>，登录账号  </p>
+<p>键盘F12 打开开发者工具  </p>
+<p>找到<code>源代码</code>或者<code>Sources</code>页，右键<code>debugger</code>左侧行号, 选择 <code>never pause here</code> 或者叫做 <code>永不在此处暂停</code>, 然后再刷新页面  </p>
+<p>此时就可以跳过<code>debugger</code>和重定向，然后找到<code>网络</code>或者<code>Network</code>。  </p>
+<p>再随便发送一个提问，随便找个XHR请求中，查看请求头内的<code>cookie</code>对应的一长串的值，复制粘贴回GUI中保存即可。  </p>
+</li>
+</ul>
+<h4 id="_5">通义星尘</h4>
+<p>官网：<a href="https://xingchen.aliyun.com/">xingchen.aliyun.com</a>  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1iu4y1379B">https://www.bilibili.com/video/BV1iu4y1379B</a>  </p>
+<p>进入官网，注册账号，登录，打开<code>接口管理</code>页面，点击<code>API-KEY管理</code>，<code>创建密钥</code>，复制密钥，配置对应配置项。  </p>
+<p>角色ID如何获取？ 首页点击<code>创建角色</code>，自己创建去！创建完成后，进入角色聊天页，角色头像边上有个<code>信息</code>，点进去可以看见<code>ID</code>，复制配置即可。</p>
+<p>当然，还没完，现在官方还在内测，所以你创建了密钥还不能用，需要联系官方开通调用权限。联系方式见 <a href="https://xingchen.aliyun.com/xingchen/document/service_support">使用文档-服务支持</a>  </p>
+<h4 id="_6">千帆大模型</h4>
+<h5 id="_7">第三方库</h5>
+<ul>
+<li>
+<p>千帆大模型</p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1EC4y1Q7ob">https://www.bilibili.com/video/BV1EC4y1Q7ob</a>  </p>
+<p>接入库，我对原库做了修改：<a href="https://github.com/Ikaros-521/WenxinWorkshop-Python-SDK">WenxinWorkshop-Python-SDK</a>  </p>
+<p>百度智能云千帆大模型平台：<a href="https://cloud.baidu.com/product/wenxinworkshop">https://cloud.baidu.com/product/wenxinworkshop</a>  </p>
+<p>官方API文档：<a href="https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11">https://cloud.baidu.com/doc/WENXINWORKSHOP/s/jlil56u11</a>  </p>
+<p><a href="https://console.bce.baidu.com/qianfan/ais/console/onlineService">在线服务</a>，购买<code>ERNIE-Bot大模型公有云在线调用服务</code>等服务，<a href="https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application">应用接入</a> 创建应用，获取<code>API Key</code>和<code>Secret Key</code>，配置即可。  </p>
+</li>
+<li>
+<p>AppBuilder</p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1b1421D7fz">旧版API教程</a>  </p>
+<p>百度智能云 AppBuilder 应用中心：<a href="https://console.bce.baidu.com/ai_apaas/appCenter">https://console.bce.baidu.com/ai_apaas/appCenter</a>，创建一个你的专属应用 —— 知识问答应用（RAG框架），创建好后，获取应用ID：<a href="https://console.bce.baidu.com/ai_apaas/personalSpace">https://console.bce.baidu.com/ai_apaas/personalSpace</a>。获取密钥token：<a href="https://console.bce.baidu.com/ai_apaas/secretKey">https://console.bce.baidu.com/ai_apaas/secretKey</a>  </p>
+<p>图文文档：<a href="https://github.com/Ikaros-521/AI-Vtuber/pull/830">https://github.com/Ikaros-521/AI-Vtuber/pull/830</a>  </p>
+</li>
+</ul>
+<h5 id="_8">官方库（有版本冲突，暂不启用）</h5>
+<p>接入库：<a href="https://github.com/baidubce/bce-qianfan-sdk">bce-qianfan-sdk</a>  </p>
+<p>使用文档：<a href="https://github.com/baidubce/bce-qianfan-sdk#readme">bce-qianfan-sdk#readme</a>  </p>
+<p>在使用千帆 SDK 之前，用户需要 <a href="https://console.bce.baidu.com/iam/#/iam/accesslist">百度智能云控制台 - 安全认证</a> 页面获取 Access Key 与 Secret Key，并在 <a href="https://console.bce.baidu.com/qianfan/ais/console/applicationConsole/application">千帆控制台</a> 中创建应用，选择需要启用的服务，具体流程参见平台 <a href="https://cloud.baidu.com/doc/Reference/s/9jwvz2egb">说明文档</a>。在获得了 Access Key 与 Secret Key 后，配置好即可开始使用。  </p>
+<h4 id="gemini">Gemini</h4>
+<p>官方平台：<a href="https://makersuite.google.com/app">makersuite.google.com/app</a>  </p>
+<p>前往 <a href="https://makersuite.google.com/app/apikey">makersuite.google.com/app/apikey</a> 创建一个API KEY，配置到项目中即可使用啦~（记得开魔法配置代理！）  </p>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1op4y1f7gr">https://www.bilibili.com/video/BV1op4y1f7gr</a>  </p>
+<h4 id="kimi-chat">Kimi Chat</h4>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1Vm411S7zL">https://www.bilibili.com/video/BV1Vm411S7zL</a>  </p>
+<p>Kimi官网：<a href="https://kimi.moonshot.cn/">https://kimi.moonshot.cn/</a>  </p>
+<p>API申请：<a href="https://platform.moonshot.cn/console/api-keys">https://platform.moonshot.cn/console/api-keys</a>  </p>
+<p>使用：<br />
+1. 大语言模型选择：ChatGPT
+2. 配置
+    API地址：https://api.moonshot.cn/v1<br />
+    API密钥：上面申请的密钥<br />
+    模型：moonshot-v1-8k  </p>
+<h4 id="qanything">QAnything</h4>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1p2421F7QE">https://www.bilibili.com/video/BV1p2421F7QE</a>  </p>
+<p>官方仓库：<a href="https://github.com/netease-youdao/QAnything">https://github.com/netease-youdao/QAnything</a>  </p>
+<h5 id="_9">在线</h5>
+<p>在线官网：<a href="https://ai.youdao.com/saas/qanything/#/home">https://ai.youdao.com/saas/qanything/#/home</a>  </p>
+<p>登录官方平台，完成实名认证获得免费额度，创建应用，获取应用ID和密钥：<a href="https://ai.youdao.com/console/#/app-overview">https://ai.youdao.com/console/#/app-overview</a>  </p>
+<h5 id="_10">本地</h5>
+<p>部署：Windows部署配合CUDA驱动、WSL2、docker，完成。主要坑点在docker加载cuda相关库上。根据官方仓库的run.sh脚本运行即可，具体报错参考issue。  </p>
+<p>参考教程：<br />
+<a href="https://blog.csdn.net/m0_63834988/article/details/131816239">【2023最新版】Win11: WSL（Ubuntu22.04）使用docker远程容器教程（Windows的Docker Desktop下载安装、迁移到非系统盘、配置国内镜像源、设置 WSL2）</a><br />
+<a href="https://www.bilibili.com/read/cv31412472/">Windows安装网易开源QAnything打造智能客服系统</a>  </p>
+<h4 id="minimax">阿里云百炼（通义千问、百川、月之暗面、零一万物、MiniMax）</h4>
+<p>官网：<a href="//qianwen.aliyun.com/">qianwen.aliyun.com</a>   </p>
+<p>阿里云百炼平台：<a href="https://bailian.console.aliyun.com/">bailian.console.aliyun.com</a>  </p>
+<p>开通模型服务，申请API密钥，配置密钥到webui，选中模型，保存配置运行即可。</p>
+<h5 id="api">API类型</h5>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1dx4y1S7Ei">https://www.bilibili.com/video/BV1dx4y1S7Ei</a>  </p>
+<p>API文档：<a href="https://help.aliyun.com/zh/dashscope/developer-reference/quick-start">https://help.aliyun.com/zh/dashscope/developer-reference/quick-start</a><br />
+申请API KEY 文档（文档教程详细，我就不再赘述了）：<a href="https://help.aliyun.com/zh/dashscope/developer-reference/activate-dashscope-and-create-an-api-key">https://help.aliyun.com/zh/dashscope/developer-reference/activate-dashscope-and-create-an-api-key</a>  </p>
+<h5 id="web">web类型</h5>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1nc411Z7Db">https://www.bilibili.com/video/BV1nc411Z7Db</a>  </p>
+<p>依赖库：<a href="https://github.com/leeeduke/revTongYi">revTongYi</a>  </p>
+<p>cookie 获取方式：<br />
+1. 安装 <a href="//chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm">Chrome</a>、<a href="//microsoftedge.microsoft.com/addons/detail/cookie-editor-plus/nbmajjcfigmlcnikhnfhhicidleefhpp">Edge</a> 或 <a href="//addons.mozilla.org/en-US/firefox/addon/cookie-editor/">Firefox</a> 上的<code>Cookies Editor</code>插件
+2. 前往 <a href="//tongyi.aliyun.com/chat">https://tongyi.aliyun.com/chat</a> 并登录
+3. 打开此插件，点击 Export -&gt; Export as JSON，将复制的Cookies内容保存到文件<code>cookie</code>文件夹下的<code>tongyi.json</code>  </p>
+<p>ps:cookie有效期估计在6小时左右。  </p>
+<h4 id="fastgpt">FastGPT</h4>
+<h5 id="_11">在线</h5>
+<p>官方：<a href="https://doc.fastgpt.in/">https://doc.fastgpt.in/</a>  </p>
+<p><img alt="image" src="./static/images/luna-ai/fastgpt-1.png" />  </p>
+<p><img alt="image" src="./static/images/luna-ai/fastgpt-2.png" />  </p>
+<h4 id="koboldcpp">koboldcpp</h4>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV1Ci421o7kt">https://www.bilibili.com/video/BV1Ci421o7kt</a>  </p>
+<p>官方仓库：<a href="https://github.com/LostRuins/koboldcpp">https://github.com/LostRuins/koboldcpp</a>  </p>
+<p>exe程序下载(也可以去整合包网盘中下载)：<a href="https://github.com/LostRuins/koboldcpp/releases">https://github.com/LostRuins/koboldcpp/releases</a></p>
+<h4 id="anythingllm">AnythingLLM</h4>
+<p>视频教程：<a href="https://www.bilibili.com/video/BV13x421k7Yf">https://www.bilibili.com/video/BV13x421k7Yf</a>  </p>
+<p>官网：<a href="https://useanything.com/">https://useanything.com/</a>  </p>
+<p>下载安装，然后根据官方提示选择对接的LLM、向量数据库等，创建工作区（有知识库检索需求的请在工作区添加文档本导入到需要的工作区内）。  </p>
+<p>左下角设置图标进去，到API KEYS创建密钥，复制密钥，配置到项目中，保存配置，读取工作区列表，然后选择你要使用的工作区，保存运行使用即可。  </p>
+<h4 id="gpt4free">GPT4Free</h4>
+<p>官方仓库：<a href="https://github.com/xtekky/gpt4free">https://github.com/xtekky/gpt4free</a>  </p>
+<p>免费白嫖GPT使用，不过得找个好的供应商，不然不稳定。有哪些代理商可以去官方仓库看文档。  </p>
+<h4 id="llm-tpu">LLM-TPU</h4>
+<p>官方仓库：<a href="https://github.com/sophgo/LLM-TPU">https://github.com/sophgo/LLM-TPU</a>  </p>
+<h4 id="dify">Dify</h4>
+<p>官方仓库: <a href="https://github.com/langgenius/dify">https://github.com/langgenius/dify</a>  </p>
+<p>图文教程：<a href="https://github.com/Ikaros-521/AI-Vtuber/pull/924">https://github.com/Ikaros-521/AI-Vtuber/pull/924</a>  </p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 <a href="https://github.com/Ikaros-521/AI-Vtuber">AI-Vtuber</a> & Ikaros-521
+
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "content.tabs.link", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>
