@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs-material==9.2.8
+          pip install mkdocs-material==9.5.50
 
       - name: Build documentation
         run: |
