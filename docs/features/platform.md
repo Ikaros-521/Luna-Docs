@@ -2,28 +2,28 @@
 
 #### b站直播监听
 
-方案1 [bilibili-api :octicons-link-16:](//github.com/Nemo2011/bilibili-api)  
+方案1(官方已停更) [bilibili-api :octicons-link-16:](//github.com/Nemo2011/bilibili-api)  
 
 需要进行扫描登录或者配置 cookie 等信息，才能稳定监听弹幕。注意！！！请使用小号登录，有封号风险！！！  
 
-方案2 [blivedm :octicons-link-16:](//github.com/xfgryujk/blivedm)  
+方案2 [blivedm :octicons-link-16:](//github.com/Ikaros-521/blivedm)  
 
-注意：如果使用方案2，需要手动克隆官方项目仓库的`blivedm`到`site-packages`  
+注意：如果使用方案2，可以手动克隆官方项目仓库的`blivedm`到`site-packages`  也可以使用命令`git+https://gitee.com/ikaros-521/blivedm`安装  
 
 - cookie模式下，不配置cookie，获取不到完整用户名。自行选择配置。
-- 开放平台模式下，请前往 开放平台: https://open-live.bilibili.com/ 注册成为开发者，“直播创作者服务中心” 创建项目，获取 项目ID 、 access_key_id 、 access_key_secred 
+- 开放平台模式下，请前往 开放平台: [https://open-live.bilibili.com/](https://open-live.bilibili.com) 注册成为开发者，“直播创作者服务中心” 创建项目，获取 项目ID 、 access_key_id 、 access_key_secred  
 
 #### <span id="dy">抖音弹幕获取</span>
 
-`dy.py` 稳定 [dy-barrage-grab :octicons-link-16:](//gitee.com/haodong108/dy-barrage-grab)
-
+`dy.py` 稳定 [dy-barrage-grab :octicons-link-16:](//gitee.com/haodong108/dy-barrage-grab)，通过外置监听程序，走ws传输数据。  
 请到此仓库的 releases 下载官方软件包，并仔细阅读官方的使用说明，运行后能在cmd看到弹幕消息的话，即为成功。  
 
 `dy_old.py` 不稳定 [douyin-live :octicons-link-16:](//github.com/YunzhiYike/douyin-live)   
 
+
 #### 快手弹幕获取
 
-##### 快手方案1
+##### 快手方案1（已废弃）
 
 `ks.py` 新版本 [kuaishou_websocket :octicons-link-16:](//github.com/Superheroff/kuaishou_websocket)
 
@@ -71,7 +71,7 @@
 
 依赖库：[pytchat](//github.com/taizan-hokuto/pytchat/tree/master)  
 
-修改平台后，配置直播间号即可，如`https://www.youtube.com/watch?v=P5wlxQgYhMY`的直播间号就是`P5wlxQgYhMY`  
+科学上网，修改平台后，配置直播间号即可，如`https://www.youtube.com/watch?v=P5wlxQgYhMY`的直播间号就是`P5wlxQgYhMY`  
 
 #### twitch直播监听
 
@@ -85,6 +85,7 @@
 
 #### TikTok
 
+需要纯净的外网环境，再测试兼容性。  
 视频教程：[BV1GU421o7Wq](https://www.bilibili.com/video/BV1GU421o7Wq)  
 监听项目：[https://github.com/isaackogan/TikTokLive](https://github.com/isaackogan/TikTokLive)  
 

@@ -8,7 +8,7 @@
 
 不注册账号也可以使用，不过应该是有限制的（具体多少未知）。免费账号拥有每月1万字的额度。
 
-#### genshinvoice.top
+#### genshinvoice.top（已弃用）
 
 [在线体验官网](//genshinvoice.top)
 
@@ -16,7 +16,7 @@
 
 官方视频讲解：[【在线合成&效果优化】基于VITS的米哈游全角色语音合成现已发布](//www.bilibili.com/video/BV1Sg4y1K7kg)
 
-#### tts.ai-lab.top
+#### tts.ai-lab.top（已弃用）
 
 在线体验官网: [https://tts.ai-hobbyist.org/](https://tts.ai-hobbyist.org/)
 
@@ -100,7 +100,7 @@ error, ref_enc.convs.0.weight_g is not in the checkpoint
 
 整合包视频教程2：[【VITS一键包】本地训练独属于你的AI嘴替？训练部署AI语音合成教程](//www.bilibili.com/video/BV1B841197Em)  
 
-#### 睿声
+#### 睿声（已弃用）
 
 官网：[https://www.reecho.ai/](https://www.reecho.ai/)  
 

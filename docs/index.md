@@ -41,7 +41,7 @@ hide:
 
     `Luna AI` 的外观由 `Live2D、Vtube Studio、xuniren、UE5 结合 Audio2Face、EasyAIVtuber、数字人视频播放器（Easy-Wav2Lip、Sadtalker、GeneFace++、MuseTalk、本地视频）、metahuman-stream（ernerf、musetalk、wav2lip）、DH_live、live2d-TTS-LLM-GPT-SoVITS-Vtuber` 技术打造，为用户提供了一个生动、互动的虚拟形象。这使得 `Luna AI` 能够在各大直播平台，如 `Bilibili、抖音、快手、微信视频号、拼多多、1688、斗鱼、让弹幕飞、YouTube、Twitch 和 TikTok`，进行实时互动直播。当然，它也可以在本地环境中与您进行个性化对话。
 
-    为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术和文本转语音技术，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、睿声AI、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS、fish-speech、ChatTTS、CosyVoice、F5-TTS`。这些技术能够生成流畅的回答，而且 Luna AI 还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
+    为了使交流更加自然，`Luna AI` 使用了先进的自然语言处理技术和文本转语音技术，如 `Edge-TTS、VITS-Fast、elevenlabs、bark-gui、VALL-E-X、OpenVoice、GPT_SoVITS、clone-voice、Azure TTS、fish-speech、ChatTTS、CosyVoice、F5-TTS`。这些技术能够生成流畅的回答，而且 Luna AI 还可以通过 `so-vits-svc 和 DDSP-SVC` 实现声音的变化，以适应不同的场景和角色。
 
     此外，`Luna AI` 还能够通过特定指令与 `Stable Diffusion` 协作，展示画作。用户还可以自定义文案，让 Luna AI 循环播放，以满足不同场合的需求。
 
@@ -126,11 +126,11 @@ hide:
 
 ### 合作伙伴
 
-睿声AI：[reecho.ai](https://www.reecho.ai/)  ———— 瞬时创建 超级拟真的 人工智能克隆语音  
-
 AIHubMix: [aihubmix.com](https://aihubmix.com/register?aff=1BMI)  ———— OpenAI,Google,通义千问等大语言模型API代理站  
 
 ​迅雷加速器：[jsq.xunlei.com](https://jsq.xunlei.com/) 新用户可以凭口令领取7x24小时的免费福利加速。兑换码 口令：ikaros  
+
+优云智算： [compshare.cn](https://passport.compshare.cn/register?referral_code=CpxneZgXby6EOmUwLGr7hQ) GPU云算力服务器平台  
 
 ### 🙌赞助
 
