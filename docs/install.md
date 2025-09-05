@@ -14,7 +14,7 @@ git clone -b owner https://github.com/Ikaros-521/AI-Vtuber.git
 
     Windows整合包下载（不会装环境就用整合包捏）：
     - [github :octicons-link-16:](//github.com/Ikaros-521/AI-Vtuber/releases)
-    - [百度网盘 :octicons-link-16:](https://pan.baidu.com/s/1kHNwVOmWPISar2XLnzLpLQ?pwd=atb7)
+    - [百度网盘 :octicons-link-16:](https://pan.baidu.com/s/1CQm2Uky-qsIa4x1S9gvbjQ?pwd=6666)
     - [夸克网盘 :octicons-link-16:](https://pan.quark.cn/s/936dcae8aba0)
     - [迅雷云盘 :octicons-link-16:](https://pan.xunlei.com/s/VNitDF0Y3l-qwTpE0A5Rh4DaA1)
     

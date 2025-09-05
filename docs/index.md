@@ -66,6 +66,8 @@ hide:
     <a href="//github.com/Ikaros-521/AI-Vtuber" target="_blank">:simple-github: GitHub</span></a>
     <span> | </span>
     <a href="//gitee.com/ikaros-521/AI-Vtuber" target="_blank">:simple-gitee: Gitee</span></a>
+    <span> | </span>
+    <a href="//github.com/Ikaros-521/LX_AI" target="_blank">:fontawesome-solid-video: 商用版-洛曦AI</span></a>
 
 ![mind-map](./static/images/luna-ai/xmind.png)
 ## :material-file-tree: 项目结构
