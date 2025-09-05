@@ -1,0 +1,43 @@
+name: Update Docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material==9.5.50
+
+      - name: Build documentation
+        run: |
+          mkdocs build
+          
+      - name: Deploy to server
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git config --global user.email "327209194@qq.com"
+          git config --global user.name "Ikaros-521"
+          git add .
+          git commit -m "Action：更新文档"
+          git push origin main
+          
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.GH_PAGES_DEPLOY_KEY }}
+          publish_dir: ./site  # 指定要部署的目录

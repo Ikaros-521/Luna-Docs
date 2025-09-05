@@ -1,0 +1,58 @@
+site_name: Luna AI
+site_dir: site
+repo_url: https://github.com/Ikaros-521/AI-Vtuber
+repo_name: Luna AI
+markdown_extensions:
+  - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+theme:
+  name: material
+  language: zh
+  favicon: static/images/favicon.png
+  icon:
+    logo: fontawesome/solid/dove
+  features:
+    - navigation.instant
+    - content.tabs.link
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+  palette:
+    scheme: default
+    primary: blue
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: G-FR32RDV2MT
+copyright: >
+  Copyright &copy; 2025 <a href="https://github.com/Ikaros-521/AI-Vtuber">AI-Vtuber</a> & Ikaros-521
+nav:
+  - 首页: index.md
+  - 安装: install.md
+  - 使用: use.md
+  - 功能介绍:
+    - 基础功能: features/basic.md
+    - API接口: features/api.md
+    - 平台: features/platform.md
+    - 大语言模型: features/llm.md
+    - 语音合成: features/tts.md
+    - 变声: features/svc.md
+    - 虚拟身体: features/visual_body.md
+    - 其他: features/other.md
+  - 常见问题: faq.md
+  - 开发&项目相关: develop.md
+  - 开发计划:
+    - 待办列表: plans/todo.md
+    - 长期规划: plans/long-term.md
+  - 更新日志: changelog.md
+  - 关于: about.md
